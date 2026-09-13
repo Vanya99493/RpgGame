@@ -17,12 +17,10 @@ namespace Utils
         private bool keyCollision;
 #pragma warning restore 0414
 
-        [SerializeField]
-        [HideInInspector] 
+        [NonSerialized]
         private Dictionary<TKey, int> _indexByKey = new();
         
-        [SerializeField]
-        [HideInInspector] 
+        [NonSerialized]
         private Dictionary<TKey, TValue> _dict = new();
         
         [Serializable]
