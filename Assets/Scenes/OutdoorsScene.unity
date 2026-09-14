@@ -436,6 +436,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8f1d397b612d714e9abfefeeec09b87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Runtime.Entry.EntryPoint
+  _dictionary:
+  - key: 0
+    value: 
+  - key: 1
+    value: 
+  - key: 2
+    value: 
+  _x: 5
 --- !u!4 &1214809211
 Transform:
   m_ObjectHideFlags: 0
