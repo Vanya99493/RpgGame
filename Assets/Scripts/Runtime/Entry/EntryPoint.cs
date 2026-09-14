@@ -1,4 +1,5 @@
-using System.Collections.Generic;
+using Configs.HexagonalGrid;
+using Runtime.HexagonalGrid;
 using UnityEngine;
 
 namespace Runtime.Entry
@@ -6,9 +7,19 @@ namespace Runtime.Entry
 	public class EntryPoint : MonoBehaviour
 	{
 		[SerializeField]
-		private Dictionary<int, string> _dictionary = new();
-
+		private HexagonalGridController _hexagonalGridController;
+		
 		[SerializeField]
-		private float _x = 5f;
+		private HexagonalGridConfig _hexagonalGridConfig;
+
+		private void Awake()
+		{
+			BuildGrid();
+		}
+
+		public void BuildGrid()
+		{
+			_hexagonalGridController.Initialize(_hexagonalGridConfig.GridData);
+		}
 	}
 }
