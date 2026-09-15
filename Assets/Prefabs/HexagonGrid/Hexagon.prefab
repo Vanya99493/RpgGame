@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9141449810975353961}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 1070767904094579231}
   - component: {fileID: 3248340363575173138}
   - component: {fileID: 5172425270646902037}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FramePlane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -134,7 +134,9 @@ GameObject:
   - component: {fileID: 8832486807332400363}
   - component: {fileID: 2348538452306264758}
   - component: {fileID: 2279853064943363363}
-  m_Layer: 0
+  - component: {fileID: 6322035259072130909}
+  - component: {fileID: 1960144889220927499}
+  m_Layer: 8
   m_Name: Hexagon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -213,6 +215,43 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &6322035259072130909
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6928036973898073613}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2794067383335433913, guid: 534ac75f5ec64d041a76e32dcdba7a2c, type: 3}
+--- !u!114 &1960144889220927499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6928036973898073613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58db881816a34cbb83d5a9c5cfebcf2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Runtime.Interaction.InteractionController
+  _modelGameObjects:
+  - {fileID: 6928036973898073613}
+  _outlineDataAsset: {fileID: 11400000, guid: 31e2967d57f6a1d419b552075b8f6ddc, type: 2}
 --- !u!1 &7519712828329100653
 GameObject:
   m_ObjectHideFlags: 0
@@ -223,7 +262,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6184553225329935940}
   - component: {fileID: 1852779753140760936}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Hexagon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -259,3 +298,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Runtime.HexagonalGrid.HexagonalGridElement
   _model: {fileID: 6928036973898073613}
+  _interactionController: {fileID: 1960144889220927499}

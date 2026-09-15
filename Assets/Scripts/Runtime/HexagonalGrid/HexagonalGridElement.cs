@@ -1,5 +1,6 @@
 ﻿using System;
 using Patterns;
+using Runtime.Interaction;
 using Runtime.Interfaces;
 using UnityEngine;
 
@@ -10,8 +11,22 @@ namespace Runtime.HexagonalGrid
 		[SerializeField]
 		private GameObject _model;
 		
+		[SerializeField]
+		private InteractionController _interactionController;
+
+		public event Action<HexagonalGridElement> SelectEvent; 
 		public event Action<IDestroyable> DestroyEvent;
 		public event Action<IPoolable> ReturnToPoolEvent;
+
+		private void OnEnable()
+		{
+			SubscribeOnEvents();
+		}
+
+		private void OnDestroy()
+		{
+			UnsubscribeFromEvents();
+		}
 
 		public void Initialize(bool isAvailable)
 		{
@@ -39,6 +54,21 @@ namespace Runtime.HexagonalGrid
 		public void ReturnToPool()
 		{
 			ReturnToPoolEvent?.Invoke(this);
+		}
+
+		private void SubscribeOnEvents()
+		{
+			_interactionController.SelectEvent += OnSelectEventHandler;
+		}
+
+		private void UnsubscribeFromEvents()
+		{
+			_interactionController.SelectEvent -= OnSelectEventHandler;
+		}
+
+		private void OnSelectEventHandler()
+		{
+			SelectEvent?.Invoke(this);
 		}
 	}
 }
