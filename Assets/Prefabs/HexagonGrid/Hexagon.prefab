@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9141449810975353961}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 1070767904094579231}
   - component: {fileID: 3248340363575173138}
   - component: {fileID: 5172425270646902037}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: FramePlane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60,7 +60,7 @@ Transform:
   m_GameObject: {fileID: 6261533862800754391}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.01, z: 0}
+  m_LocalPosition: {x: 0, y: 0.011, z: 0}
   m_LocalScale: {x: 0.1, y: 1, z: 0.1155}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 2279853064943363363}
   - component: {fileID: 6322035259072130909}
   - component: {fileID: 1960144889220927499}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: Hexagon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -262,7 +262,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6184553225329935940}
   - component: {fileID: 1852779753140760936}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: Hexagon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
