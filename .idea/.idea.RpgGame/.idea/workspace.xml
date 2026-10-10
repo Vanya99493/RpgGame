@@ -1,40 +1,144 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakeProjectFlavorService">
+    <option name="flavorId" value="CMakePlainProjectFlavor" />
+  </component>
+  <component name="CMakeSettings">
+    <configurations />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c763a81-88c4-4510-b47f-161648233395" name="Changes" comment="" />
+    <list default="true" id="4c763a81-88c4-4510-b47f-161648233395" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RpgGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RpgGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/Hexagone/Hexagone.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/Hexagone/Hexagone.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/HexagonGrid/Hexagon.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/HexagonGrid/Hexagon.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableOjbects/Interaction/GridElementOutlineDataAsset.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableOjbects/Interaction/GridElementOutlineDataAsset.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Character/Character.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Character/CharacterController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Character/Character.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Character/CharacterController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Entry/EntryPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Entry/EntryPoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/HexagonalGrid/HexagonalGridElement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/HexagonalGrid/HexagonalGridElement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Interaction/InteractionController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Interaction/InteractionController.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DpaMonitoringSettings">
+    <option name="firstShow" value="false" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Character/CharactersController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Core/Enums/TeamType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Level/LevelBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Models/Level/LevelData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Player/PlayerSelection/IPlayerSelectionController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Player/PlayerSelection/States/Base/BaseSelectionState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Player/PlayerSelection/States/CharacterMovementSelectionState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Player/PlayerSelection/States/FreeSelectionState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Player/PlayerSelection/States/NeutralSelectionState.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.5079915623024418" />
+      <entry key="MS500" value="3.544362063263882" />
+      <entry key="S2" value="6.337149034614186" />
+      <entry key="S5" value="10.037039960850178" />
+      <entry key="S10" value="14.163220898543837" />
+      <entry key="S30" value="22.880707654045903" />
+      <entry key="S60" value="28.709442071523384" />
+      <entry key="M2" value="35.821032896975765" />
+      <entry key="M5" value="55.82603503648917" />
+      <entry key="M10" value="92.14396791413229" />
+      <entry key="M15" value="123.4992206964028" />
+      <entry key="M30" value="181.9708220149298" />
+      <entry key="H1" value="229.77685607352657" />
+      <entry key="H2" value="260.8106111886873" />
+      <entry key="H4" value="278.55760497045804" />
+      <entry key="D1" value="294.6345381203208" />
+      <entry key="W1" value="297.5160564245094" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="3.7453410837537537E-96" />
+      <entry key="MS500" value="8.216715971414224E-20" />
+      <entry key="S2" value="1.6930686524472717E-5" />
+      <entry key="S5" value="0.012344395499240643" />
+      <entry key="S10" value="0.11110772319059044" />
+      <entry key="S30" value="0.5196487998954235" />
+      <entry key="S60" value="1.1662624128738475" />
+      <entry key="M2" value="2.6454423127466087" />
+      <entry key="M5" value="5.874849358174844" />
+      <entry key="M10" value="9.38758758140067" />
+      <entry key="M15" value="11.870122994716858" />
+      <entry key="M30" value="16.108905573798026" />
+      <entry key="H1" value="19.410512463118465" />
+      <entry key="H2" value="21.511591199289057" />
+      <entry key="H4" value="22.7025135519721" />
+      <entry key="D1" value="23.7758962363481" />
+      <entry key="W1" value="23.967786528637877" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="1.4130504366263676" />
+      <entry key="MS500" value="3.501670777035706" />
+      <entry key="S2" value="6.306405709254143" />
+      <entry key="S5" value="10.001475229464612" />
+      <entry key="S10" value="14.203656278878274" />
+      <entry key="S30" value="23.31497532521299" />
+      <entry key="S60" value="29.794534991661305" />
+      <entry key="M2" value="38.390270048761714" />
+      <entry key="M5" value="61.63253879158241" />
+      <entry key="M10" value="101.47258493186679" />
+      <entry key="M15" value="135.3187469606431" />
+      <entry key="M30" value="198.0454719345853" />
+      <entry key="H1" value="249.1669803019622" />
+      <entry key="H2" value="282.3110095687472" />
+      <entry key="H4" value="301.2542446156633" />
+      <entry key="D1" value="318.4094141979472" />
+      <entry key="W1" value="321.48369617149683" />
+    </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2,
   &quot;fromUser&quot;: false
 }</component>
   <component name="ProjectId" id="3K3gDcfKa04H8rStEy10FO76FJd" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "cidr.known.project.marker": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "master",
     "junie.onboarding.icon.badge.shown": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
   }
@@ -60,13 +164,15 @@
       <option name="MIXED_MODE_DEBUG" value="0" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" useMixedMode="false">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" useMixedMode="false" ignored-value-for-modified-check="10136">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="10136" />
       <option name="projectPathOnTarget" />
       <option name="runtimes">
-        <list />
+        <list>
+          <MonoRuntime />
+        </list>
       </option>
       <option name="selectedOptions">
         <list />
@@ -86,8 +192,12 @@
       <updated>1790791548542</updated>
       <workItem from="1790791551067" duration="2000" />
       <workItem from="1790792953438" duration="37000" />
+      <workItem from="1791644041321" duration="2988000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityProjectDiscoverer">

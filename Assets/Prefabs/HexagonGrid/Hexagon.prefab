@@ -298,4 +298,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Runtime.HexagonalGrid.HexagonalGridElement
   _model: {fileID: 6928036973898073613}
+  _frameModel: {fileID: 6261533862800754391}
   _interactionController: {fileID: 1960144889220927499}
