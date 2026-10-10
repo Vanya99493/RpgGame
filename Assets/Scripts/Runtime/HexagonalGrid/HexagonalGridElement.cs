@@ -10,6 +10,9 @@ namespace Runtime.HexagonalGrid
 	{
 		[SerializeField]
 		private GameObject _model;
+
+		[SerializeField]
+		private GameObject _frameModel;
 		
 		[SerializeField]
 		private InteractionController _interactionController;
@@ -30,20 +33,8 @@ namespace Runtime.HexagonalGrid
 
 		public void Initialize(bool isAvailable)
 		{
-			if (!isAvailable)
-			{
-				var renderer = _model.GetComponent<Renderer>();
-
-				var propertyBlock = new MaterialPropertyBlock();
-				renderer.GetPropertyBlock(propertyBlock);
-
-				propertyBlock.SetColor(
-					"_BaseColor",
-					new Color(1f, 1f, 1f, 0.2f)
-				);
-
-				renderer.SetPropertyBlock(propertyBlock);
-			}
+			_interactionController.Initialize(isAvailable);
+			InitVisual(isAvailable);
 		}
 		
 		public void Destroy()
@@ -64,6 +55,24 @@ namespace Runtime.HexagonalGrid
 		private void UnsubscribeFromEvents()
 		{
 			_interactionController.SelectEvent -= OnSelectEventHandler;
+		}
+
+		private void InitVisual(bool isAvailable)
+		{
+			if (!isAvailable)
+			{
+				var renderer = _model.GetComponent<Renderer>();
+
+				var propertyBlock = new MaterialPropertyBlock();
+				renderer.GetPropertyBlock(propertyBlock);
+
+				propertyBlock.SetColor(
+					"_BaseColor",
+					new Color(1f, 1f, 1f, 0.2f)
+				);
+
+				renderer.SetPropertyBlock(propertyBlock);
+			}
 		}
 
 		private void OnSelectEventHandler()

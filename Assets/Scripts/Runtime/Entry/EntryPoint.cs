@@ -1,5 +1,6 @@
 using Configs.HexagonalGrid;
-using Runtime.HexagonalGrid;
+using Runtime.Level;
+using Runtime.Models.Level;
 using Runtime.Player;
 using UnityEngine;
 
@@ -8,10 +9,10 @@ namespace Runtime.Entry
 	public class EntryPoint : MonoBehaviour
 	{
 		[SerializeField]
-		private HexagonalGridController _hexagonalGridController;
+		private PlayerCameraController _playerCameraController;
 		
 		[SerializeField]
-		private PlayerCameraController _playerCameraController;
+		private LevelBuilder _levelBuilder;
 		
 		[Header("Configs")]
 		[SerializeField]
@@ -29,9 +30,14 @@ namespace Runtime.Entry
 			_playerCameraController.DeactivateSelection();
 		}
 
-		public void BuildGrid()
+		private void BuildGrid()
 		{
-			_hexagonalGridController.Initialize(_hexagonalGridConfig.GridData);
+			LevelData levelData = new LevelData()
+			{
+				GridData = _hexagonalGridConfig.GridData,
+			};
+			
+			_levelBuilder.BuildLevel(levelData);
 		}
 	}
 }
