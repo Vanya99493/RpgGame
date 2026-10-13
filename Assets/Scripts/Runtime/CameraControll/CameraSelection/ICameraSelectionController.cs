@@ -2,7 +2,7 @@
 
 namespace Runtime.Player
 {
-	public interface IPlayerSelectionController
+	public interface ICameraSelectionController
 	{
 		public void SelectObject(IInteractable interactable);
 	}

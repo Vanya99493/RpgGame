@@ -8,6 +8,7 @@ namespace Patterns
 		[SerializeField]
 		private T _prefab;
 		
+		[Header("Optional")]
 		[SerializeField]
 		private Transform _parent;
 		

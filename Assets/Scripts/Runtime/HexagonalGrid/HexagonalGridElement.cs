@@ -15,7 +15,12 @@ namespace Runtime.HexagonalGrid
 		private GameObject _frameModel;
 		
 		[SerializeField]
+		private Transform _centerTransform;
+		
+		[SerializeField]
 		private InteractionController _interactionController;
+		
+		public Vector3 CenterPosition => _centerTransform.position;
 
 		public event Action<HexagonalGridElement> SelectEvent; 
 		public event Action<IDestroyable> DestroyEvent;

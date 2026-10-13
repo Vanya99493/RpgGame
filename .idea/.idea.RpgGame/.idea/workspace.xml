@@ -12,15 +12,50 @@
   <component name="ChangeListManager">
     <list default="true" id="4c763a81-88c4-4510-b47f-161648233395" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RpgGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RpgGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/Hexagone/Hexagone.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/Hexagone/Hexagone.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Character/TestCharacter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Character/TestCharacter.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/HexagonGrid/Hexagon.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/HexagonGrid/Hexagon.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableOjbects/Interaction/GridElementOutlineDataAsset.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableOjbects/Interaction/GridElementOutlineDataAsset.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Character/Character.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Character/CharacterController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Character/Character.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Character/CharacterController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableOjbects/Interaction/CharacterOutlineDataAsset.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableOjbects/Interaction/CharacterOutlineDataAsset.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableOjbects/Interaction/GridElementOutlineDataAsset.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableOjbects/Interaction/GridElementOutlineDataAsset.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Patterns/Factory/Factory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Patterns/Factory/Factory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Character/CharacterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Character/CharacterController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Character/CharactersController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Character/CharactersController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Core/Interfaces/IInteractable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Core/Interfaces/IInteractable.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Entry/EntryPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Entry/EntryPoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/HexagonalGrid/HexagonalGridController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/HexagonalGrid/HexagonalGridController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/HexagonalGrid/HexagonalGridElement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/HexagonalGrid/HexagonalGridElement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/HexagonalGrid/HexagonalGridElementFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/HexagonalGrid/HexagonalGridElementsFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/HexagonalGrid/HexagonalGridElementFactory.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/HexagonalGrid/HexagonalGridElementsFactory.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/HexagonalGrid/HexagonalGridElementObjectPool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/HexagonalGrid/HexagonalGridElementsObjectPool.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/HexagonalGrid/HexagonalGridElementObjectPool.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/HexagonalGrid/HexagonalGridElementsObjectPool.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Interaction/InteractionController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Interaction/InteractionController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Level/LevelBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Level/LevelBuilder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Models/Character/CharacterData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Models/Character/CharacterData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Models/Character/CharacterInitializationData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Models/Character/CharacterInitializationData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Models/Level/LevelData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Models/Level/LevelData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Player.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Player/IPlayerCameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/ICameraController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Player/IPlayerCameraController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/ICameraController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Player/PlayerCameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Player/PlayerCameraController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Player/PlayerSelection.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Player/PlayerSelection/IPlayerSelectionController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/ICameraSelectionController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Player/PlayerSelection/IPlayerSelectionController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/ICameraSelectionController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Player/PlayerSelection/PlayerSelectionController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/CameraSelectionController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Player/PlayerSelection/PlayerSelectionController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/CameraSelectionController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Player/PlayerSelection/States.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/States.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Player/PlayerSelection/States/Base.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/States/Base.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Player/PlayerSelection/States/Base/BaseSelectionState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/States/Base/BaseSelectionState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Player/PlayerSelection/States/Base/BaseSelectionState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/States/Base/BaseSelectionState.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Player/PlayerSelection/States/CharacterMovementSelectionState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/States/CharacterMovementSelectionState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Player/PlayerSelection/States/CharacterMovementSelectionState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/States/CharacterMovementSelectionState.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Player/PlayerSelection/States/FreeSelectionState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/States/FreeSelectionState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Player/PlayerSelection/States/FreeSelectionState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/States/FreeSelectionState.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Player/PlayerSelection/States/NeutralSelectionState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/States/NeutralSelectionState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Player/PlayerSelection/States/NeutralSelectionState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/States/NeutralSelectionState.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,15 +69,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3ea01e77be99618395f448b16bd7cc2bd4248bd9e5d8474964b2d97f39c5d74/System.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Character/CharactersController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Character/RandomCharacterGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Core/Enums/TeamType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Level/LevelBuilder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Models/Level/LevelData.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Player/PlayerSelection/IPlayerSelectionController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Player/PlayerSelection/States/Base/BaseSelectionState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Player/PlayerSelection/States/CharacterMovementSelectionState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Player/PlayerSelection/States/FreeSelectionState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Player/PlayerSelection/States/NeutralSelectionState.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="McpProjectServerCommands">
     <commands />
@@ -50,61 +82,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.5079915623024418" />
-      <entry key="MS500" value="3.544362063263882" />
-      <entry key="S2" value="6.337149034614186" />
-      <entry key="S5" value="10.037039960850178" />
-      <entry key="S10" value="14.163220898543837" />
-      <entry key="S30" value="22.880707654045903" />
-      <entry key="S60" value="28.709442071523384" />
-      <entry key="M2" value="35.821032896975765" />
-      <entry key="M5" value="55.82603503648917" />
-      <entry key="M10" value="92.14396791413229" />
-      <entry key="M15" value="123.4992206964028" />
-      <entry key="M30" value="181.9708220149298" />
-      <entry key="H1" value="229.77685607352657" />
-      <entry key="H2" value="260.8106111886873" />
-      <entry key="H4" value="278.55760497045804" />
-      <entry key="D1" value="294.6345381203208" />
-      <entry key="W1" value="297.5160564245094" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0000012611576394" />
+      <entry key="S2" value="1.0669480542557515" />
+      <entry key="S5" value="2.199443408212873" />
+      <entry key="S10" value="4.408731570166764" />
+      <entry key="S30" value="7.963680622462052" />
+      <entry key="S60" value="9.363253664224116" />
+      <entry key="M2" value="10.61203011856863" />
+      <entry key="M5" value="21.833318616288548" />
+      <entry key="M10" value="74.13034639216339" />
+      <entry key="M15" value="144.01370958645282" />
+      <entry key="M30" value="335.8029549927084" />
+      <entry key="H1" value="566.9606911758415" />
+      <entry key="H2" value="762.9655121733846" />
+      <entry key="H4" value="894.2561779400328" />
+      <entry key="D1" value="1026.5902104370125" />
+      <entry key="W1" value="1051.7335098183282" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="3.7453410837537537E-96" />
-      <entry key="MS500" value="8.216715971414224E-20" />
-      <entry key="S2" value="1.6930686524472717E-5" />
-      <entry key="S5" value="0.012344395499240643" />
-      <entry key="S10" value="0.11110772319059044" />
-      <entry key="S30" value="0.5196487998954235" />
-      <entry key="S60" value="1.1662624128738475" />
-      <entry key="M2" value="2.6454423127466087" />
-      <entry key="M5" value="5.874849358174844" />
-      <entry key="M10" value="9.38758758140067" />
-      <entry key="M15" value="11.870122994716858" />
-      <entry key="M30" value="16.108905573798026" />
-      <entry key="H1" value="19.410512463118465" />
-      <entry key="H2" value="21.511591199289057" />
-      <entry key="H4" value="22.7025135519721" />
-      <entry key="D1" value="23.7758962363481" />
-      <entry key="W1" value="23.967786528637877" />
+      <entry key="MS100" value="2.3427489654761177E-25" />
+      <entry key="MS500" value="1.1876321097007423E-5" />
+      <entry key="S2" value="0.07059099319339776" />
+      <entry key="S5" value="0.49163376785712704" />
+      <entry key="S10" value="0.979430147416027" />
+      <entry key="S30" value="1.5720222580335976" />
+      <entry key="S60" value="1.7746239569788576" />
+      <entry key="M2" value="1.9868335988767631" />
+      <entry key="M5" value="3.9962156479759057" />
+      <entry key="M10" value="12.149005468239604" />
+      <entry key="M15" value="22.46274434432592" />
+      <entry key="M30" value="48.817558234279204" />
+      <entry key="H1" value="77.94539085216965" />
+      <entry key="H2" value="101.12381967855065" />
+      <entry key="H4" value="116.07772202745814" />
+      <entry key="D1" value="130.77780500191773" />
+      <entry key="W1" value="133.53350030421197" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.4130504366263676" />
-      <entry key="MS500" value="3.501670777035706" />
-      <entry key="S2" value="6.306405709254143" />
-      <entry key="S5" value="10.001475229464612" />
-      <entry key="S10" value="14.203656278878274" />
-      <entry key="S30" value="23.31497532521299" />
-      <entry key="S60" value="29.794534991661305" />
-      <entry key="M2" value="38.390270048761714" />
-      <entry key="M5" value="61.63253879158241" />
-      <entry key="M10" value="101.47258493186679" />
-      <entry key="M15" value="135.3187469606431" />
-      <entry key="M30" value="198.0454719345853" />
-      <entry key="H1" value="249.1669803019622" />
-      <entry key="H2" value="282.3110095687472" />
-      <entry key="H4" value="301.2542446156633" />
-      <entry key="D1" value="318.4094141979472" />
-      <entry key="W1" value="321.48369617149683" />
+      <entry key="MS100" value="0.003194929916241331" />
+      <entry key="MS500" value="0.3168820922244462" />
+      <entry key="S2" value="0.8518107808731809" />
+      <entry key="S5" value="2.4368277528854083" />
+      <entry key="S10" value="5.16024946464835" />
+      <entry key="S30" value="9.411608289995002" />
+      <entry key="S60" value="11.066787032790263" />
+      <entry key="M2" value="12.559371348807382" />
+      <entry key="M5" value="25.80113287365346" />
+      <entry key="M10" value="86.23758383029694" />
+      <entry key="M15" value="166.42402089073005" />
+      <entry key="M30" value="384.5604132021987" />
+      <entry key="H1" value="644.8558401503237" />
+      <entry key="H2" value="864.0558052022635" />
+      <entry key="H4" value="1010.3143609851741" />
+      <entry key="D1" value="1157.3642976407123" />
+      <entry key="W1" value="1185.266466564105" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -119,30 +151,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "cidr.known.project.marker": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "master",
-    "junie.onboarding.icon.badge.shown": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Attach to Unity Editor.Attach to Unity Editor.executor&quot;: &quot;Debug&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.6.0f1\Editor\Unity.exe" />
@@ -164,15 +196,13 @@
       <option name="MIXED_MODE_DEBUG" value="0" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" useMixedMode="false" ignored-value-for-modified-check="10136">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" useMixedMode="false">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="10136" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="runtimes">
-        <list>
-          <MonoRuntime />
-        </list>
+        <list />
       </option>
       <option name="selectedOptions">
         <list />
@@ -192,7 +222,8 @@
       <updated>1790791548542</updated>
       <workItem from="1790791551067" duration="2000" />
       <workItem from="1790792953438" duration="37000" />
-      <workItem from="1791644041321" duration="2988000" />
+      <workItem from="1791644041321" duration="3302000" />
+      <workItem from="1791899576569" duration="4998000" />
     </task>
     <servers />
   </component>

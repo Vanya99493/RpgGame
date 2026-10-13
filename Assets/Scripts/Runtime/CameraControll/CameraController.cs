@@ -4,8 +4,12 @@ using UnityEngine.InputSystem;
 
 namespace Runtime.Player
 {
-	public class PlayerCameraController : MonoBehaviour, IPlayerCameraController
+	public class CameraController : MonoBehaviour, ICameraController
 	{
+		[SerializeField]
+		private CameraSelectionController _cameraSelectionController;
+		
+		[Header("Camera")]
 		[SerializeField]
 		private Camera _playerCamera;
 		
@@ -76,7 +80,6 @@ namespace Runtime.Player
 
 			if (Physics.Raycast(ray, out RaycastHit hit, _raycastDistance, _selectionLayerMask))
 			{
-				Debug.Log("Hit interactable object");
 				if (hit.collider.TryGetComponent(out IInteractable interactable))
 				{
 					if (_hoveredInteractable == null)
@@ -122,8 +125,12 @@ namespace Runtime.Player
 			{
 				if (hit.collider.TryGetComponent(out IInteractable interactable))
 				{
-					interactable.Select();
+					_cameraSelectionController.SelectObject(interactable);
 				}
+			}
+			else
+			{
+				_cameraSelectionController.ReleaseSelection();
 			}
 		}
 

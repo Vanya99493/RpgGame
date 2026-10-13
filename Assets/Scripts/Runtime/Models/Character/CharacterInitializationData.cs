@@ -1,5 +1,4 @@
-﻿using Runtime.Enums;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Runtime.Models
 {
@@ -7,6 +6,5 @@ namespace Runtime.Models
 	{
 		public CharacterData CharacterData;
 		public Vector2 SpawnPosition;
-		public TeamType TeamType;
 	}
 }

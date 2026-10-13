@@ -1,6 +1,6 @@
 ﻿namespace Runtime.Player
 {
-	public interface IPlayerCameraController
+	public interface ICameraController
 	{
 		public void ActivateSelection();
 		public void DeactivateSelection();

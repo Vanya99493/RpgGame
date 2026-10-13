@@ -1,15 +1,23 @@
-﻿using Runtime.Interaction;
+﻿using System;
+using Runtime.HexagonalGrid;
+using Runtime.Interaction;
+using Runtime.Interfaces;
 using Runtime.Models;
 using UnityEngine;
 
 namespace Runtime.Character
 {
-	public class CharacterController : MonoBehaviour
+	public class CharacterController : MonoBehaviour, IDestroyable
 	{
 		[SerializeField]
 		private InteractionController _interactionController;
 		
+		private HexagonalGridController _hexagonalGridController;
+		private Vector2 _gridPosition;
+		
 		public CharacterData CharacterData { get; private set; }
+		
+		public event Action<IDestroyable> DestroyEvent;
 
 		private void OnEnable()
 		{
@@ -19,6 +27,25 @@ namespace Runtime.Character
 		private void OnDestroy()
 		{
 			UnsubscribeFromEvents();
+		}
+
+		public void Initialize(
+			CharacterInitializationData initializationData,
+			HexagonalGridController hexagonalGridController)
+		{
+			_hexagonalGridController = hexagonalGridController;
+			
+			CharacterData = initializationData.CharacterData;
+			_gridPosition = initializationData.SpawnPosition;
+			
+			_interactionController.Initialize(true);
+
+			transform.position = _hexagonalGridController.GetGridElementPosition(_gridPosition);
+		}
+
+		public void Destroy()
+		{
+			DestroyEvent?.Invoke(this);
 		}
 		
 		private void SubscribeOnEvents()

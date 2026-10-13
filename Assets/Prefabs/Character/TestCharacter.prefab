@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6438433233333129876}
   - component: {fileID: 3069432377801143506}
   - component: {fileID: 4207434102861011564}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Capsule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -129,7 +129,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Runtime.Interaction.InteractionController
   _modelGameObjects:
   - {fileID: 1213078177842593861}
-  _outlineDataAsset: {fileID: 11400000, guid: b1ee253480932774b9d4fb96f9c92417, type: 2}
+  _hoverOutlineDataAsset: {fileID: 11400000, guid: b1ee253480932774b9d4fb96f9c92417, type: 2}
+  _selectionOutlineDataAsset: {fileID: 11400000, guid: 03e34c192bd8db14c942b6b1509eb9d3, type: 2}
 --- !u!1 &7208427399403129663
 GameObject:
   m_ObjectHideFlags: 0
@@ -140,7 +141,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3080377554810250116}
   - component: {fileID: 7457861271694036659}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TestCharacter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -185,7 +186,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5186080972368213424}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}

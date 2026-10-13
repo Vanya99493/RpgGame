@@ -11,13 +11,18 @@ namespace Runtime.Interaction
 		private List<GameObject> _modelGameObjects = new();
 
 		[SerializeField]
-		private OutlineDataAsset _outlineDataAsset;
+		private OutlineDataAsset _hoverOutlineDataAsset;
+		
+		[SerializeField]
+		private OutlineDataAsset _selectionOutlineDataAsset;
 
 		private bool _isInteractionActive;
+		private bool _isSelected;
 		
 		public event Action HoverEvent;
 		public event Action UnHoverEvent;
 		public event Action SelectEvent;
+		public event Action ReleaseEvent;
 
 		public void Initialize(bool isInteractionActive)
 		{
@@ -31,14 +36,7 @@ namespace Runtime.Interaction
 				return;
 			}
 			
-			foreach (var modelGameObject in _modelGameObjects)
-			{
-				var outline = modelGameObject.AddComponent<Outline>();
-				outline.SetOutlineData(
-					_outlineDataAsset.OutlineMode, 
-					_outlineDataAsset.OutlineColor, 
-					_outlineDataAsset.OutlineWidth);
-			}
+			ApplyOutline(_hoverOutlineDataAsset);
 			
 			HoverEvent?.Invoke();
 		}
@@ -50,12 +48,13 @@ namespace Runtime.Interaction
 				return;
 			}
 
-			foreach (var modelGameObject in _modelGameObjects)
+			if (_isSelected)
 			{
-				if (modelGameObject.TryGetComponent(out Outline outline))
-				{
-					Destroy(outline);
-				}
+				ApplyOutline(_selectionOutlineDataAsset);
+			}
+			else
+			{
+				RemoveOutline();
 			}
 			
 			UnHoverEvent?.Invoke();
@@ -67,9 +66,59 @@ namespace Runtime.Interaction
 			{
 				return;
 			}
+			
+			_isSelected = true;
 
-			UnHover();
+			ApplyOutline(_selectionOutlineDataAsset);
+			
 			SelectEvent?.Invoke();
+		}
+
+		public void Release()
+		{
+			if (!_isInteractionActive)
+			{
+				return;
+			}
+			
+			_isSelected = false;
+			
+			RemoveOutline();
+			
+			ReleaseEvent?.Invoke();
+		}
+
+		private void ApplyOutline(OutlineDataAsset outlineDataAsset)
+		{
+			foreach (var modelGameObject in _modelGameObjects)
+			{
+				if (modelGameObject.TryGetComponent(out Outline outline))
+				{
+					outline.SetOutlineData(
+						outlineDataAsset.OutlineMode, 
+						outlineDataAsset.OutlineColor, 
+						outlineDataAsset.OutlineWidth);
+				}
+				else
+				{
+					var newOutline = modelGameObject.AddComponent<Outline>();
+					newOutline.SetOutlineData(
+						outlineDataAsset.OutlineMode, 
+						outlineDataAsset.OutlineColor, 
+						outlineDataAsset.OutlineWidth);
+				}
+			}
+		}
+
+		private void RemoveOutline()
+		{
+			foreach (var modelGameObject in _modelGameObjects)
+			{
+				if (modelGameObject.TryGetComponent(out Outline outline))
+				{
+					Destroy(outline);
+				}
+			}
 		}
 	}
 }

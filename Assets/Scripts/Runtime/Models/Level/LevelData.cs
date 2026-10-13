@@ -6,6 +6,6 @@ namespace Runtime.Models.Level
 	public struct LevelData
 	{
 		public HexagonalGridData GridData;
-		public CharacterData[] Characters;
+		public CharacterInitializationData[] Characters;
 	}
 }

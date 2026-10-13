@@ -8,13 +8,13 @@ namespace Runtime.HexagonalGrid
 	public class HexagonalGridController : MonoBehaviour
 	{
 		[SerializeField]
-		private HexagonalGridElementObjectPool _hexagonalGridElementObjectPool;
+		private HexagonalGridElementsObjectPool _hexagonalGridElementsObjectPool;
 		
 		[Header("Configs")]
 		[SerializeField]
 		private HexagonalGridBuildingDataConfig _hexagonalGridBuildingDataConfig;
 		
-		private List<HexagonalGridRowModel> _gridRows = new();
+		private readonly List<HexagonalGridRowModel> _gridRows = new();
 
 		public void Initialize(HexagonalGridData gridData)
 		{
@@ -27,6 +27,8 @@ namespace Runtime.HexagonalGrid
 		{
 			ClearGrid();
 		}
+
+		public Vector3 GetGridElementPosition(Vector2 position) => GetGridElement(position).CenterPosition;
 
 		private void BuildGrid(HexagonalGridData gridData)
 		{
@@ -53,7 +55,7 @@ namespace Runtime.HexagonalGrid
 
 			for (int i = 0; i < gridRowData.Elements.Count; i++)
 			{
-				var gridElement = _hexagonalGridElementObjectPool.GetObjectFromPool();
+				var gridElement = _hexagonalGridElementsObjectPool.GetObjectFromPool();
 				Vector3 gridElementPosition = startRowPosition + new Vector3(
 					CalculateGridElementHorizontalStep(
 						gridRowModel.RowPadding, 
@@ -77,6 +79,8 @@ namespace Runtime.HexagonalGrid
 
 			return padding + step;
 		}
+
+		private HexagonalGridElement GetGridElement(Vector2 position) => _gridRows[(int)position.x].Elements[(int)position.y];
 		
 		private void ClearGrid()
 		{

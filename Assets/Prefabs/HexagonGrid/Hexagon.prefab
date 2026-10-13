@@ -31,6 +31,7 @@ Transform:
   m_Children:
   - {fileID: 8832486807332400363}
   - {fileID: 1070767904094579231}
+  - {fileID: 8476008476459723064}
   m_Father: {fileID: 6184553225329935940}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6261533862800754391
@@ -251,7 +252,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Runtime.Interaction.InteractionController
   _modelGameObjects:
   - {fileID: 6928036973898073613}
-  _outlineDataAsset: {fileID: 11400000, guid: 31e2967d57f6a1d419b552075b8f6ddc, type: 2}
+  _hoverOutlineDataAsset: {fileID: 11400000, guid: 31e2967d57f6a1d419b552075b8f6ddc, type: 2}
+  _selectionOutlineDataAsset: {fileID: 11400000, guid: 03e34c192bd8db14c942b6b1509eb9d3, type: 2}
+--- !u!1 &7164218459272896605
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8476008476459723064}
+  m_Layer: 7
+  m_Name: CenterTransform
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8476008476459723064
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7164218459272896605}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.01, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9141449810975353961}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7519712828329100653
 GameObject:
   m_ObjectHideFlags: 0
@@ -299,4 +332,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Runtime.HexagonalGrid.HexagonalGridElement
   _model: {fileID: 6928036973898073613}
   _frameModel: {fileID: 6261533862800754391}
+  _centerTransform: {fileID: 8476008476459723064}
   _interactionController: {fileID: 1960144889220927499}
