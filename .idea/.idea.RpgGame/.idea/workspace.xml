@@ -11,51 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c763a81-88c4-4510-b47f-161648233395" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RpgGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RpgGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Character/TestCharacter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Character/TestCharacter.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/HexagonGrid/Hexagon.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/HexagonGrid/Hexagon.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableOjbects/Interaction/CharacterOutlineDataAsset.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableOjbects/Interaction/CharacterOutlineDataAsset.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableOjbects/Interaction/GridElementOutlineDataAsset.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableOjbects/Interaction/GridElementOutlineDataAsset.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Patterns/Factory/Factory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Patterns/Factory/Factory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Character/CharacterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Character/CharacterController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Character/CharactersController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Character/CharactersController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Core/Interfaces/IInteractable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Core/Interfaces/IInteractable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Entry/EntryPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Entry/EntryPoint.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/HexagonalGrid/HexagonalGridController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/HexagonalGrid/HexagonalGridController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/HexagonalGrid/HexagonalGridElement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/HexagonalGrid/HexagonalGridElement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/HexagonalGrid/HexagonalGridElementFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/HexagonalGrid/HexagonalGridElementsFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/HexagonalGrid/HexagonalGridElementFactory.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/HexagonalGrid/HexagonalGridElementsFactory.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/HexagonalGrid/HexagonalGridElementObjectPool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/HexagonalGrid/HexagonalGridElementsObjectPool.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/HexagonalGrid/HexagonalGridElementObjectPool.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/HexagonalGrid/HexagonalGridElementsObjectPool.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Interaction/InteractionController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Interaction/InteractionController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Level/LevelBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Level/LevelBuilder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Models/Character/CharacterData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Models/Character/CharacterData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Models/Character/CharacterInitializationData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Models/Character/CharacterInitializationData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Models/Level/LevelData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Models/Level/LevelData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Player.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Player/IPlayerCameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/ICameraController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Player/IPlayerCameraController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/ICameraController.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Player/PlayerCameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Player/PlayerCameraController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraController.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Player/PlayerSelection.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Player/PlayerSelection/IPlayerSelectionController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/ICameraSelectionController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Player/PlayerSelection/IPlayerSelectionController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/ICameraSelectionController.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Player/PlayerSelection/PlayerSelectionController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/CameraSelectionController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Player/PlayerSelection/PlayerSelectionController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/CameraSelectionController.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Player/PlayerSelection/States.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/States.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Player/PlayerSelection/States/Base.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/States/Base.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Player/PlayerSelection/States/Base/BaseSelectionState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/States/Base/BaseSelectionState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Player/PlayerSelection/States/Base/BaseSelectionState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/States/Base/BaseSelectionState.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Player/PlayerSelection/States/CharacterMovementSelectionState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/States/CharacterMovementSelectionState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Player/PlayerSelection/States/CharacterMovementSelectionState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/States/CharacterMovementSelectionState.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Player/PlayerSelection/States/FreeSelectionState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/States/FreeSelectionState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Player/PlayerSelection/States/FreeSelectionState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/States/FreeSelectionState.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Player/PlayerSelection/States/NeutralSelectionState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/States/NeutralSelectionState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Player/PlayerSelection/States/NeutralSelectionState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/States/NeutralSelectionState.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableOjbects/Interaction/GridHoverElementOutlineDataAsset.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableOjbects/Interaction/GridHoverElementOutlineDataAsset.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,60 +39,60 @@
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
       <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0000012611576394" />
-      <entry key="S2" value="1.0669480542557515" />
-      <entry key="S5" value="2.199443408212873" />
-      <entry key="S10" value="4.408731570166764" />
-      <entry key="S30" value="7.963680622462052" />
-      <entry key="S60" value="9.363253664224116" />
-      <entry key="M2" value="10.61203011856863" />
-      <entry key="M5" value="21.833318616288548" />
-      <entry key="M10" value="74.13034639216339" />
-      <entry key="M15" value="144.01370958645282" />
-      <entry key="M30" value="335.8029549927084" />
-      <entry key="H1" value="566.9606911758415" />
-      <entry key="H2" value="762.9655121733846" />
-      <entry key="H4" value="894.2561779400328" />
-      <entry key="D1" value="1026.5902104370125" />
-      <entry key="W1" value="1051.7335098183282" />
+      <entry key="MS500" value="1.000413449859552" />
+      <entry key="S2" value="1.142595464483553" />
+      <entry key="S5" value="1.4588199411556826" />
+      <entry key="S10" value="1.6773624946771428" />
+      <entry key="S30" value="1.887020515992981" />
+      <entry key="S60" value="2.2482651851213085" />
+      <entry key="M2" value="3.9024936547613946" />
+      <entry key="M5" value="13.038618666958515" />
+      <entry key="M10" value="54.7343820897872" />
+      <entry key="M15" value="116.76820182993941" />
+      <entry key="M30" value="301.7770787122398" />
+      <entry key="H1" value="537.6863660838287" />
+      <entry key="H2" value="743.6241283352348" />
+      <entry key="H4" value="883.660625965922" />
+      <entry key="D1" value="1026.1660399751968" />
+      <entry key="W1" value="1053.3783584973082" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="2.3427489654761177E-25" />
-      <entry key="MS500" value="1.1876321097007423E-5" />
-      <entry key="S2" value="0.07059099319339776" />
-      <entry key="S5" value="0.49163376785712704" />
-      <entry key="S10" value="0.979430147416027" />
-      <entry key="S30" value="1.5720222580335976" />
-      <entry key="S60" value="1.7746239569788576" />
-      <entry key="M2" value="1.9868335988767631" />
-      <entry key="M5" value="3.9962156479759057" />
-      <entry key="M10" value="12.149005468239604" />
-      <entry key="M15" value="22.46274434432592" />
-      <entry key="M30" value="48.817558234279204" />
-      <entry key="H1" value="77.94539085216965" />
-      <entry key="H2" value="101.12381967855065" />
-      <entry key="H4" value="116.07772202745814" />
-      <entry key="D1" value="130.77780500191773" />
-      <entry key="W1" value="133.53350030421197" />
+      <entry key="MS100" value="2.923531993698554E-4" />
+      <entry key="MS500" value="0.19641812916689505" />
+      <entry key="S2" value="0.6657258066181854" />
+      <entry key="S5" value="0.8498027986560053" />
+      <entry key="S10" value="0.9218474933993679" />
+      <entry key="S30" value="0.9749751496273352" />
+      <entry key="S60" value="1.045497138718056" />
+      <entry key="M2" value="1.355415524766957" />
+      <entry key="M5" value="3.0200828692830637" />
+      <entry key="M10" value="9.64218875917597" />
+      <entry key="M15" value="18.900904333828542" />
+      <entry key="M30" value="44.58013691362044" />
+      <entry key="H1" value="74.64573943652066" />
+      <entry key="H2" value="99.29518097088047" />
+      <entry key="H4" value="115.4427519221708" />
+      <entry key="D1" value="131.46898512289107" />
+      <entry key="W1" value="134.48840793660077" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.003194929916241331" />
-      <entry key="MS500" value="0.3168820922244462" />
-      <entry key="S2" value="0.8518107808731809" />
-      <entry key="S5" value="2.4368277528854083" />
-      <entry key="S10" value="5.16024946464835" />
-      <entry key="S30" value="9.411608289995002" />
-      <entry key="S60" value="11.066787032790263" />
-      <entry key="M2" value="12.559371348807382" />
-      <entry key="M5" value="25.80113287365346" />
-      <entry key="M10" value="86.23758383029694" />
-      <entry key="M15" value="166.42402089073005" />
-      <entry key="M30" value="384.5604132021987" />
-      <entry key="H1" value="644.8558401503237" />
-      <entry key="H2" value="864.0558052022635" />
-      <entry key="H4" value="1010.3143609851741" />
-      <entry key="D1" value="1157.3642976407123" />
-      <entry key="W1" value="1185.266466564105" />
+      <entry key="MS100" value="0.01562643551516285" />
+      <entry key="MS500" value="0.503287398061204" />
+      <entry key="S2" value="1.4392511134679775" />
+      <entry key="S5" value="2.1077013315248867" />
+      <entry key="S10" value="2.484098185693037" />
+      <entry key="S30" value="2.81932558693916" />
+      <entry key="S60" value="3.2695423512784982" />
+      <entry key="M2" value="5.239627605690619" />
+      <entry key="M5" value="16.03985466360606" />
+      <entry key="M10" value="64.34461279924847" />
+      <entry key="M15" value="135.62582346465106" />
+      <entry key="M30" value="346.30281425367696" />
+      <entry key="H1" value="612.2842604504964" />
+      <entry key="H2" value="842.8865331296495" />
+      <entry key="H4" value="999.0840204453924" />
+      <entry key="D1" value="1157.6313004672963" />
+      <entry key="W1" value="1187.8662208287612" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -223,7 +179,7 @@
       <workItem from="1790791551067" duration="2000" />
       <workItem from="1790792953438" duration="37000" />
       <workItem from="1791644041321" duration="3302000" />
-      <workItem from="1791899576569" duration="4998000" />
+      <workItem from="1791899576569" duration="5387000" />
     </task>
     <servers />
   </component>
