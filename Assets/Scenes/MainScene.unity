@@ -385,7 +385,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b46ba1474c244af7b3b5d45f94166f49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Runtime.Character.CharactersFactory
-  _prefab: {fileID: 7457861271694036659, guid: aa37e83bdacb8cb49a5cadd6a10fdf01, type: 3}
+  _prefab: {fileID: 167436051188290293, guid: 801cc2cffbf9da44eabc5feb84b1546b, type: 3}
   _parent: {fileID: 0}
 --- !u!4 &530070632
 Transform:
