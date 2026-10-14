@@ -15,7 +15,7 @@ MonoBehaviour:
   GridData:
     GridStartPosition: {x: 0, y: 0, z: 0}
     Rows:
-    - RowPadding: 4
+    - RowPadding: 0
       Elements:
       - IsAwailableToMovement: 1
         IsBlockedByObject: 0

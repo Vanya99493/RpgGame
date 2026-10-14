@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: HexagonalGridBuildingDataConfig
   m_EditorClassIdentifier: Assembly-CSharp::Configs.HexagonalGrid.HexagonalGridBuildingDataConfig
   HexagonalGridBuildingData:
-    HorizontalBuildingStep: 1
-    VerticalBuildingStep: 0.866
+    HorizontalBuildingStep: 1.732052
+    VerticalBuildingStep: 1.4999571
