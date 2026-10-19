@@ -1,13 +1,27 @@
-﻿using Runtime.Interfaces;
+﻿using Runtime.Enums;
+using Runtime.Interfaces;
 
 namespace Runtime.Player.States.Base
 {
 	public abstract class BaseSelectionState
 	{
-		public abstract void SelectObject(IInteractable interactable);
+		protected ICameraSelectionStateMachine _selectionStateMachine;
 		
-		public abstract void Enter();
-		public abstract void Preform();
-		public abstract void Exit();
+		public BaseSelectionState(ICameraSelectionStateMachine selectionStateMachine)
+		{
+			_selectionStateMachine = selectionStateMachine;
+		}
+
+		public virtual void Enter()
+		{
+			_selectionStateMachine.SelectedInteractableObject?.Select();
+		}
+
+		public virtual void Exit()
+		{
+			_selectionStateMachine.SelectedInteractableObject?.Release();
+		}
+		
+		public abstract void SelectObject(IInteractable interactable, InputActionType inputActionType);
 	}
 }

@@ -1,9 +1,10 @@
-﻿using Runtime.Interfaces;
+﻿using Runtime.Enums;
+using Runtime.Interfaces;
 
 namespace Runtime.Player
 {
 	public interface ICameraSelectionController
 	{
-		public void SelectObject(IInteractable interactable);
+		public void SelectObject(IInteractable interactable, InputActionType inputActionType);
 	}
 }

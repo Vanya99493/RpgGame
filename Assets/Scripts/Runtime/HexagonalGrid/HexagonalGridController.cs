@@ -30,6 +30,11 @@ namespace Runtime.HexagonalGrid
 
 		public Vector3 GetGridElementPosition(Vector2 position) => GetGridElement(position).CenterPosition;
 
+		/*public List<Vector3> BuildRoute(Vector2 from, Vector2 to)
+		{
+			
+		}*/
+
 		private void BuildGrid(HexagonalGridData gridData)
 		{
 			for (int i = 0; i < gridData.Rows.Count; i++)

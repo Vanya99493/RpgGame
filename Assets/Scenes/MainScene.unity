@@ -148,6 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b5a2d0e27c4ea591031970af57e913, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Runtime.Player.CameraSelectionController
+  _currentSelectionStateNameDebug: 
 --- !u!4 &288514435
 Transform:
   m_ObjectHideFlags: 0
@@ -210,11 +211,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Runtime.Player.PlayerCameraController
   _cameraSelectionController: {fileID: 288514434}
   _playerCamera: {fileID: 1823688466}
-  _selectionLayerMask:
-    serializedVersion: 2
-    m_Bits: 384
-  _raycastDistance: 50
-  _performSelectionInputActionReference: {fileID: 889906451936594499, guid: 67914444e5ce67b48a10558438270e63, type: 3}
+  _raycastSettings:
+    SelectionLayerMask:
+      serializedVersion: 2
+      m_Bits: 384
+    RaycastDistance: 50
+  _primaryButtonInputActionReference: {fileID: 889906451936594499, guid: 67914444e5ce67b48a10558438270e63, type: 3}
+  _secondaryButtonInputActionReference: {fileID: -5996954645598976333, guid: 67914444e5ce67b48a10558438270e63, type: 3}
 --- !u!1 &374912236
 GameObject:
   m_ObjectHideFlags: 0
@@ -1060,8 +1063,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1823688464}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: 3.25, y: 3, z: -4.5}
+  m_LocalRotation: {x: 0.42261827, y: 0, z: 0, w: 0.9063079}
+  m_LocalPosition: {x: 5, y: 5.25, z: -7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

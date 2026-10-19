@@ -1,6 +1,8 @@
 ﻿using Runtime.Interfaces;
+using Runtime.Models;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using InputActionType = Runtime.Enums.InputActionType;
 
 namespace Runtime.Player
 {
@@ -13,16 +15,16 @@ namespace Runtime.Player
 		[SerializeField]
 		private Camera _playerCamera;
 		
-		[Header("Raycast settings")]
+		[Space(20)]
 		[SerializeField]
-		private LayerMask _selectionLayerMask;
-
-		[SerializeField]
-		private float _raycastDistance = 100f;
+		private RaycastSettings _raycastSettings;
 		
 		[Header("Input Action References")]
 		[SerializeField]
-		private InputActionReference _performSelectionInputActionReference;
+		private InputActionReference _primaryButtonInputActionReference;
+		
+		[SerializeField]
+		private InputActionReference _secondaryButtonInputActionReference;
 
 		private bool _isSelectionActive;
 		private IInteractable _hoveredInteractable;
@@ -47,6 +49,11 @@ namespace Runtime.Player
 			CastSelectionRay();
 		}
 
+		public void Initialize()
+		{
+			_cameraSelectionController.Initialize();
+		}
+
 		public void ActivateSelection()
 		{
 			_isSelectionActive = true;
@@ -62,23 +69,27 @@ namespace Runtime.Player
 
 		private void SubscribeEvents()
 		{
-			_performSelectionInputActionReference.action.performed += OnSelectionPerformedEventHandler;
+			_primaryButtonInputActionReference.action.performed += OnPrimaryButtonPerformedEventHandler;
+			_secondaryButtonInputActionReference.action.performed += OnSecondaryButtonPerformedEventHandler;
 			
-			_performSelectionInputActionReference.action.Enable();
+			_primaryButtonInputActionReference.action.Enable();
+			_secondaryButtonInputActionReference.action.Enable();
 		}
 
 		private void UnsubscribeEvents()
 		{
-			_performSelectionInputActionReference.action.performed -= OnSelectionPerformedEventHandler;
+			_primaryButtonInputActionReference.action.performed -= OnPrimaryButtonPerformedEventHandler;
+			_secondaryButtonInputActionReference.action.performed -= OnSecondaryButtonPerformedEventHandler;
 			
-			_performSelectionInputActionReference.action.Disable();
+			_primaryButtonInputActionReference.action.Disable();
+			_secondaryButtonInputActionReference.action.Disable();
 		}
 
 		private void CastSelectionRay()
 		{
 			Ray ray = _playerCamera.ScreenPointToRay(Input.mousePosition);
 
-			if (Physics.Raycast(ray, out RaycastHit hit, _raycastDistance, _selectionLayerMask))
+			if (Physics.Raycast(ray, out RaycastHit hit, _raycastSettings.RaycastDistance, _raycastSettings.SelectionLayerMask))
 			{
 				if (hit.collider.TryGetComponent(out IInteractable interactable))
 				{
@@ -97,12 +108,12 @@ namespace Runtime.Player
 						}
 					}
 				}
-				else if (_hoveredInteractable != null)
+				else
 				{
 					UnHoverHoveredInteractableObject();
 				}
 			}
-			else if (_hoveredInteractable != null)
+			else
 			{
 				UnHoverHoveredInteractableObject();
 			}
@@ -110,22 +121,19 @@ namespace Runtime.Player
 
 		private void UnHoverHoveredInteractableObject()
 		{
-			if (_hoveredInteractable != null)
-			{
-				_hoveredInteractable.UnHover();
-				_hoveredInteractable = null;
-			}
+			_hoveredInteractable?.UnHover();
+			_hoveredInteractable = null;
 		}
 
-		private void OnSelectionPerformedEventHandler(InputAction.CallbackContext callback)
+		private void OnPrimaryButtonPerformedEventHandler(InputAction.CallbackContext callback)
 		{
 			Ray ray = _playerCamera.ScreenPointToRay(Input.mousePosition);
 
-			if (Physics.Raycast(ray, out RaycastHit hit, _raycastDistance, _selectionLayerMask))
+			if (Physics.Raycast(ray, out RaycastHit hit, _raycastSettings.RaycastDistance, _raycastSettings.SelectionLayerMask))
 			{
 				if (hit.collider.TryGetComponent(out IInteractable interactable))
 				{
-					_cameraSelectionController.SelectObject(interactable);
+					_cameraSelectionController.SelectObject(interactable, InputActionType.PrimaryAction);
 				}
 			}
 			else
@@ -134,6 +142,24 @@ namespace Runtime.Player
 			}
 		}
 
+		private void OnSecondaryButtonPerformedEventHandler(InputAction.CallbackContext callback)
+		{
+			Ray ray = _playerCamera.ScreenPointToRay(Input.mousePosition);
+
+			if (Physics.Raycast(ray, out RaycastHit hit, _raycastSettings.RaycastDistance, _raycastSettings.SelectionLayerMask))
+			{
+				if (hit.collider.TryGetComponent(out IInteractable interactable))
+				{
+					_cameraSelectionController.SelectObject(interactable, InputActionType.SecondaryAction);
+				}
+			}
+			else
+			{
+				_cameraSelectionController.ReleaseSelection();
+			}
+		}
+
+#if UNITY_EDITOR
 		private void OnDrawGizmos()
 		{
 			if (_playerCamera == null)
@@ -144,13 +170,14 @@ namespace Runtime.Player
 			Ray ray = _playerCamera.ScreenPointToRay(Input.mousePosition);
 
 			Gizmos.color = Color.green;
-			Gizmos.DrawRay(ray.origin, ray.direction * _raycastDistance);
+			Gizmos.DrawRay(ray.origin, ray.direction * _raycastSettings.RaycastDistance);
 
-			if (Physics.Raycast(ray, out RaycastHit hit, _raycastDistance, _selectionLayerMask))
+			if (Physics.Raycast(ray, out RaycastHit hit, _raycastSettings.RaycastDistance, _raycastSettings.SelectionLayerMask))
 			{
 				Gizmos.color = Color.red;
 				Gizmos.DrawSphere(hit.point, 0.15f);
 			}
 		}
+#endif
 	}
 }

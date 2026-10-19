@@ -403,6 +403,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58db881816a34cbb83d5a9c5cfebcf2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Runtime.Interaction.InteractionController
+  _root: {fileID: 6861660482621992233}
+  _interactionObjectType: 1
   _modelGameObjects:
   - {fileID: 1854018303511426362}
   _hoverOutlineDataAsset: {fileID: 11400000, guid: b1ee253480932774b9d4fb96f9c92417, type: 2}

@@ -43,6 +43,11 @@ namespace Runtime.Character
 			transform.position = _hexagonalGridController.GetGridElementPosition(_gridPosition);
 		}
 
+		public void Move(HexagonalGridElement destination)
+		{
+			transform.position = destination.CenterPosition;
+		}
+
 		public void Destroy()
 		{
 			DestroyEvent?.Invoke(this);
@@ -60,7 +65,7 @@ namespace Runtime.Character
 		
 		private void OnSelectEventHandler()
 		{
-			
+			// TODO: add ui activation
 		}
 	}
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Runtime.Enums;
 using Runtime.Interfaces;
 using UnityEngine;
 
@@ -8,8 +9,16 @@ namespace Runtime.Interaction
 	public class InteractionController : MonoBehaviour, IInteractable
 	{
 		[SerializeField]
+		private GameObject _root;
+		
+		[SerializeField]
+		private InteractionObjectType _interactionObjectType;
+
+		[Space(20)]
+		[SerializeField]
 		private List<GameObject> _modelGameObjects = new();
 
+		[Header("Configs")]
 		[SerializeField]
 		private OutlineDataAsset _hoverOutlineDataAsset;
 		
@@ -18,6 +27,9 @@ namespace Runtime.Interaction
 
 		private bool _isInteractionActive;
 		private bool _isSelected;
+
+		public GameObject Root => _root;
+		public InteractionObjectType InteractionObjectType => _interactionObjectType;
 		
 		public event Action HoverEvent;
 		public event Action UnHoverEvent;
@@ -28,7 +40,7 @@ namespace Runtime.Interaction
 		{
 			_isInteractionActive = isInteractionActive;
 		}
-		
+
 		public void Hover()
 		{
 			if (!_isInteractionActive)

@@ -1,10 +1,16 @@
-﻿namespace Runtime.Interfaces
+﻿using Runtime.Enums;
+using UnityEngine;
+
+namespace Runtime.Interfaces
 {
 	public interface IInteractable
 	{
-		public void Hover();
-		public void UnHover();
-		public void Select();
-		public void Release();
+		GameObject Root { get; }
+		InteractionObjectType InteractionObjectType { get; }
+		
+		void Hover();
+		void UnHover();
+		void Select();
+		void Release();
 	}
 }

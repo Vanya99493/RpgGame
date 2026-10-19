@@ -1,31 +1,76 @@
-﻿using Runtime.Interfaces;
+﻿using System.Collections.Generic;
+using Runtime.Enums;
+using Runtime.Interfaces;
+using Runtime.Player.States;
+using Runtime.Player.States.Base;
 using UnityEngine;
 
 namespace Runtime.Player
 {
-	public class CameraSelectionController : MonoBehaviour, ICameraSelectionController
+	public class CameraSelectionController : MonoBehaviour, ICameraSelectionController, ICameraSelectionStateMachine
 	{
-		private IInteractable _interactable;
+		[SerializeField]
+		private string _currentSelectionStateNameDebug;
 		
-		public void SelectObject(IInteractable interactable)
+		private Dictionary<InteractionObjectType, BaseSelectionState> _selectionStates;
+		private BaseSelectionState _currentSelectionState;
+		
+		private IInteractable _selectedInteractable;
+
+		public IInteractable SelectedInteractableObject => _selectedInteractable;
+		public InteractionObjectType SelectedInteractableObjectType => _selectedInteractable.InteractionObjectType;
+
+		public void Initialize()
 		{
-			_interactable?.Release();
-			
-			if (_interactable != interactable)
+			_selectionStates = new()
 			{
-				_interactable = interactable;
-				_interactable.Select();
+				{ InteractionObjectType.Undefined, new FreeSelectionState(this) },
+				{ InteractionObjectType.Character, new CharacterControlSelectionState(this) },
+				{ InteractionObjectType.Grid, new GridSelectionState(this) },
+				{ InteractionObjectType.EnvironmentObject, new EnvironmentObjectSelectionState(this) },
+			};
+			
+			SetFreeSelectionState();
+		}
+		
+		public void SelectObject(IInteractable interactable, InputActionType inputActionType)
+		{
+			_selectedInteractable?.Release();
+			
+			if (_selectedInteractable != interactable)
+			{
+				_currentSelectionState.SelectObject(interactable, inputActionType);
 			}
 			else
 			{
-				_interactable = null;
+				SetFreeSelectionState();
 			}
 		}
 
 		public void ReleaseSelection()
 		{
-			_interactable?.Release();
-			_interactable = null;
+			SetFreeSelectionState();
+		}
+		
+		public void ChangeSelectionState(IInteractable selectedInteractableObject, InputActionType inputActionType)
+		{
+			SetSelectionState(selectedInteractableObject.InteractionObjectType, selectedInteractableObject);
+		}
+
+		private void SetFreeSelectionState()
+		{
+			SetSelectionState(InteractionObjectType.Undefined, null);
+		}
+
+		private void SetSelectionState(InteractionObjectType interactionObjectType, IInteractable interactable)
+		{
+			_currentSelectionState?.Exit();
+			_currentSelectionState = _selectionStates[interactionObjectType];
+			_currentSelectionStateNameDebug = _currentSelectionState.GetType().Name;
+			
+			_selectedInteractable = interactable;
+			
+			_currentSelectionState.Enter();
 		}
 	}
 }
