@@ -74,7 +74,7 @@ namespace Runtime.HexagonalGrid
 					rowFurthestRight);
 			}
 
-			return new Vector3(
+			return gridData.GridCenterPosition + new Vector3(
 				(furthestRight - furthestLeft) / 2 * -1,
 				0f,
 				Mathf.Abs(lowest / 2));
