@@ -119,6 +119,53 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &152315807
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 152315808}
+  - component: {fileID: 152315809}
+  m_Layer: 0
+  m_Name: HexagonalGridBuilder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &152315808
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152315807}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1973917340}
+  m_Father: {fileID: 682839118}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &152315809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152315807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96af53a8578f4a6b946b352deb90cbfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Runtime.HexagonalGrid.HexagonalGridBuilder
+  _hexagonalGridElementsObjectPool: {fileID: 1973917341}
+  _hexagonalGridBuildingDataConfig: {fileID: 11400000, guid: c7bab2bbab9b0ca4bbdd01a26e684cf8, type: 2}
 --- !u!1 &288514433
 GameObject:
   m_ObjectHideFlags: 0
@@ -545,7 +592,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1973917340}
+  - {fileID: 152315808}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &682839119
@@ -560,8 +607,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a186a61cebf24c139bd4699c71e2d70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Runtime.HexagonalGrid.HexagonalGridController
-  _hexagonalGridElementsObjectPool: {fileID: 1973917341}
-  _hexagonalGridBuildingDataConfig: {fileID: 11400000, guid: c7bab2bbab9b0ca4bbdd01a26e684cf8, type: 2}
+  _hexagonalGridBuilder: {fileID: 152315809}
 --- !u!1 &745942293
 GameObject:
   m_ObjectHideFlags: 0
@@ -1171,12 +1217,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1973917339}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 682839118}
+  m_Father: {fileID: 152315808}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1973917341
 MonoBehaviour:

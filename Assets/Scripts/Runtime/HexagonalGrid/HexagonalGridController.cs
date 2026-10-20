@@ -1,20 +1,16 @@
 ﻿using System.Collections.Generic;
-using Configs.HexagonalGrid;
 using Runtime.Models;
 using UnityEngine;
 
 namespace Runtime.HexagonalGrid
 {
-	public class HexagonalGridController : MonoBehaviour
+	public class HexagonalGridController : MonoBehaviour, IHexagonalGridController
 	{
 		[SerializeField]
-		private HexagonalGridElementsObjectPool _hexagonalGridElementsObjectPool;
-		
-		[Header("Configs")]
-		[SerializeField]
-		private HexagonalGridBuildingDataConfig _hexagonalGridBuildingDataConfig;
+		private HexagonalGridBuilder _hexagonalGridBuilder;
 		
 		private readonly List<HexagonalGridRowModel> _gridRows = new();
+		private readonly HexagonalGridBfs _hexagonalGridBfs = new();
 
 		public void Initialize(HexagonalGridData gridData)
 		{
@@ -28,95 +24,78 @@ namespace Runtime.HexagonalGrid
 			ClearGrid();
 		}
 
-		public Vector3 GetGridElementPosition(Vector2 position) => GetGridElement(position).CenterPosition;
+		public Vector3 GetGridElementPosition(Vector2Int position) => GetGridElement(position).CenterPosition;
 
-		// TODO: create route building with shortest path search
-		public List<Vector3> BuildRoute(Vector2 from, Vector2 to)
+		public HexagonalGridElement GetGridElement(Vector2Int position) => _gridRows[position.x].Elements[position.y];
+
+		public List<HexagonalGridElement> GetClosestGridElements(Vector2Int gridPosition, int depth)
 		{
-			return new();
+			return _hexagonalGridBfs.GetClosestGridElements(GetGridElement(gridPosition), depth);
+		}
+
+		public List<HexagonalGridElement> GetNeighbors(Vector2Int gridPosition)
+		{
+			return GetNeighbors(GetGridElement(gridPosition));
+		}
+
+		public List<HexagonalGridElement> GetNeighbors(HexagonalGridElement element)
+		{
+			List<HexagonalGridElement> neighbors = new();
+			Vector2Int position = element.GridPosition;
+
+			// Top
+			if (position.x > 0)
+			{
+				int paddingDifference = _gridRows[position.x].RowPadding - _gridRows[position.x - 1].RowPadding;
+				int leftIndex = GetAdjacentRowElementIndex(position.y, paddingDifference);
+
+				AddNeighborIfValid(neighbors, position.x - 1, leftIndex);
+				AddNeighborIfValid(neighbors, position.x - 1, leftIndex + 1);
+			}
+
+			// Left
+			if (position.y > 0)
+			{
+				neighbors.Add(GetGridElement(new Vector2Int(position.x, position.y - 1)));
+			}
+
+			// Right
+			if (position.y < _gridRows[position.x].Elements.Count - 1)
+			{
+				neighbors.Add(GetGridElement(new Vector2Int(position.x, position.y + 1)));
+			}
+
+			// Bottom
+			if (position.x < _gridRows.Count - 1)
+			{
+				int paddingDifference = _gridRows[position.x].RowPadding - _gridRows[position.x + 1].RowPadding;
+				int leftIndex = GetAdjacentRowElementIndex(position.y, paddingDifference);
+
+				AddNeighborIfValid(neighbors, position.x + 1, leftIndex);
+				AddNeighborIfValid(neighbors, position.x + 1, leftIndex + 1);
+			}
+
+			return neighbors;
+		}
+
+		private static int GetAdjacentRowElementIndex(int currentIndex, int paddingDifference) => paddingDifference + currentIndex + Mathf.Abs(Mathf.RoundToInt(paddingDifference / 2f));
+
+		private void AddNeighborIfValid(
+			List<HexagonalGridElement> neighbors,
+			int rowIndex,
+			int elementIndex)
+		{
+			if (elementIndex >= 0 
+			    && elementIndex < _gridRows[rowIndex].Elements.Count)
+			{
+				neighbors.Add(GetGridElement(new Vector2Int(rowIndex, elementIndex)));
+			}
 		}
 
 		private void BuildGrid(HexagonalGridData gridData)
 		{
-			Vector3 gridOffset = CalculateGridOffset(gridData);
-			
-			for (int i = 0; i < gridData.Rows.Count; i++)
-			{
-				var gridRowModel = BuildGridRow(
-					gridData.Rows[i],
-					gridOffset + new Vector3(
-						0f, 
-						0f, 
-						-_hexagonalGridBuildingDataConfig.HexagonalGridBuildingData.VerticalBuildingStep * i));
-				_gridRows.Add(gridRowModel);
-			}
+			_gridRows.AddRange(_hexagonalGridBuilder.BuildGrid(gridData, this));
 		}
-
-		private Vector3 CalculateGridOffset(HexagonalGridData gridData)
-		{
-			float highest = 0f;
-			float lowest = -_hexagonalGridBuildingDataConfig.HexagonalGridBuildingData.VerticalBuildingStep * (gridData.Rows.Count - 1);
-			
-			float furthestLeft = float.MaxValue;
-			float furthestRight = float.MinValue;
-			
-			foreach (var row in gridData.Rows)
-			{
-				float rowFurthestLeft = _hexagonalGridBuildingDataConfig.HexagonalGridBuildingData.HorizontalBuildingStep / 2 * row.RowPadding;
-				float rowFurthestRight = rowFurthestLeft + _hexagonalGridBuildingDataConfig.HexagonalGridBuildingData.HorizontalBuildingStep * (row.Elements.Count - 1);
-
-				furthestLeft = Mathf.Min(
-					furthestLeft, 
-					rowFurthestLeft);
-				
-				furthestRight = Mathf.Max(
-					furthestRight, 
-					rowFurthestRight);
-			}
-
-			return gridData.GridCenterPosition + new Vector3(
-				(furthestRight - furthestLeft) / 2 * -1,
-				0f,
-				Mathf.Abs(lowest / 2));
-		}
-
-		private HexagonalGridRowModel BuildGridRow(
-			HexagonalGridRowData gridRowData,
-			Vector3 startRowPosition)
-		{
-			HexagonalGridRowModel gridRowModel = new HexagonalGridRowModel()
-			{
-				RowPadding = gridRowData.RowPadding,
-			};
-
-			for (int i = 0; i < gridRowData.Elements.Count; i++)
-			{
-				var gridElement = _hexagonalGridElementsObjectPool.GetObjectFromPool();
-				Vector3 gridElementPosition = startRowPosition + new Vector3(
-					CalculateGridElementHorizontalStep(
-						gridRowModel.RowPadding, 
-						i),
-					0f,
-					0f);
-				gridElement.transform.position = gridElementPosition;
-				gridElement.Initialize(gridRowData.Elements[i]);
-				gridRowModel.Elements.Add(gridElement);
-			}
-			
-			return gridRowModel;
-		}
-
-		private float CalculateGridElementHorizontalStep(
-			int rowPadding,
-			int elementIndex)
-		{
-			float padding = rowPadding * 0.5f * _hexagonalGridBuildingDataConfig.HexagonalGridBuildingData.HorizontalBuildingStep;
-			float step = _hexagonalGridBuildingDataConfig.HexagonalGridBuildingData.HorizontalBuildingStep * elementIndex;
-
-			return padding + step;
-		}
-
-		private HexagonalGridElement GetGridElement(Vector2 position) => _gridRows[(int)position.x].Elements[(int)position.y];
 		
 		private void ClearGrid()
 		{

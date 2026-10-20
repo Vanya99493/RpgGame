@@ -60,7 +60,7 @@ namespace Runtime.Entry
 				CharacterInitializationData initializationData = new()
 				{
 					CharacterData = _randomCharacterGenerator.GenerateRandomCharacter(TeamType.Ally),
-					SpawnPosition = GenerateSPawnPosition()
+					SpawnPosition = GenerateSpawnPosition()
 				};
 				charactersInitializationData.Add(initializationData);
 			}
@@ -70,7 +70,7 @@ namespace Runtime.Entry
 				CharacterInitializationData initializationData = new()
 				{
 					CharacterData = _randomCharacterGenerator.GenerateRandomCharacter(TeamType.Enemy),
-					SpawnPosition = GenerateSPawnPosition()
+					SpawnPosition = GenerateSpawnPosition()
 				};
 				charactersInitializationData.Add(initializationData);
 			}
@@ -78,7 +78,7 @@ namespace Runtime.Entry
 			return charactersInitializationData;
 		}
 
-		private Vector2 GenerateSPawnPosition()
+		private Vector2Int GenerateSpawnPosition()
 		{
 			int rowIndex;
 			int columnIndex;
@@ -87,9 +87,9 @@ namespace Runtime.Entry
 			{
 				rowIndex = Random.Range(0, _hexagonalGridConfig.GridData.Rows.Count);
 				columnIndex = Random.Range(0, _hexagonalGridConfig.GridData.Rows[rowIndex].Elements.Count);
-			} while (!_hexagonalGridConfig.GridData.Rows[rowIndex].Elements[columnIndex].IsAwailableToMovement);
+			} while (_hexagonalGridConfig.GridData.Rows[rowIndex].Elements[columnIndex].IsBlocked);
 			
-			return new Vector2(rowIndex, columnIndex);
+			return new Vector2Int(rowIndex, columnIndex);
 		}
 	}
 }

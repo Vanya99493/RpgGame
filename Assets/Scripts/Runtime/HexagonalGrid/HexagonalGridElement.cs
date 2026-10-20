@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using Patterns;
+using Runtime.Bfs;
 using Runtime.Interaction;
 using Runtime.Interfaces;
 using Runtime.Models;
@@ -7,7 +9,7 @@ using UnityEngine;
 
 namespace Runtime.HexagonalGrid
 {
-	public class HexagonalGridElement : MonoBehaviour, IDestroyable, IPoolable
+	public class HexagonalGridElement : MonoBehaviour, IDestroyable, IPoolable, IBfsElement
 	{
 		[SerializeField]
 		private GameObject _model;
@@ -20,8 +22,12 @@ namespace Runtime.HexagonalGrid
 		
 		[SerializeField]
 		private InteractionController _interactionController;
-		
-		public HexagonalGridElementData GridElementData { get; private set; }
+
+		private IHexagonalGridController _hexagonalGridController;
+		private HexagonalGridElementModel _gridElementModel;
+
+		public HexagonalGridElementData GridElementData => _gridElementModel.ElementData;
+		public Vector2Int GridPosition => _gridElementModel.GridPosition;
 		public Vector3 CenterPosition => _centerTransform.position;
 
 		public event Action<HexagonalGridElement> SelectEvent; 
@@ -38,12 +44,36 @@ namespace Runtime.HexagonalGrid
 			UnsubscribeFromEvents();
 		}
 
-		public void Initialize(HexagonalGridElementData gridElementData)
+		public void Initialize(
+			IHexagonalGridController hexagonalGridController, 
+			HexagonalGridElementData gridElementData,
+			Vector2Int gridElementPosition)
 		{
-			GridElementData = gridElementData;
+			_hexagonalGridController = hexagonalGridController;
+			_gridElementModel = new()
+			{
+				ElementData = gridElementData,
+				GridPosition = gridElementPosition,
+			};
 			
-			_interactionController.Initialize(GridElementData.IsAwailableToMovement);
-			InitVisual(GridElementData.IsAwailableToMovement);
+			_interactionController.Initialize(!GridElementData.IsBlocked);
+			InitVisual(!GridElementData.IsBlocked);
+		}
+		
+		public List<T> GetNeighbors<T>()
+		{
+			return _hexagonalGridController.GetNeighbors(this) as List<T>;
+		}
+
+		// TODO: create additional (un)hover logic, that won't be affected by camera interaction controller
+		public void ForceHover()
+		{
+			_interactionController.Hover();
+		}
+
+		public void ForceUnhover()
+		{
+			_interactionController.UnHover();
 		}
 		
 		public void Destroy()

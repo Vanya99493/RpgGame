@@ -6,8 +6,7 @@ namespace Runtime.Models
 	[Serializable]
 	public struct HexagonalGridElementData
 	{
-		public bool IsAwailableToMovement;
-		public bool IsBlockedByObject;
+		public bool IsBlocked;
 		public SurfaceType SurfaceType;
 	}
 }

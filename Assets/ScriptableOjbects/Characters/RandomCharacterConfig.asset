@@ -25,4 +25,4 @@ MonoBehaviour:
   - Kendy
   - Grace
   _healthRange: {x: 10, y: 25}
-  _energyRange: {x: 3, y: 5}
+  _energyRange: {x: 2, y: 4}

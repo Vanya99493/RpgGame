@@ -5,6 +5,6 @@ namespace Runtime.Models
 	public struct CharacterInitializationData
 	{
 		public CharacterData CharacterData;
-		public Vector2 SpawnPosition;
+		public Vector2Int SpawnPosition;
 	}
 }
