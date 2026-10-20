@@ -7,7 +7,7 @@ namespace Runtime.Models
 	[Serializable]
 	public struct HexagonalGridData
 	{
-		public Vector3 GridStartPosition;
+		public Vector3 GridCenterPosition;
 		public List<HexagonalGridRowData> Rows;
 	}
 }

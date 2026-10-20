@@ -10,13 +10,45 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f65049a0428f4f0d99ae32593cbe6f52, type: 3}
-  m_Name: TestHexagonalGridConfig
+  m_Name: Test1HexagonalGridConfig
   m_EditorClassIdentifier: Assembly-CSharp::Configs.HexagonalGrid.HexagonalGridConfig
   GridData:
     GridStartPosition: {x: 0, y: 0, z: 0}
     Rows:
+    - RowPadding: 1
+      Elements:
+      - IsAwailableToMovement: 1
+        IsBlockedByObject: 0
+        SurfaceType: 0
+      - IsAwailableToMovement: 1
+        IsBlockedByObject: 0
+        SurfaceType: 0
+      - IsAwailableToMovement: 1
+        IsBlockedByObject: 0
+        SurfaceType: 0
+      - IsAwailableToMovement: 1
+        IsBlockedByObject: 0
+        SurfaceType: 0
+      - IsAwailableToMovement: 1
+        IsBlockedByObject: 0
+        SurfaceType: 0
+      - IsAwailableToMovement: 1
+        IsBlockedByObject: 0
+        SurfaceType: 0
     - RowPadding: 0
       Elements:
+      - IsAwailableToMovement: 1
+        IsBlockedByObject: 0
+        SurfaceType: 0
+      - IsAwailableToMovement: 1
+        IsBlockedByObject: 0
+        SurfaceType: 0
+      - IsAwailableToMovement: 1
+        IsBlockedByObject: 0
+        SurfaceType: 0
+      - IsAwailableToMovement: 1
+        IsBlockedByObject: 0
+        SurfaceType: 0
       - IsAwailableToMovement: 1
         IsBlockedByObject: 0
         SurfaceType: 0
@@ -37,16 +69,16 @@ MonoBehaviour:
       - IsAwailableToMovement: 1
         IsBlockedByObject: 0
         SurfaceType: 0
-      - IsAwailableToMovement: 0
-        IsBlockedByObject: 0
-        SurfaceType: 0
       - IsAwailableToMovement: 1
         IsBlockedByObject: 0
         SurfaceType: 0
       - IsAwailableToMovement: 1
         IsBlockedByObject: 0
         SurfaceType: 0
-    - RowPadding: 2
+      - IsAwailableToMovement: 1
+        IsBlockedByObject: 0
+        SurfaceType: 0
+    - RowPadding: 0
       Elements:
       - IsAwailableToMovement: 1
         IsBlockedByObject: 0
@@ -57,14 +89,26 @@ MonoBehaviour:
       - IsAwailableToMovement: 1
         IsBlockedByObject: 0
         SurfaceType: 0
-      - IsAwailableToMovement: 0
+      - IsAwailableToMovement: 1
         IsBlockedByObject: 0
         SurfaceType: 0
       - IsAwailableToMovement: 1
         IsBlockedByObject: 0
         SurfaceType: 0
-    - RowPadding: 5
+      - IsAwailableToMovement: 1
+        IsBlockedByObject: 0
+        SurfaceType: 0
+      - IsAwailableToMovement: 1
+        IsBlockedByObject: 0
+        SurfaceType: 0
+    - RowPadding: 1
       Elements:
+      - IsAwailableToMovement: 1
+        IsBlockedByObject: 0
+        SurfaceType: 0
+      - IsAwailableToMovement: 1
+        IsBlockedByObject: 0
+        SurfaceType: 0
       - IsAwailableToMovement: 1
         IsBlockedByObject: 0
         SurfaceType: 0

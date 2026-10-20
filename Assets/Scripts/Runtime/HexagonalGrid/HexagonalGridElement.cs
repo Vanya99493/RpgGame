@@ -2,6 +2,7 @@
 using Patterns;
 using Runtime.Interaction;
 using Runtime.Interfaces;
+using Runtime.Models;
 using UnityEngine;
 
 namespace Runtime.HexagonalGrid
@@ -20,6 +21,7 @@ namespace Runtime.HexagonalGrid
 		[SerializeField]
 		private InteractionController _interactionController;
 		
+		public HexagonalGridElementData GridElementData { get; private set; }
 		public Vector3 CenterPosition => _centerTransform.position;
 
 		public event Action<HexagonalGridElement> SelectEvent; 
@@ -36,10 +38,12 @@ namespace Runtime.HexagonalGrid
 			UnsubscribeFromEvents();
 		}
 
-		public void Initialize(bool isAvailable)
+		public void Initialize(HexagonalGridElementData gridElementData)
 		{
-			_interactionController.Initialize(isAvailable);
-			InitVisual(isAvailable);
+			GridElementData = gridElementData;
+			
+			_interactionController.Initialize(GridElementData.IsAwailableToMovement);
+			InitVisual(GridElementData.IsAwailableToMovement);
 		}
 		
 		public void Destroy()

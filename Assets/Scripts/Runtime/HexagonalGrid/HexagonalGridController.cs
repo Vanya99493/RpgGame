@@ -30,23 +30,54 @@ namespace Runtime.HexagonalGrid
 
 		public Vector3 GetGridElementPosition(Vector2 position) => GetGridElement(position).CenterPosition;
 
-		/*public List<Vector3> BuildRoute(Vector2 from, Vector2 to)
+		// TODO: create route building with shortest path search
+		public List<Vector3> BuildRoute(Vector2 from, Vector2 to)
 		{
-			
-		}*/
+			return new();
+		}
 
 		private void BuildGrid(HexagonalGridData gridData)
 		{
+			Vector3 gridOffset = CalculateGridOffset(gridData);
+			
 			for (int i = 0; i < gridData.Rows.Count; i++)
 			{
 				var gridRowModel = BuildGridRow(
 					gridData.Rows[i],
-					gridData.GridStartPosition + new Vector3(
+					gridOffset + new Vector3(
 						0f, 
 						0f, 
 						-_hexagonalGridBuildingDataConfig.HexagonalGridBuildingData.VerticalBuildingStep * i));
 				_gridRows.Add(gridRowModel);
 			}
+		}
+
+		private Vector3 CalculateGridOffset(HexagonalGridData gridData)
+		{
+			float highest = 0f;
+			float lowest = -_hexagonalGridBuildingDataConfig.HexagonalGridBuildingData.VerticalBuildingStep * (gridData.Rows.Count - 1);
+			
+			float furthestLeft = float.MaxValue;
+			float furthestRight = float.MinValue;
+			
+			foreach (var row in gridData.Rows)
+			{
+				float rowFurthestLeft = _hexagonalGridBuildingDataConfig.HexagonalGridBuildingData.HorizontalBuildingStep / 2 * row.RowPadding;
+				float rowFurthestRight = rowFurthestLeft + _hexagonalGridBuildingDataConfig.HexagonalGridBuildingData.HorizontalBuildingStep * (row.Elements.Count - 1);
+
+				furthestLeft = Mathf.Min(
+					furthestLeft, 
+					rowFurthestLeft);
+				
+				furthestRight = Mathf.Max(
+					furthestRight, 
+					rowFurthestRight);
+			}
+
+			return new Vector3(
+				(furthestRight - furthestLeft) / 2 * -1,
+				0f,
+				Mathf.Abs(lowest / 2));
 		}
 
 		private HexagonalGridRowModel BuildGridRow(
@@ -68,7 +99,7 @@ namespace Runtime.HexagonalGrid
 					0f,
 					0f);
 				gridElement.transform.position = gridElementPosition;
-				gridElement.Initialize(gridRowData.Elements[i].IsAwailableToMovement);
+				gridElement.Initialize(gridRowData.Elements[i]);
 				gridRowModel.Elements.Add(gridElement);
 			}
 			
