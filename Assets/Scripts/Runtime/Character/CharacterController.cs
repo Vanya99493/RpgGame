@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using Runtime.HexagonalGrid;
 using Runtime.Interaction;
 using Runtime.Interfaces;
@@ -12,19 +13,17 @@ namespace Runtime.Character
 	{
 		[SerializeField]
 		private InteractionController _interactionController;
-
-		// Debug
-		[Space(10)]
-		[Header("Debug")]
+		
 		[SerializeField]
-		private int _energy;
-		// -----
+		private CharacterMovementController _movementController;
 		
 		private readonly List<HexagonalGridElement> _hoveredPossibleCellsToMove = new();
 		
 		private HexagonalGridController _hexagonalGridController;
 		private Vector2Int _gridPosition;
 		
+		// Debug attribute
+		[field: SerializeField]
 		public CharacterData CharacterData { get; private set; }
 		
 		public event Action<IDestroyable> DestroyEvent;
@@ -51,16 +50,16 @@ namespace Runtime.Character
 			_interactionController.Initialize(true);
 
 			transform.position = _hexagonalGridController.GetGridElementPosition(_gridPosition);
-			
-			// Debug
-			_energy = CharacterData.Energy;
-			// -----
 		}
 
-		public void Move(HexagonalGridElement destination)
+		public async void Move(HexagonalGridElement destination)
 		{
-			transform.position = destination.CenterPosition;
-			_gridPosition = destination.GridPosition;
+			List<HexagonalGridElement> moveGridPoints = _hexagonalGridController.GetPath(_gridPosition, destination.GridPosition);
+			await _movementController.Move(
+				transform,
+				CharacterData.Energy, 
+				moveGridPoints, 
+				OnMovementEnd);
 		}
 
 		public void Destroy()
@@ -102,6 +101,15 @@ namespace Runtime.Character
 			_hoveredPossibleCellsToMove.Clear();
 				
 			// TODO: add ui deactivation
+		}
+
+		private void OnMovementEnd(HexagonalGridElement movementEndElement, int remainingEnergy)
+		{
+			if (movementEndElement != null)
+			{
+				transform.position = movementEndElement.CenterPosition;
+				_gridPosition = movementEndElement.GridPosition;
+			}
 		}
 	}
 }

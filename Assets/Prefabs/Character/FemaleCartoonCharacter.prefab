@@ -42,6 +42,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7813239116730383494}
   - component: {fileID: 167436051188290293}
+  - component: {fileID: 1814317620220143110}
   m_Layer: 8
   m_Name: FemaleCartoonCharacter
   m_TagString: Untagged
@@ -78,6 +79,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Runtime.Character.CharacterController
   _interactionController: {fileID: 7552233143322197371}
+  _movementController: {fileID: 1814317620220143110}
+  <CharacterData>k__BackingField:
+    Guid: 
+    Name: 
+    Team: 0
+    Health: 0
+    MaxHealth: 0
+    Energy: 0
+    MaxEnergy: 0
+--- !u!114 &1814317620220143110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6861660482621992233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dde5a51226e4927827fffe4e0743e6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Runtime.Character.CharacterMovementController
+  _animator: {fileID: 1548009031920032474}
+  _oneUnityMovementTime: 0.5
+  _animationParametersConfig: {fileID: 11400000, guid: c408f4fc946af7a45a0170896954cb5b, type: 2}
 --- !u!1001 &8330216586737599636
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -284,7 +309,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7019920669011962644, guid: cc91c8ba8b9a34f4d99e70d721f60b64, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7019920669011962644, guid: cc91c8ba8b9a34f4d99e70d721f60b64, type: 3}
       propertyPath: m_LocalRotation.x
@@ -292,7 +317,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7019920669011962644, guid: cc91c8ba8b9a34f4d99e70d721f60b64, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7019920669011962644, guid: cc91c8ba8b9a34f4d99e70d721f60b64, type: 3}
       propertyPath: m_LocalRotation.z
@@ -304,7 +329,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7019920669011962644, guid: cc91c8ba8b9a34f4d99e70d721f60b64, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7019920669011962644, guid: cc91c8ba8b9a34f4d99e70d721f60b64, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -384,6 +409,11 @@ PrefabInstance:
 --- !u!4 &1364902391818661760 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7019920669011962644, guid: cc91c8ba8b9a34f4d99e70d721f60b64, type: 3}
+  m_PrefabInstance: {fileID: 8330216586737599636}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1548009031920032474 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7413344840680693326, guid: cc91c8ba8b9a34f4d99e70d721f60b64, type: 3}
   m_PrefabInstance: {fileID: 8330216586737599636}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1854018303511426362 stripped

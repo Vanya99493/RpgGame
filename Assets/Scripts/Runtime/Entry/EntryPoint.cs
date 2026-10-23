@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using Configs.HexagonalGrid;
+using Extensions;
 using Runtime.Character;
 using Runtime.Enums;
 using Runtime.Level;

@@ -33,6 +33,11 @@ namespace Runtime.HexagonalGrid
 			return _hexagonalGridBfs.GetClosestGridElements(GetGridElement(gridPosition), depth);
 		}
 
+		public List<HexagonalGridElement> GetPath(Vector2Int startPosition, Vector2Int destinationPosition)
+		{
+			return _hexagonalGridBfs.FindPath(GetGridElement(startPosition), GetGridElement(destinationPosition));
+		}
+
 		public List<HexagonalGridElement> GetNeighbors(Vector2Int gridPosition)
 		{
 			return GetNeighbors(GetGridElement(gridPosition));

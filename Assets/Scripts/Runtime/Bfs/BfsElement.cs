@@ -3,16 +3,16 @@
 	public class BfsElement<T> where T : class, IBfsElement
 	{
 		public T Reference;
-		public T ComeFromReference;
+		public BfsElement<T> ComeFromElement;
 		public int Depth;
 		
 		public BfsElement(
 			T reference,
-			T comeFromReference,
+			BfsElement<T> comeFromElement,
 			int depth)
 		{
 			Reference = reference;
-			ComeFromReference = comeFromReference;
+			ComeFromElement = comeFromElement;
 			Depth = depth;
 		}
 	}
