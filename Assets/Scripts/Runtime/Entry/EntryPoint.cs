@@ -28,16 +28,21 @@ namespace Runtime.Entry
 
 		private void Awake()
 		{
-			_cameraController.Initialize();
-			
-			_cameraController.ActivateSelection();
-			
-			BuildGrid();
+			Initialize();
 		}
 
 		private void OnDestroy()
 		{
 			_cameraController.DeactivateSelection();
+		}
+
+		private void Initialize()
+		{
+			_cameraController.Initialize();
+			
+			_cameraController.ActivateSelection();
+			
+			BuildGrid();
 		}
 
 		private void BuildGrid()

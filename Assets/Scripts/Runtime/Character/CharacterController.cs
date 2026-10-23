@@ -12,6 +12,13 @@ namespace Runtime.Character
 	{
 		[SerializeField]
 		private InteractionController _interactionController;
+
+		// Debug
+		[Space(10)]
+		[Header("Debug")]
+		[SerializeField]
+		private int _energy;
+		// -----
 		
 		private readonly List<HexagonalGridElement> _hoveredPossibleCellsToMove = new();
 		
@@ -44,11 +51,16 @@ namespace Runtime.Character
 			_interactionController.Initialize(true);
 
 			transform.position = _hexagonalGridController.GetGridElementPosition(_gridPosition);
+			
+			// Debug
+			_energy = CharacterData.Energy;
+			// -----
 		}
 
 		public void Move(HexagonalGridElement destination)
 		{
 			transform.position = destination.CenterPosition;
+			_gridPosition = destination.GridPosition;
 		}
 
 		public void Destroy()
@@ -70,7 +82,6 @@ namespace Runtime.Character
 		
 		private void OnSelectEventHandler()
 		{
-			Debug.Log("OnSelectEventHandler");
 			_hoveredPossibleCellsToMove.AddRange(_hexagonalGridController.GetClosestGridElements(_gridPosition, CharacterData.Energy));
 
 			foreach (var hoveredPossibleCell in _hoveredPossibleCellsToMove)
@@ -83,7 +94,6 @@ namespace Runtime.Character
 
 		private void OnReleaseEventHandler()
 		{
-			Debug.Log("OnReleaseEventHandler");
 			foreach (var hoveredPossibleCell in _hoveredPossibleCellsToMove)
 			{
 				hoveredPossibleCell.ForceUnhover();

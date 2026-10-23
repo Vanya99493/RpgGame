@@ -14,12 +14,12 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RpgGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RpgGame/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/ScriptableOjbects/Characters/RandomCharacterConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableOjbects/Characters/RandomCharacterConfig.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableOjbects/Grid/Grids/Test1HexagonalGridConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableOjbects/Grid/Grids/Test1HexagonalGridConfig.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Configs/Character/RandomCharacterConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Configs/Character/RandomCharacterConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Bfs/BfsAlgorithm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Bfs/BfsAlgorithm.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Character/CharacterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Character/CharacterController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Entry/EntryPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Entry/EntryPoint.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/HexagonalGrid/HexagonalGridController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/HexagonalGrid/HexagonalGridController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/HexagonalGrid/HexagonalGridElement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/HexagonalGrid/HexagonalGridElement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Models/Character/CharacterInitializationData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Models/Character/CharacterInitializationData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Models/HexagonalGrid/HexagonalGridElementData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Models/HexagonalGrid/HexagonalGridElementData.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,61 +61,61 @@
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000012848227846" />
-      <entry key="MS500" value="1.0728326333941338" />
-      <entry key="S2" value="1.9849055824594162" />
-      <entry key="S5" value="2.8900262668548233" />
-      <entry key="S10" value="3.374973836089266" />
-      <entry key="S30" value="3.9996973198592913" />
-      <entry key="S60" value="6.280407455873986" />
-      <entry key="M2" value="13.882678267436257" />
-      <entry key="M5" value="42.79769290691468" />
-      <entry key="M10" value="85.99338846686938" />
-      <entry key="M15" value="122.01260839927332" />
-      <entry key="M30" value="219.4892198178454" />
-      <entry key="H1" value="412.79315276920255" />
-      <entry key="H2" value="786.4671979678216" />
-      <entry key="H4" value="1338.3030273316324" />
-      <entry key="D1" value="2437.9897140825865" />
-      <entry key="W1" value="2743.329573546814" />
+      <entry key="MS100" value="1.0000000054864004" />
+      <entry key="MS500" value="1.0897702727464416" />
+      <entry key="S2" value="3.931200445320387" />
+      <entry key="S5" value="7.094487604498604" />
+      <entry key="S10" value="8.801027117167646" />
+      <entry key="S30" value="10.214455549613248" />
+      <entry key="S60" value="10.978589878136328" />
+      <entry key="M2" value="14.375802984138739" />
+      <entry key="M5" value="29.90382748556818" />
+      <entry key="M10" value="59.9085144033539" />
+      <entry key="M15" value="92.56890903795744" />
+      <entry key="M30" value="190.59801545981247" />
+      <entry key="H1" value="385.36877836984206" />
+      <entry key="H2" value="761.8854767237734" />
+      <entry key="H4" value="1329.1195033598565" />
+      <entry key="D1" value="2495.9941214812443" />
+      <entry key="W1" value="2826.491660535215" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="1.2487363981326493E-96" />
-      <entry key="S2" value="1.712666576462756E-24" />
-      <entry key="S5" value="4.909485324401067E-10" />
-      <entry key="S10" value="3.5706916800073216E-5" />
-      <entry key="S30" value="0.07595786704393324" />
-      <entry key="S60" value="0.5985049879618191" />
-      <entry key="M2" value="2.0429979754449654" />
-      <entry key="M5" value="6.095399517658197" />
-      <entry key="M10" value="11.678567190524392" />
-      <entry key="M15" value="16.951997079672132" />
-      <entry key="M30" value="33.69852482194397" />
-      <entry key="H1" value="67.9668623222601" />
-      <entry key="H2" value="128.76654584754448" />
-      <entry key="H4" value="211.18947728411166" />
-      <entry key="D1" value="365.69885327064776" />
-      <entry key="W1" value="407.4293148762782" />
+      <entry key="MS500" value="5.663532083575574E-158" />
+      <entry key="S2" value="7.562880143299573E-40" />
+      <entry key="S5" value="3.3782803304472854E-16" />
+      <entry key="S10" value="2.595907456548175E-8" />
+      <entry key="S30" value="0.004746633093579114" />
+      <entry key="S60" value="0.10777378185013291" />
+      <entry key="M2" value="0.6309021494522302" />
+      <entry key="M5" value="2.634525219022361" />
+      <entry key="M10" value="6.654257466232933" />
+      <entry key="M15" value="11.259190936483717" />
+      <entry key="M30" value="26.770560044010207" />
+      <entry key="H1" value="60.078482510193915" />
+      <entry key="H2" value="121.38568912961881" />
+      <entry key="H4" value="206.86183903920522" />
+      <entry key="D1" value="372.19690328107225" />
+      <entry key="W1" value="417.7103227940177" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.008490178249655134" />
-      <entry key="MS500" value="0.4260954021893795" />
-      <entry key="S2" value="1.6548988021837718" />
-      <entry key="S5" value="2.7073827616341917" />
-      <entry key="S10" value="3.270504477317029" />
-      <entry key="S30" value="4.035129320826281" />
-      <entry key="S60" value="6.849930372330835" />
-      <entry key="M2" value="15.898005782884251" />
-      <entry key="M5" value="48.85881120514435" />
-      <entry key="M10" value="97.63346706536973" />
-      <entry key="M15" value="138.9251879444877" />
-      <entry key="M30" value="253.1465229472771" />
-      <entry key="H1" value="480.716729865243" />
-      <entry key="H2" value="915.1911200006781" />
-      <entry key="H4" value="1549.45662376052" />
-      <entry key="D1" value="2803.677975565945" />
-      <entry key="W1" value="3150.7571964262493" />
+      <entry key="MS100" value="4.4994908108159453E-5" />
+      <entry key="MS500" value="0.2206611436458187" />
+      <entry key="S2" value="3.497591762817446" />
+      <entry key="S5" value="6.877804443773835" />
+      <entry key="S10" value="8.682698503329368" />
+      <entry key="S30" value="10.176578192900323" />
+      <entry key="S60" value="11.056656986423848" />
+      <entry key="M2" value="14.970876065282392" />
+      <entry key="M5" value="32.498135459795066" />
+      <entry key="M10" value="66.52455613723534" />
+      <entry key="M15" value="103.79044250882342" />
+      <entry key="M30" value="217.32992632668822" />
+      <entry key="H1" value="445.4061621080819" />
+      <entry key="H2" value="883.2296762025957" />
+      <entry key="H4" value="1535.9455875435774" />
+      <entry key="D1" value="2868.1801505025433" />
+      <entry key="W1" value="3244.2002353502958" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -140,6 +140,7 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.49422634&quot;,
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
     &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
@@ -175,13 +176,15 @@
       <option name="MIXED_MODE_DEBUG" value="0" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" useMixedMode="false">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" useMixedMode="false" ignored-value-for-modified-check="30112">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="30112" />
       <option name="projectPathOnTarget" />
       <option name="runtimes">
-        <list />
+        <list>
+          <MonoRuntime />
+        </list>
       </option>
       <option name="selectedOptions">
         <list />
@@ -206,7 +209,9 @@
       <workItem from="1791973483244" duration="686000" />
       <workItem from="1792422002611" duration="7693000" />
       <workItem from="1792507011414" duration="10350000" />
-      <workItem from="1792522123962" duration="2989000" />
+      <workItem from="1792522123962" duration="3120000" />
+      <workItem from="1792762561029" duration="2834000" />
+      <workItem from="1792774606499" duration="1230000" />
     </task>
     <servers />
   </component>

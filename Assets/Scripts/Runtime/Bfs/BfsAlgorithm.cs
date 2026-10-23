@@ -5,7 +5,6 @@ namespace Runtime.Bfs
 {
 	public class BfsAlgorithm<T> where T : class, IBfsElement
 	{
-		// TODO: fix logic
 		public List<T> GetClosestGridElements(T startPoint, int depth)
 		{
 			var queue = new Queue<BfsElement<T>>();
@@ -26,7 +25,7 @@ namespace Runtime.Bfs
 
 				foreach (var neighbor in neighbors)
 				{
-					if (current.Depth + 1 < depth
+					if (current.Depth + 1 <= depth
 						&& visited.Add(neighbor))
 					{
 						BfsElement<T> neighborElement = new(

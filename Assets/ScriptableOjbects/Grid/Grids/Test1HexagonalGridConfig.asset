@@ -17,107 +17,75 @@ MonoBehaviour:
     Rows:
     - RowPadding: 1
       Elements:
-      - IsAwailableToMovement: 1
-        IsBlockedByObject: 0
+      - IsBlocked: 0
         SurfaceType: 0
-      - IsAwailableToMovement: 1
-        IsBlockedByObject: 0
+      - IsBlocked: 0
         SurfaceType: 0
-      - IsAwailableToMovement: 1
-        IsBlockedByObject: 0
+      - IsBlocked: 0
         SurfaceType: 0
-      - IsAwailableToMovement: 1
-        IsBlockedByObject: 0
+      - IsBlocked: 0
         SurfaceType: 0
-      - IsAwailableToMovement: 1
-        IsBlockedByObject: 0
+      - IsBlocked: 0
         SurfaceType: 0
-      - IsAwailableToMovement: 1
-        IsBlockedByObject: 0
+      - IsBlocked: 0
         SurfaceType: 0
     - RowPadding: 0
       Elements:
-      - IsAwailableToMovement: 1
-        IsBlockedByObject: 0
+      - IsBlocked: 0
         SurfaceType: 0
-      - IsAwailableToMovement: 1
-        IsBlockedByObject: 0
+      - IsBlocked: 0
         SurfaceType: 0
-      - IsAwailableToMovement: 1
-        IsBlockedByObject: 0
+      - IsBlocked: 0
         SurfaceType: 0
-      - IsAwailableToMovement: 1
-        IsBlockedByObject: 0
+      - IsBlocked: 0
         SurfaceType: 0
-      - IsAwailableToMovement: 1
-        IsBlockedByObject: 0
+      - IsBlocked: 0
         SurfaceType: 0
-      - IsAwailableToMovement: 1
-        IsBlockedByObject: 0
+      - IsBlocked: 0
         SurfaceType: 0
-      - IsAwailableToMovement: 1
-        IsBlockedByObject: 0
+      - IsBlocked: 0
         SurfaceType: 0
     - RowPadding: 1
       Elements:
-      - IsAwailableToMovement: 1
-        IsBlockedByObject: 0
+      - IsBlocked: 0
         SurfaceType: 0
-      - IsAwailableToMovement: 1
-        IsBlockedByObject: 0
+      - IsBlocked: 0
         SurfaceType: 0
-      - IsAwailableToMovement: 1
-        IsBlockedByObject: 0
+      - IsBlocked: 0
         SurfaceType: 0
-      - IsAwailableToMovement: 1
-        IsBlockedByObject: 0
+      - IsBlocked: 0
         SurfaceType: 0
-      - IsAwailableToMovement: 1
-        IsBlockedByObject: 0
+      - IsBlocked: 0
         SurfaceType: 0
-      - IsAwailableToMovement: 1
-        IsBlockedByObject: 0
+      - IsBlocked: 0
         SurfaceType: 0
     - RowPadding: 0
       Elements:
-      - IsAwailableToMovement: 1
-        IsBlockedByObject: 0
+      - IsBlocked: 0
         SurfaceType: 0
-      - IsAwailableToMovement: 1
-        IsBlockedByObject: 0
+      - IsBlocked: 0
         SurfaceType: 0
-      - IsAwailableToMovement: 1
-        IsBlockedByObject: 0
+      - IsBlocked: 0
         SurfaceType: 0
-      - IsAwailableToMovement: 1
-        IsBlockedByObject: 0
+      - IsBlocked: 0
         SurfaceType: 0
-      - IsAwailableToMovement: 1
-        IsBlockedByObject: 0
+      - IsBlocked: 0
         SurfaceType: 0
-      - IsAwailableToMovement: 1
-        IsBlockedByObject: 0
+      - IsBlocked: 0
         SurfaceType: 0
-      - IsAwailableToMovement: 1
-        IsBlockedByObject: 0
+      - IsBlocked: 0
         SurfaceType: 0
     - RowPadding: 1
       Elements:
-      - IsAwailableToMovement: 1
-        IsBlockedByObject: 0
+      - IsBlocked: 0
         SurfaceType: 0
-      - IsAwailableToMovement: 1
-        IsBlockedByObject: 0
+      - IsBlocked: 0
         SurfaceType: 0
-      - IsAwailableToMovement: 1
-        IsBlockedByObject: 0
+      - IsBlocked: 0
         SurfaceType: 0
-      - IsAwailableToMovement: 1
-        IsBlockedByObject: 0
+      - IsBlocked: 0
         SurfaceType: 0
-      - IsAwailableToMovement: 1
-        IsBlockedByObject: 0
+      - IsBlocked: 0
         SurfaceType: 0
-      - IsAwailableToMovement: 1
-        IsBlockedByObject: 0
+      - IsBlocked: 0
         SurfaceType: 0

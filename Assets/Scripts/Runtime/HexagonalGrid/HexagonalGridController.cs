@@ -56,13 +56,13 @@ namespace Runtime.HexagonalGrid
 			// Left
 			if (position.y > 0)
 			{
-				neighbors.Add(GetGridElement(new Vector2Int(position.x, position.y - 1)));
+				AddNeighborIfValid(neighbors, position.x, position.y - 1);
 			}
 
 			// Right
 			if (position.y < _gridRows[position.x].Elements.Count - 1)
 			{
-				neighbors.Add(GetGridElement(new Vector2Int(position.x, position.y + 1)));
+				AddNeighborIfValid(neighbors, position.x, position.y + 1);
 			}
 
 			// Bottom
@@ -78,7 +78,15 @@ namespace Runtime.HexagonalGrid
 			return neighbors;
 		}
 
-		private static int GetAdjacentRowElementIndex(int currentIndex, int paddingDifference) => paddingDifference + currentIndex + Mathf.Abs(Mathf.RoundToInt(paddingDifference / 2f));
+		private static int GetAdjacentRowElementIndex(int currentIndex, int paddingDifference)
+		{
+			if (paddingDifference < 0)
+			{
+				return paddingDifference + currentIndex + Mathf.Abs((int)(paddingDifference / 2f));
+			}
+				
+			return paddingDifference + currentIndex - Mathf.Abs((int)(paddingDifference / 2f)) - 1;
+		}
 
 		private void AddNeighborIfValid(
 			List<HexagonalGridElement> neighbors,
@@ -86,7 +94,8 @@ namespace Runtime.HexagonalGrid
 			int elementIndex)
 		{
 			if (elementIndex >= 0 
-			    && elementIndex < _gridRows[rowIndex].Elements.Count)
+			    && elementIndex < _gridRows[rowIndex].Elements.Count
+			    && !GetGridElement(new Vector2Int(rowIndex, elementIndex)).GridElementData.IsBlocked)
 			{
 				neighbors.Add(GetGridElement(new Vector2Int(rowIndex, elementIndex)));
 			}

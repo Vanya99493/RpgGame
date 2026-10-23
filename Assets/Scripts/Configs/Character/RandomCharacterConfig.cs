@@ -14,10 +14,10 @@ namespace Configs.Character
 		
 		[Header("Skills")]
 		[SerializeField]
-		private Vector2 _healthRange;
+		private Vector2Int _healthRange;
 
 		[SerializeField]
-		private Vector2 _energyRange;
+		private Vector2Int _energyRange;
 
 		public string GetRandomName()
 		{
@@ -28,12 +28,12 @@ namespace Configs.Character
 
 		public int GetRandomHealthValue()
 		{
-			return (int)Random.Range(_healthRange.x, _healthRange.y);
+			return Random.Range(_healthRange.x, _healthRange.y);
 		}
 
 		public int GetRandomEnergyValue()
 		{
-			return (int)Random.Range(_energyRange.x, _energyRange.y);
+			return Random.Range(_energyRange.x, _energyRange.y);
 		}
 	}
 }
