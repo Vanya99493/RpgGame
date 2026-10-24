@@ -15,3 +15,5 @@ MonoBehaviour:
   sceneEntries:
   - displayName: MainScene
     scene: {fileID: 102900000, guid: 8124e5870f4fd4c779e7a5f994e84ad1, type: 3}
+  - displayName: LevelBuildingScene
+    scene: {fileID: 102900000, guid: f5334301de381744e825be36e7cfadf9, type: 3}

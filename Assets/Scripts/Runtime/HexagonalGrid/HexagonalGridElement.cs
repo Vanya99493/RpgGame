@@ -99,17 +99,7 @@ namespace Runtime.HexagonalGrid
 		{
 			if (!isAvailable)
 			{
-				var renderer = _frameModel.GetComponent<Renderer>();
-
-				var propertyBlock = new MaterialPropertyBlock();
-				renderer.GetPropertyBlock(propertyBlock);
-
-				propertyBlock.SetColor(
-					"_FrameColor",
-					new Color(0.5f, 0.5f, 0.5f, 1f)
-				);
-
-				renderer.SetPropertyBlock(propertyBlock);
+				_frameModel.SetActive(false);
 			}
 		}
 
