@@ -65,15 +65,14 @@ namespace Runtime.HexagonalGrid
 			return _hexagonalGridController.GetNeighbors(this) as List<T>;
 		}
 
-		// TODO: create additional (un)hover logic, that won't be affected by camera interaction controller
 		public void ForceHover()
 		{
-			_interactionController.Hover();
+			_interactionController.Select();
 		}
 
 		public void ForceUnhover()
 		{
-			_interactionController.UnHover();
+			_interactionController.Release();
 		}
 		
 		public void Destroy()
@@ -100,14 +99,14 @@ namespace Runtime.HexagonalGrid
 		{
 			if (!isAvailable)
 			{
-				var renderer = _model.GetComponent<Renderer>();
+				var renderer = _frameModel.GetComponent<Renderer>();
 
 				var propertyBlock = new MaterialPropertyBlock();
 				renderer.GetPropertyBlock(propertyBlock);
 
 				propertyBlock.SetColor(
-					"_BaseColor",
-					new Color(1f, 1f, 1f, 0.2f)
+					"_FrameColor",
+					new Color(0.5f, 0.5f, 0.5f, 1f)
 				);
 
 				renderer.SetPropertyBlock(propertyBlock);

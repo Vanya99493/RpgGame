@@ -137,6 +137,7 @@ GameObject:
   - component: {fileID: 2279853064943363363}
   - component: {fileID: 6322035259072130909}
   - component: {fileID: 1960144889220927499}
+  - component: {fileID: 7422488324409756658}
   m_Layer: 7
   m_Name: Hexagon
   m_TagString: Untagged
@@ -252,10 +253,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Runtime.Interaction.InteractionController
   _root: {fileID: 7519712828329100653}
   _interactionObjectType: 2
+  _interactionVisualizationStrategy: {fileID: 7422488324409756658}
+--- !u!114 &7422488324409756658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6928036973898073613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 267f105f80184c0294b3d8f61aa2ec1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Runtime.Interaction.Strategy.OutlineInteractionVisualizationStrategy
   _modelGameObjects:
   - {fileID: 6928036973898073613}
   _hoverOutlineDataAsset: {fileID: 11400000, guid: 31e2967d57f6a1d419b552075b8f6ddc, type: 2}
-  _selectionOutlineDataAsset: {fileID: 11400000, guid: 03e34c192bd8db14c942b6b1509eb9d3, type: 2}
+  _selectionOutlineDataAsset: {fileID: 11400000, guid: 13e344e9856779440886c4474f6a1521, type: 2}
 --- !u!1 &7164218459272896605
 GameObject:
   m_ObjectHideFlags: 0

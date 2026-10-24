@@ -401,10 +401,13 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 7647134206250791342, guid: cc91c8ba8b9a34f4d99e70d721f60b64, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 7470123926171032696}
+    - targetCorrespondingSourceObject: {fileID: 7647134206250791342, guid: cc91c8ba8b9a34f4d99e70d721f60b64, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 7552233143322197371}
     - targetCorrespondingSourceObject: {fileID: 7647134206250791342, guid: cc91c8ba8b9a34f4d99e70d721f60b64, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7470123926171032696}
+      addedObject: {fileID: 1265382724294957005}
   m_SourcePrefab: {fileID: 100100000, guid: cc91c8ba8b9a34f4d99e70d721f60b64, type: 3}
 --- !u!4 &1364902391818661760 stripped
 Transform:
@@ -421,24 +424,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7647134206250791342, guid: cc91c8ba8b9a34f4d99e70d721f60b64, type: 3}
   m_PrefabInstance: {fileID: 8330216586737599636}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &7552233143322197371
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1854018303511426362}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58db881816a34cbb83d5a9c5cfebcf2f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Runtime.Interaction.InteractionController
-  _root: {fileID: 6861660482621992233}
-  _interactionObjectType: 1
-  _modelGameObjects:
-  - {fileID: 1854018303511426362}
-  _hoverOutlineDataAsset: {fileID: 11400000, guid: b1ee253480932774b9d4fb96f9c92417, type: 2}
-  _selectionOutlineDataAsset: {fileID: 11400000, guid: 03e34c192bd8db14c942b6b1509eb9d3, type: 2}
 --- !u!136 &7470123926171032696
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -462,3 +447,34 @@ CapsuleCollider:
   m_Height: 1.5
   m_Direction: 1
   m_Center: {x: 0, y: 0.75, z: 0}
+--- !u!114 &7552233143322197371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1854018303511426362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58db881816a34cbb83d5a9c5cfebcf2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Runtime.Interaction.InteractionController
+  _root: {fileID: 6861660482621992233}
+  _interactionObjectType: 1
+  _interactionVisualizationStrategy: {fileID: 1265382724294957005}
+--- !u!114 &1265382724294957005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1854018303511426362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 267f105f80184c0294b3d8f61aa2ec1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Runtime.Interaction.Strategy.OutlineInteractionVisualizationStrategy
+  _modelGameObjects:
+  - {fileID: 1854018303511426362}
+  _hoverOutlineDataAsset: {fileID: 11400000, guid: b1ee253480932774b9d4fb96f9c92417, type: 2}
+  _selectionOutlineDataAsset: {fileID: 11400000, guid: 03e34c192bd8db14c942b6b1509eb9d3, type: 2}

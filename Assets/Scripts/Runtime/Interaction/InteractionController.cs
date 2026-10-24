@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using Runtime.Enums;
 using Runtime.Interfaces;
 using UnityEngine;
@@ -16,14 +15,7 @@ namespace Runtime.Interaction
 
 		[Space(20)]
 		[SerializeField]
-		private List<GameObject> _modelGameObjects = new();
-
-		[Header("Configs")]
-		[SerializeField]
-		private OutlineDataAsset _hoverOutlineDataAsset;
-		
-		[SerializeField]
-		private OutlineDataAsset _selectionOutlineDataAsset;
+		private InteractionVisualStrategy _interactionVisualizationStrategy;
 
 		private bool _isInteractionActive;
 		private bool _isSelected;
@@ -48,7 +40,7 @@ namespace Runtime.Interaction
 				return;
 			}
 			
-			ApplyOutline(_hoverOutlineDataAsset);
+			_interactionVisualizationStrategy.Hover();
 			
 			HoverEvent?.Invoke();
 		}
@@ -62,11 +54,11 @@ namespace Runtime.Interaction
 
 			if (_isSelected)
 			{
-				ApplyOutline(_selectionOutlineDataAsset);
+				_interactionVisualizationStrategy.Select();
 			}
 			else
 			{
-				RemoveOutline();
+				_interactionVisualizationStrategy.UnHover();
 			}
 			
 			UnHoverEvent?.Invoke();
@@ -81,7 +73,7 @@ namespace Runtime.Interaction
 			
 			_isSelected = true;
 
-			ApplyOutline(_selectionOutlineDataAsset);
+			_interactionVisualizationStrategy.Select();
 			
 			SelectEvent?.Invoke();
 		}
@@ -95,42 +87,9 @@ namespace Runtime.Interaction
 			
 			_isSelected = false;
 			
-			RemoveOutline();
+			_interactionVisualizationStrategy.Release();
 			
 			ReleaseEvent?.Invoke();
-		}
-
-		private void ApplyOutline(OutlineDataAsset outlineDataAsset)
-		{
-			foreach (var modelGameObject in _modelGameObjects)
-			{
-				if (modelGameObject.TryGetComponent(out Outline outline))
-				{
-					outline.SetOutlineData(
-						outlineDataAsset.OutlineMode, 
-						outlineDataAsset.OutlineColor, 
-						outlineDataAsset.OutlineWidth);
-				}
-				else
-				{
-					var newOutline = modelGameObject.AddComponent<Outline>();
-					newOutline.SetOutlineData(
-						outlineDataAsset.OutlineMode, 
-						outlineDataAsset.OutlineColor, 
-						outlineDataAsset.OutlineWidth);
-				}
-			}
-		}
-
-		private void RemoveOutline()
-		{
-			foreach (var modelGameObject in _modelGameObjects)
-			{
-				if (modelGameObject.TryGetComponent(out Outline outline))
-				{
-					Destroy(outline);
-				}
-			}
 		}
 	}
 }

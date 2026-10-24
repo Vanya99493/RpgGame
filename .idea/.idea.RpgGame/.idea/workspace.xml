@@ -12,17 +12,19 @@
   <component name="ChangeListManager">
     <list default="true" id="4c763a81-88c4-4510-b47f-161648233395" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RpgGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RpgGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rd-Party/RPG Tiny Hero Duo/Animator/SimpleAnimator.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/3rd-Party/RPG Tiny Hero Duo/Animator/SimpleAnimator.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rd-Party/RPG Tiny Hero Duo/Animator/SwordAndShieldStance.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/3rd-Party/RPG Tiny Hero Duo/Animator/SwordAndShieldStance.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/Hexagone/HexagonalFrame.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/Hexagone/HexagonalFrame.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/Hexagone/Hexagone.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/Hexagone/Hexagone.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Character/FemaleCartoonCharacter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Character/FemaleCartoonCharacter.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableOjbects/Characters/RandomCharacterConfig.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableOjbects/Characters/RandomCharacterConfig.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Bfs/BfsAlgorithm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Bfs/BfsAlgorithm.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Bfs/BfsElement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Bfs/BfsElement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Character/CharacterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Character/CharacterController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Entry/EntryPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Entry/EntryPoint.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/HexagonalGrid/Bfs/HexagonalGridBfsElement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/HexagonalGrid/Bfs/HexagonalGridBfsElement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/HexagonalGrid/HexagonalGridController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/HexagonalGrid/HexagonalGridController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/HexagonGrid/Hexagon.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/HexagonGrid/Hexagon.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableOjbects/Interaction/CharacterHoverOutlineDataAsset.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableOjbects/Interaction/CharacterHoverOutlineDataAsset.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableOjbects/Interaction/GridHoverElementOutlineDataAsset.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableOjbects/Interaction/GridHoverElementOutlineDataAsset.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableOjbects/Interaction/SelectionOutlineDataAsset.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableOjbects/Interaction/SelectionOutlineDataAsset.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/HexagonalGrid/HexagonalGridElement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/HexagonalGrid/HexagonalGridElement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Interaction/InteractionController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Interaction/InteractionController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/3DFrame.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/3DFrame.shadergraph" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +58,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/HexagonalGrid/Bfs/HexagonalGridBfsElement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/HexagonalGrid/HexagonalGridBuilder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/HexagonalGrid/IHexagonalGridController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Interaction/Strategy/Base/InteractionVisualStrategy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Interaction/Strategy/OutlineInteractionVisualizationStrategy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Level/LevelBuilder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Models/Camera/RaycastSettings.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Models/HexagonalGrid/HexagonaLGridElementModel.cs" root0="FORCE_HIGHLIGHTING" />
@@ -68,61 +72,61 @@
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000857205124352" />
-      <entry key="MS500" value="1.1536798584068226" />
-      <entry key="S2" value="1.6261151871688504" />
-      <entry key="S5" value="1.8295239806977757" />
-      <entry key="S10" value="1.947359491871725" />
-      <entry key="S30" value="3.037936284728472" />
-      <entry key="S60" value="5.2581835087347635" />
-      <entry key="M2" value="9.37603167076593" />
-      <entry key="M5" value="17.85246454798527" />
-      <entry key="M10" value="34.30564910385764" />
-      <entry key="M15" value="61.88431058896246" />
-      <entry key="M30" value="177.46487641121908" />
-      <entry key="H1" value="414.86337932924624" />
-      <entry key="H2" value="837.8136053774889" />
-      <entry key="H4" value="1481.375008122899" />
-      <entry key="D1" value="2927.7961977340146" />
-      <entry key="W1" value="3364.832316036781" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="1.4283518157518294E-162" />
+      <entry key="S2" value="3.4570749705055434E-41" />
+      <entry key="S5" value="6.538581305702395E-17" />
+      <entry key="S10" value="8.090817804008048E-9" />
+      <entry key="S30" value="0.0035292696418323705" />
+      <entry key="S60" value="0.3190614031615227" />
+      <entry key="M2" value="4.471590260905012" />
+      <entry key="M5" value="25.629075379903192" />
+      <entry key="M10" value="53.86198605735716" />
+      <entry key="M15" value="83.26333896922341" />
+      <entry key="M30" value="194.54591248216622" />
+      <entry key="H1" value="428.77427722589056" />
+      <entry key="H2" value="852.8018247323331" />
+      <entry key="H4" value="1502.453643162138" />
+      <entry key="D1" value="2977.065051348672" />
+      <entry key="W1" value="3425.5786434468846" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="9.979622022438033E-181" />
-      <entry key="MS500" value="9.995921078324247E-37" />
-      <entry key="S2" value="9.998980113812407E-10" />
-      <entry key="S5" value="2.512000712788493E-4" />
-      <entry key="S10" value="0.016057283758844756" />
-      <entry key="S30" value="0.3588811297116609" />
-      <entry key="S60" value="1.1358968861023742" />
-      <entry key="M2" value="2.579855513568311" />
-      <entry key="M5" value="5.263122730633273" />
-      <entry key="M10" value="8.216897043454592" />
-      <entry key="M15" value="12.052447413116399" />
-      <entry key="M30" value="27.008821832803548" />
-      <entry key="H1" value="59.67871198169007" />
-      <entry key="H2" value="122.74674597875676" />
-      <entry key="H4" value="218.28646945339588" />
-      <entry key="D1" value="424.804655561091" />
-      <entry key="W1" value="485.7376027058597" />
+      <entry key="MS100" value="1.0000000000006892" />
+      <entry key="MS500" value="1.0036955376825218" />
+      <entry key="S2" value="1.2465581761233397" />
+      <entry key="S5" value="1.5711731234242814" />
+      <entry key="S10" value="1.7557601041255548" />
+      <entry key="S30" value="1.9223763838952008" />
+      <entry key="S60" value="2.1798767203343674" />
+      <entry key="M2" value="3.1866053949628697" />
+      <entry key="M5" value="6.614037800023469" />
+      <entry key="M10" value="10.941694947610204" />
+      <entry key="M15" value="15.107147037785063" />
+      <entry key="M30" value="29.76551038025247" />
+      <entry key="H1" value="61.965237087257066" />
+      <entry key="H2" value="124.8994422407063" />
+      <entry key="H4" value="221.20520738037897" />
+      <entry key="D1" value="431.8280053892771" />
+      <entry key="W1" value="494.4144841468453" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.22689569559443976" />
-      <entry key="MS500" value="0.8530192169166974" />
-      <entry key="S2" value="1.504061599243453" />
-      <entry key="S5" value="1.7730487218267286" />
-      <entry key="S10" value="1.9322608656354008" />
-      <entry key="S30" value="3.3733094844589453" />
-      <entry key="S60" value="6.364884111616264" />
-      <entry key="M2" value="11.922885105617263" />
-      <entry key="M5" value="23.087640261243617" />
-      <entry key="M10" value="42.49832672018634" />
-      <entry key="M15" value="73.91013706622128" />
-      <entry key="M30" value="204.43869081290356" />
-      <entry key="H1" value="474.5012137257586" />
-      <entry key="H2" value="960.5177834808746" />
-      <entry key="H4" value="1699.6233550720212" />
-      <entry key="D1" value="3352.5883721966543" />
-      <entry key="W1" value="3850.567876080499" />
+      <entry key="MS100" value="0.012006837353822304" />
+      <entry key="MS500" value="0.41451430465384065" />
+      <entry key="S2" value="1.0008543890376331" />
+      <entry key="S5" value="1.4398475864549607" />
+      <entry key="S10" value="1.680960960378878" />
+      <entry key="S30" value="1.8981595744945328" />
+      <entry key="S60" value="2.480937567810938" />
+      <entry key="M2" value="7.633632119249773" />
+      <entry key="M5" value="32.20466156418042" />
+      <entry key="M10" value="64.76614247526074" />
+      <entry key="M15" value="98.33365679668194" />
+      <entry key="M30" value="224.27169141846565" />
+      <entry key="H1" value="490.6965632946596" />
+      <entry key="H2" value="977.6576736415583" />
+      <entry key="H4" value="1723.6200736916576" />
+      <entry key="D1" value="3408.8803453478886" />
+      <entry key="W1" value="3919.9910450387265" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -183,15 +187,13 @@
       <option name="MIXED_MODE_DEBUG" value="0" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" useMixedMode="false" ignored-value-for-modified-check="30112">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" useMixedMode="false">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="30112" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="runtimes">
-        <list>
-          <MonoRuntime />
-        </list>
+        <list />
       </option>
       <option name="selectedOptions">
         <list />
@@ -218,7 +220,8 @@
       <workItem from="1792507011414" duration="10350000" />
       <workItem from="1792522123962" duration="3120000" />
       <workItem from="1792762561029" duration="2834000" />
-      <workItem from="1792774606499" duration="6623000" />
+      <workItem from="1792774606499" duration="6693000" />
+      <workItem from="1792853543490" duration="1285000" />
     </task>
     <servers />
   </component>
