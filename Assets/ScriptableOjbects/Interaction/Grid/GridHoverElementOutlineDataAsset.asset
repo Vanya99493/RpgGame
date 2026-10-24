@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: GridHoverElementOutlineDataAsset
   m_EditorClassIdentifier: Assembly-CSharp::OutlineDataAsset
   <OutlineMode>k__BackingField: 1
-  <OutlineColor>k__BackingField: {r: 1, g: 0.8066038, b: 0.94673663, a: 1}
-  <OutlineWidth>k__BackingField: 5
+  <OutlineColor>k__BackingField: {r: 0.735849, g: 0.735849, b: 0.735849, a: 1}
+  <OutlineWidth>k__BackingField: 7

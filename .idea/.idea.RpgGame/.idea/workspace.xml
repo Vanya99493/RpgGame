@@ -11,20 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c763a81-88c4-4510-b47f-161648233395" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RpgGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RpgGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/Hexagone/HexagonalFrame.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/Hexagone/HexagonalFrame.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/Hexagone/Hexagone.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/Hexagone/Hexagone.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Character/FemaleCartoonCharacter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Character/FemaleCartoonCharacter.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/HexagonGrid/Hexagon.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/HexagonGrid/Hexagon.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableOjbects/Interaction/CharacterHoverOutlineDataAsset.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableOjbects/Interaction/CharacterHoverOutlineDataAsset.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableOjbects/Interaction/GridHoverElementOutlineDataAsset.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableOjbects/Interaction/GridHoverElementOutlineDataAsset.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableOjbects/Interaction/SelectionOutlineDataAsset.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableOjbects/Interaction/SelectionOutlineDataAsset.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/HexagonalGrid/HexagonalGridElement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/HexagonalGrid/HexagonalGridElement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Interaction/InteractionController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Interaction/InteractionController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shaders/3DFrame.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/3DFrame.shadergraph" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Blink/Tools/EditorSceneLoader/EditorSceneLoaderSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Blink/Tools/EditorSceneLoader/EditorSceneLoaderSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableOjbects/Interaction/Grid/GridHoverElementOutlineDataAsset.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableOjbects/Interaction/Grid/GridHoverElementOutlineDataAsset.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +43,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Core/Enums/InputActionType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Core/Enums/InteractionObjectType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Core/Enums/TeamType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Entry/LevelBuildingEntryPoint.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/HexagonalGrid/Bfs/HexagonalGridBfsElement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/HexagonalGrid/HexagonalGridBuilder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/HexagonalGrid/IHexagonalGridController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -72,61 +61,61 @@
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="1.4283518157518294E-162" />
-      <entry key="S2" value="3.4570749705055434E-41" />
-      <entry key="S5" value="6.538581305702395E-17" />
-      <entry key="S10" value="8.090817804008048E-9" />
-      <entry key="S30" value="0.0035292696418323705" />
-      <entry key="S60" value="0.3190614031615227" />
-      <entry key="M2" value="4.471590260905012" />
-      <entry key="M5" value="25.629075379903192" />
-      <entry key="M10" value="53.86198605735716" />
-      <entry key="M15" value="83.26333896922341" />
-      <entry key="M30" value="194.54591248216622" />
-      <entry key="H1" value="428.77427722589056" />
-      <entry key="H2" value="852.8018247323331" />
-      <entry key="H4" value="1502.453643162138" />
-      <entry key="D1" value="2977.065051348672" />
-      <entry key="W1" value="3425.5786434468846" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0" />
+      <entry key="S30" value="1.000000000000898" />
+      <entry key="S60" value="1.000005089149493" />
+      <entry key="M2" value="1.0178586024842367" />
+      <entry key="M5" value="3.813760482469694" />
+      <entry key="M10" value="18.846763021858713" />
+      <entry key="M15" value="40.86929460121084" />
+      <entry key="M30" value="135.62151541964184" />
+      <entry key="H1" value="357.67683629754447" />
+      <entry key="H2" value="778.8058622956136" />
+      <entry key="H4" value="1435.870235098272" />
+      <entry key="D1" value="2955.3157880445183" />
+      <entry key="W1" value="3422.826826688482" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.0000000000006892" />
-      <entry key="MS500" value="1.0036955376825218" />
-      <entry key="S2" value="1.2465581761233397" />
-      <entry key="S5" value="1.5711731234242814" />
-      <entry key="S10" value="1.7557601041255548" />
-      <entry key="S30" value="1.9223763838952008" />
-      <entry key="S60" value="2.1798767203343674" />
-      <entry key="M2" value="3.1866053949628697" />
-      <entry key="M5" value="6.614037800023469" />
-      <entry key="M10" value="10.941694947610204" />
-      <entry key="M15" value="15.107147037785063" />
-      <entry key="M30" value="29.76551038025247" />
-      <entry key="H1" value="61.965237087257066" />
-      <entry key="H2" value="124.8994422407063" />
-      <entry key="H4" value="221.20520738037897" />
-      <entry key="D1" value="431.8280053892771" />
-      <entry key="W1" value="494.4144841468453" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="1.5095262845180676E-144" />
+      <entry key="S5" value="4.260644437357041E-58" />
+      <entry key="S10" value="2.8912843268802167E-29" />
+      <entry key="S30" value="4.890804439840344E-10" />
+      <entry key="S60" value="3.4769854316745844E-5" />
+      <entry key="M2" value="0.012726639898184249" />
+      <entry key="M5" value="0.7261408347903155" />
+      <entry key="M10" value="3.625448132928531" />
+      <entry key="M15" value="7.233811462399969" />
+      <entry key="M30" value="20.59708201268937" />
+      <entry key="H1" value="51.54592030964204" />
+      <entry key="H2" value="113.91570181356636" />
+      <entry key="H4" value="211.25494910500473" />
+      <entry key="D1" value="428.5281886814568" />
+      <entry key="W1" value="493.8729836471362" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.012006837353822304" />
-      <entry key="MS500" value="0.41451430465384065" />
-      <entry key="S2" value="1.0008543890376331" />
-      <entry key="S5" value="1.4398475864549607" />
-      <entry key="S10" value="1.680960960378878" />
-      <entry key="S30" value="1.8981595744945328" />
-      <entry key="S60" value="2.480937567810938" />
-      <entry key="M2" value="7.633632119249773" />
-      <entry key="M5" value="32.20466156418042" />
-      <entry key="M10" value="64.76614247526074" />
-      <entry key="M15" value="98.33365679668194" />
-      <entry key="M30" value="224.27169141846565" />
-      <entry key="H1" value="490.6965632946596" />
-      <entry key="H2" value="977.6576736415583" />
-      <entry key="H4" value="1723.6200736916576" />
-      <entry key="D1" value="3408.8803453478886" />
-      <entry key="W1" value="3919.9910450387265" />
+      <entry key="MS100" value="9.91519038520795E-5" />
+      <entry key="MS500" value="0.158219574246285" />
+      <entry key="S2" value="0.6306887044156247" />
+      <entry key="S5" value="0.8316220983749064" />
+      <entry key="S10" value="0.911933165519769" />
+      <entry key="S30" value="0.9697378279249215" />
+      <entry key="S60" value="0.9847922451224205" />
+      <entry key="M2" value="1.0228341935373209" />
+      <entry key="M5" value="4.53261156212529" />
+      <entry key="M10" value="22.458237749491946" />
+      <entry key="M15" value="48.08444720264311" />
+      <entry key="M30" value="156.19059211468849" />
+      <entry key="H1" value="409.1867716603253" />
+      <entry key="H2" value="892.6816763729139" />
+      <entry key="H4" value="1647.0880875959165" />
+      <entry key="D1" value="3383.831351800173" />
+      <entry key="W1" value="3916.697728537223" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -221,7 +210,7 @@
       <workItem from="1792522123962" duration="3120000" />
       <workItem from="1792762561029" duration="2834000" />
       <workItem from="1792774606499" duration="6693000" />
-      <workItem from="1792853543490" duration="1285000" />
+      <workItem from="1792853543490" duration="1765000" />
     </task>
     <servers />
   </component>
