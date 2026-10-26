@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using Configs.HexagonalGrid;
-using Extensions;
 using Runtime.Character;
 using Runtime.Enums;
 using Runtime.Level;
@@ -11,7 +10,7 @@ using UnityEngine;
 
 namespace Runtime.Entry
 {
-	public class EntryPoint : MonoBehaviour
+	public class LogicTestEntryPoint : MonoBehaviour
 	{
 		[SerializeField]
 		private CameraController _cameraController;
