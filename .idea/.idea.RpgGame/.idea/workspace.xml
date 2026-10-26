@@ -10,13 +10,7 @@
     <configurations />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c763a81-88c4-4510-b47f-161648233395" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RpgGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RpgGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rd-Party/DungeonModularPack/Materials/M_Pillar_A.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/3rd-Party/DungeonModularPack/Materials/M_Pillar_A.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rd-Party/DungeonModularPack/Shaders/DungeonKitShader.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/3rd-Party/DungeonModularPack/Shaders/DungeonKitShader.shadergraph" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Blink/Tools/EditorSceneLoader/EditorSceneLoaderSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Blink/Tools/EditorSceneLoader/EditorSceneLoaderSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/HexagonalGrid/HexagonalGridElement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/HexagonalGrid/HexagonalGridElement.cs" afterDir="false" />
-    </list>
+    <list default="true" id="4c763a81-88c4-4510-b47f-161648233395" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -213,7 +207,7 @@
       <workItem from="1792522123962" duration="3120000" />
       <workItem from="1792762561029" duration="2834000" />
       <workItem from="1792774606499" duration="6693000" />
-      <workItem from="1792853543490" duration="3685000" />
+      <workItem from="1792853543490" duration="4282000" />
     </task>
     <servers />
   </component>
