@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Runtime.Enums;
 using Runtime.Interfaces;
 using UnityEngine;
@@ -12,6 +13,10 @@ namespace Runtime.Interaction
 		
 		[SerializeField]
 		private InteractionObjectType _interactionObjectType;
+
+		[Space(10)]
+		[SerializeField]
+		private List<Collider> _interactionColliders = new();
 
 		[Space(20)]
 		[SerializeField]
@@ -31,6 +36,11 @@ namespace Runtime.Interaction
 		public void Initialize(bool isInteractionActive)
 		{
 			_isInteractionActive = isInteractionActive;
+
+			foreach (var interactionCollider in _interactionColliders)
+			{
+				interactionCollider.enabled = isInteractionActive;
+			}
 		}
 
 		public void Hover()

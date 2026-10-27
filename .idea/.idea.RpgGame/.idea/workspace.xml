@@ -12,16 +12,32 @@
   <component name="ChangeListManager">
     <list default="true" id="4c763a81-88c4-4510-b47f-161648233395" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RpgGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RpgGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rd-Party/DungeonModularPack/Materials/M_Pillar_A.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/3rd-Party/DungeonModularPack/Materials/M_Pillar_A.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3rd-Party/Synty/SyntyPackageHelper/Editor/SyntyPackageHelperConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/3rd-Party/Synty/SyntyPackageHelper/Editor/SyntyPackageHelperConfig.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Plugins/Blink/Tools/EditorSceneLoader/EditorSceneLoaderSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Blink/Tools/EditorSceneLoader/EditorSceneLoaderSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LevelBuildingScene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LevelBuildingScene.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Entry/EntryPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Entry/EntryPoint.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Release/HubScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Release/HubScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Release/RaidScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Release/RaidScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Release/RaidScene.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Release/RaidScene.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/CameraSelectionController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/RaidCameraSelectionController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/CameraSelectionController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/RaidCameraSelectionController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/ICameraSelectionController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/Base/ICameraSelectionController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/ICameraSelectionController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/Base/ICameraSelectionController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/ICameraSelectionStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/Base/ICameraSelectionStateMachine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/ICameraSelectionStateMachine.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/Base/ICameraSelectionStateMachine.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/States/Base/BaseSelectionState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/States/Base/BaseSelectionState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/States/CharacterControlSelectionState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/States/CharacterControlSelectionState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/States/EnvironmentObjectSelectionState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/States/EnvironmentObjectSelectionState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/States/FreeSelectionState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/States/FreeSelectionState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/States/GridSelectionState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/States/GridSelectionState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/ICameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/ICameraController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Core/Enums/EnvironmentType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Core/Enums/LocationType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Core/Enums/EnvironmentType.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Core/Enums/LocationType.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Core/Enums/InteractionObjectType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Core/Enums/InteractionObjectType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Entry/HubEntryPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Entry/HubEntryPoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Entry/RaidEntryPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Entry/RaidEntryPoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Entry/Test/LogicTestEntryPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Entry/Test/LogicTestEntryPoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Interaction/InteractionController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Interaction/InteractionController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Level/LevelBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Level/LevelBuilder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,34 +55,44 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c5ae8a4eeb824526b5df2932bc2395e046ae00/6b/2f445477/ExceptionDispatchInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3ea01e77be99618395f448b16bd7cc2bd4248bd9e5d8474964b2d97f39c5d74/System.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Configs/Animation/AnimationParametersConfig.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Editor/EditorSceneButtons.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Configs/Location/LocationsCollectionConfig.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Extensions/ListExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Bfs/BfsAlgorithm.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Bfs/BfsElement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Bfs/IBfsElement.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/ICameraSelectionStateMachine.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraNavigation/CameraNavigationController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraNavigation/ICameraNavigation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/Base/CameraSelectionController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/HubCameraSelectionController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/States/EnvironmentObjectSelectionState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/States/GridSelectionState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/States/LocationSelectionState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Character/CharactersController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Character/Movement/CharacterMovementController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Character/RandomCharacterGenerator.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Core/Enums/EnvironmentType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Core/Enums/InputActionPhase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Core/Enums/InputActionType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Core/Enums/InteractionObjectType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Core/Enums/TeamType.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Entry/CityEntryPoint.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Entry/LevelBuildingEntryPoint.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Entry/RaidEntryPoint.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/HexagonalGrid/Bfs/HexagonalGridBfsElement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/HexagonalGrid/HexagonalGridBuilder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/HexagonalGrid/IHexagonalGridController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Hub/IHubStateMachine.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Hub/States/Base/BaseHubState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Hub/States/NavigationHubState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Interaction/NavigationInteractionController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Interaction/Strategy/Base/InteractionVisualStrategy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Interaction/Strategy/OutlineInteractionVisualizationStrategy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Interaction/Strategy/SimplifiedOutlineVisualizationStrategy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Level/LevelBuilder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Management/RaidsManagement/RaidManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Models/Camera/RaycastSettings.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Models/HexagonalGrid/HexagonaLGridElementModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Models/Level/LevelData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Models/Location/LocationData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Models/Location/LocationsCollectionData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/UI/Core/HubUIManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="McpProjectServerCommands">
     <commands />
@@ -75,61 +101,61 @@
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.000000000486278" />
-      <entry key="S5" value="1.0001882581573984" />
-      <entry key="S10" value="1.0137207200048466" />
-      <entry key="S30" value="1.2395968409225329" />
-      <entry key="S60" value="1.5090653769027182" />
-      <entry key="M2" value="1.8988745778181753" />
-      <entry key="M5" value="2.9873282007523185" />
-      <entry key="M10" value="6.204907399293519" />
-      <entry key="M15" value="11.031864571849251" />
-      <entry key="M30" value="41.828594180634376" />
-      <entry key="H1" value="174.83944853730915" />
-      <entry key="H2" value="533.6772534391873" />
-      <entry key="H4" value="1188.9304708519298" />
-      <entry key="D1" value="2896.754802457834" />
-      <entry key="W1" value="3457.094965219974" />
+      <entry key="MS100" value="1.4699925279935565E-9" />
+      <entry key="MS500" value="0.039371672211569994" />
+      <entry key="S2" value="1.0132928467565094" />
+      <entry key="S5" value="1.9785589109712667" />
+      <entry key="S10" value="2.645203547410361" />
+      <entry key="S30" value="4.622441367953589" />
+      <entry key="S60" value="9.189739847236432" />
+      <entry key="M2" value="16.655654714105573" />
+      <entry key="M5" value="25.91634887411875" />
+      <entry key="M10" value="34.07823211698579" />
+      <entry key="M15" value="46.778964239825065" />
+      <entry key="M30" value="114.35223189112264" />
+      <entry key="H1" value="277.8306721240889" />
+      <entry key="H2" value="605.065766528717" />
+      <entry key="H4" value="1247.7480482203719" />
+      <entry key="D1" value="3397.883872625447" />
+      <entry key="W1" value="4224.973648096144" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="3.104380760343993E-281" />
-      <entry key="S5" value="6.319013865789695E-113" />
-      <entry key="S10" value="8.678313272359853E-57" />
-      <entry key="S30" value="3.156074501360157E-19" />
-      <entry key="S60" value="9.075686725360708E-10" />
-      <entry key="M2" value="5.1132654458275535E-5" />
-      <entry key="M5" value="0.03755560332112276" />
-      <entry key="M10" value="0.397599795884301" />
-      <entry key="M15" value="1.1063325016532037" />
-      <entry key="M30" value="5.80996027114853" />
-      <entry key="H1" value="25.05042635082153" />
-      <entry key="H2" value="78.03758747840926" />
-      <entry key="H4" value="174.98471581976943" />
-      <entry key="D1" value="420.3237840816375" />
-      <entry key="W1" value="499.1660569061457" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0000002935277017" />
+      <entry key="S2" value="1.0232767373809992" />
+      <entry key="S5" value="1.2260347354569703" />
+      <entry key="S10" value="1.565626670141703" />
+      <entry key="S30" value="2.9936968795699666" />
+      <entry key="S60" value="5.324559958116757" />
+      <entry key="M2" value="8.586188536668526" />
+      <entry key="M5" value="12.383007383393354" />
+      <entry key="M10" value="15.006292913404408" />
+      <entry key="M15" value="17.50570946153405" />
+      <entry key="M30" value="27.552151125097073" />
+      <entry key="H1" value="49.61147681490581" />
+      <entry key="H2" value="94.37267716712405" />
+      <entry key="H4" value="186.05202248024588" />
+      <entry key="D1" value="493.31139006736595" />
+      <entry key="W1" value="610.1815060329319" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.034434534871144076" />
-      <entry key="MS500" value="0.5097988414990953" />
-      <entry key="S2" value="0.8449863848053096" />
-      <entry key="S5" value="0.9350184406655057" />
-      <entry key="S10" value="0.9800213399236744" />
-      <entry key="S30" value="1.2250474351409246" />
-      <entry key="S60" value="1.4999938878648484" />
-      <entry key="M2" value="1.8936212219969237" />
-      <entry key="M5" value="3.022293866859245" />
-      <entry key="M10" value="6.600089154412466" />
-      <entry key="M15" value="12.134968033482737" />
-      <entry key="M30" value="47.63070652080285" />
-      <entry key="H1" value="199.87245647308967" />
-      <entry key="H2" value="611.6875227121621" />
-      <entry key="H4" value="1363.8844497899197" />
-      <entry key="D1" value="3317.0662001031324" />
-      <entry key="W1" value="3956.258917519735" />
+      <entry key="MS100" value="0.004304318172609386" />
+      <entry key="MS500" value="0.3746282297769316" />
+      <entry key="S2" value="1.7799324047859586" />
+      <entry key="S5" value="3.039807480738319" />
+      <entry key="S10" value="4.071105928064477" />
+      <entry key="S30" value="7.498624195278513" />
+      <entry key="S60" value="14.405598252489458" />
+      <entry key="M2" value="25.15380793705141" />
+      <entry key="M5" value="38.24676958361948" />
+      <entry key="M10" value="49.046138308295006" />
+      <entry key="M15" value="64.24819107844095" />
+      <entry key="M30" value="141.86359501849043" />
+      <entry key="H1" value="327.39897982011666" />
+      <entry key="H2" value="699.3973069778266" />
+      <entry key="H4" value="1433.7619187583048" />
+      <entry key="D1" value="3891.1795663108946" />
+      <entry key="W1" value="4835.1524090830635" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -225,7 +251,9 @@
       <workItem from="1792762561029" duration="2834000" />
       <workItem from="1792774606499" duration="6693000" />
       <workItem from="1792853543490" duration="4282000" />
-      <workItem from="1793014583640" duration="1667000" />
+      <workItem from="1793014583640" duration="3113000" />
+      <workItem from="1793032721070" duration="3362000" />
+      <workItem from="1793111600393" duration="7960000" />
     </task>
     <servers />
   </component>

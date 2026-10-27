@@ -1,4 +1,5 @@
 ﻿using System.Linq;
+using Configs.Location;
 using Runtime.Character;
 using Runtime.HexagonalGrid;
 using Runtime.Models.Level;
@@ -13,6 +14,10 @@ namespace Runtime.Level
 		
 		[SerializeField]
 		private CharactersController _charactersController;
+		
+		[Header("Configs")]
+		[SerializeField]
+		private LocationsCollectionConfig _locationsCollectionConfig;
 
 		public void BuildLevel(LevelData levelData)
 		{

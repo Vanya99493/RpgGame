@@ -16,7 +16,7 @@ MonoBehaviour:
   - displayName: HubScene
     scene: {fileID: 102900000, guid: ba2b7ac4d2cea5047be74d982a059fef, type: 3}
   - displayName: RaidScene
-    scene: {fileID: 102900000, guid: 2545010a68663554987ce637456765a4, type: 3}
+    scene: {fileID: 102900000, guid: 70a169a8a6a63dd4294e91e852542cc7, type: 3}
   - displayName: LogicTestScene
     scene: {fileID: 102900000, guid: 8124e5870f4fd4c779e7a5f994e84ad1, type: 3}
   - displayName: LevelBuildingScene

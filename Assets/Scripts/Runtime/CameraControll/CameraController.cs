@@ -2,9 +2,10 @@
 using Runtime.Models;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using InputActionPhase = Runtime.Enums.InputActionPhase;
 using InputActionType = Runtime.Enums.InputActionType;
 
-namespace Runtime.Player
+namespace Runtime.CameraControl
 {
 	public class CameraController : MonoBehaviour, ICameraController
 	{
@@ -51,7 +52,7 @@ namespace Runtime.Player
 
 		public void Initialize()
 		{
-			_cameraSelectionController.Initialize();
+			_cameraSelectionController.Initialize(_playerCamera);
 		}
 
 		public void ActivateSelection()
@@ -70,18 +71,22 @@ namespace Runtime.Player
 		private void SubscribeEvents()
 		{
 			_primaryButtonInputActionReference.action.performed += OnPrimaryButtonPerformedEventHandler;
-			_secondaryButtonInputActionReference.action.performed += OnSecondaryButtonPerformedEventHandler;
-			
+			_primaryButtonInputActionReference.action.canceled += OnPrimaryButtonCanceledEventHandler;
 			_primaryButtonInputActionReference.action.Enable();
+			
+			_secondaryButtonInputActionReference.action.performed += OnSecondaryButtonPerformedEventHandler;
+			_secondaryButtonInputActionReference.action.canceled += OnSecondaryButtonCanceledEventHandler;
 			_secondaryButtonInputActionReference.action.Enable();
 		}
 
 		private void UnsubscribeEvents()
 		{
 			_primaryButtonInputActionReference.action.performed -= OnPrimaryButtonPerformedEventHandler;
-			_secondaryButtonInputActionReference.action.performed -= OnSecondaryButtonPerformedEventHandler;
-			
+			_primaryButtonInputActionReference.action.canceled -= OnPrimaryButtonCanceledEventHandler;
 			_primaryButtonInputActionReference.action.Disable();
+			
+			_secondaryButtonInputActionReference.action.performed -= OnSecondaryButtonPerformedEventHandler;
+			_secondaryButtonInputActionReference.action.canceled -= OnSecondaryButtonCanceledEventHandler;
 			_secondaryButtonInputActionReference.action.Disable();
 		}
 
@@ -127,22 +132,25 @@ namespace Runtime.Player
 
 		private void OnPrimaryButtonPerformedEventHandler(InputAction.CallbackContext callback)
 		{
-			Ray ray = _playerCamera.ScreenPointToRay(Input.mousePosition);
+			CastSelectionRay(InputActionType.PrimaryAction, InputActionPhase.Performed);
+		}
 
-			if (Physics.Raycast(ray, out RaycastHit hit, _raycastSettings.RaycastDistance, _raycastSettings.SelectionLayerMask))
-			{
-				if (hit.collider.TryGetComponent(out IInteractable interactable))
-				{
-					_cameraSelectionController.SelectObject(interactable, InputActionType.PrimaryAction);
-				}
-			}
-			else
-			{
-				_cameraSelectionController.ReleaseSelection();
-			}
+		private void OnPrimaryButtonCanceledEventHandler(InputAction.CallbackContext callback)
+		{
+			CastSelectionRay(InputActionType.PrimaryAction, InputActionPhase.Canceled);
 		}
 
 		private void OnSecondaryButtonPerformedEventHandler(InputAction.CallbackContext callback)
+		{
+			CastSelectionRay(InputActionType.SecondaryAction, InputActionPhase.Performed);
+		}
+
+		private void OnSecondaryButtonCanceledEventHandler(InputAction.CallbackContext callback)
+		{
+			CastSelectionRay(InputActionType.SecondaryAction, InputActionPhase.Canceled);
+		}
+
+		private void CastSelectionRay(InputActionType inputActionType, InputActionPhase inputActionPhase)
 		{
 			Ray ray = _playerCamera.ScreenPointToRay(Input.mousePosition);
 
@@ -150,7 +158,10 @@ namespace Runtime.Player
 			{
 				if (hit.collider.TryGetComponent(out IInteractable interactable))
 				{
-					_cameraSelectionController.SelectObject(interactable, InputActionType.SecondaryAction);
+					_cameraSelectionController.SelectObject(
+						interactable, 
+						inputActionType, 
+						inputActionPhase);
 				}
 			}
 			else

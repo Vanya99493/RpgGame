@@ -1,6 +1,6 @@
 ﻿namespace Runtime.Enums
 {
-	public enum EnvironmentType
+	public enum LocationType
 	{
 		Undefined,
 		Dungeon,

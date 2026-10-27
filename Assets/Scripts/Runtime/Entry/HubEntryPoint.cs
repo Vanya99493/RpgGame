@@ -1,4 +1,4 @@
-﻿using Runtime.Player;
+﻿using Runtime.CameraControl;
 using UnityEngine;
 
 namespace Runtime.Entry

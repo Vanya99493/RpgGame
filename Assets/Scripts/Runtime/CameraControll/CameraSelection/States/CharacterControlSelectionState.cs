@@ -1,17 +1,19 @@
 ﻿using Runtime.Enums;
 using Runtime.HexagonalGrid;
 using Runtime.Interfaces;
-using Runtime.Player.States.Base;
 using UnityEngine;
 using CharacterController = Runtime.Character.CharacterController;
 
-namespace Runtime.Player.States
+namespace Runtime.CameraControl
 {
 	public class CharacterControlSelectionState : BaseSelectionState
 	{
 		public CharacterControlSelectionState(ICameraSelectionStateMachine selectionStateMachine) : base(selectionStateMachine) { }
 
-		public override void SelectObject(IInteractable interactable, InputActionType inputActionType)
+		public override void SelectObject(
+			IInteractable interactable, 
+			InputActionType inputActionType, 
+			InputActionPhase inputActionPhase)
 		{
 			if (interactable.InteractionObjectType == InteractionObjectType.Grid 
 			    && inputActionType == InputActionType.SecondaryAction)

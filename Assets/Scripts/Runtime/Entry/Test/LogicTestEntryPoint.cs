@@ -5,7 +5,7 @@ using Runtime.Enums;
 using Runtime.Level;
 using Runtime.Models;
 using Runtime.Models.Level;
-using Runtime.Player;
+using Runtime.CameraControl;
 using UnityEngine;
 
 namespace Runtime.Entry

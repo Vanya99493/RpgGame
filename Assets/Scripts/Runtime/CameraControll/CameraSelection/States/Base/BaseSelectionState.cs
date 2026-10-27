@@ -1,7 +1,7 @@
 ﻿using Runtime.Enums;
 using Runtime.Interfaces;
 
-namespace Runtime.Player.States.Base
+namespace Runtime.CameraControl
 {
 	public abstract class BaseSelectionState
 	{
@@ -22,6 +22,6 @@ namespace Runtime.Player.States.Base
 			_selectionStateMachine.SelectedInteractableObject?.Release();
 		}
 		
-		public abstract void SelectObject(IInteractable interactable, InputActionType inputActionType);
+		public abstract void SelectObject(IInteractable interactable, InputActionType inputActionType, InputActionPhase inputActionPhase);
 	}
 }

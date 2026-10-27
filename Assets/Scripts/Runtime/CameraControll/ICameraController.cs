@@ -1,4 +1,4 @@
-﻿namespace Runtime.Player
+﻿namespace Runtime.CameraControl
 {
 	public interface ICameraController
 	{

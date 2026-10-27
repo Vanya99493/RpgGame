@@ -1,7 +1,7 @@
 ﻿using Runtime.Enums;
 using Runtime.Interfaces;
 
-namespace Runtime.Player
+namespace Runtime.CameraControl
 {
 	public interface ICameraSelectionStateMachine
 	{
