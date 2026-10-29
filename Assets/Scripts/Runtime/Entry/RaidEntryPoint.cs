@@ -1,4 +1,5 @@
 ﻿using Runtime.CameraControl;
+using Runtime.InputControl;
 using Runtime.Level;
 using Runtime.Management.RaidsManagement;
 using UnityEngine;
@@ -11,6 +12,9 @@ namespace Runtime.Entry
 		private CameraController _cameraController;
 		
 		[SerializeField]
+		private InputController _inputController;
+		
+		[SerializeField]
 		private RaidManager _raidManager;
 		
 		[SerializeField]
@@ -18,7 +22,7 @@ namespace Runtime.Entry
 		
 		private void Awake()
 		{
-			_cameraController.Initialize();
+			_cameraController.Initialize(_inputController);
 			
 			_cameraController.ActivateSelection();
 		}

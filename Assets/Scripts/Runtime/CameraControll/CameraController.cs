@@ -1,16 +1,20 @@
-﻿using Runtime.Interfaces;
+﻿using System;
+using Runtime.InputControl;
+using Runtime.Interfaces;
 using Runtime.Models;
 using UnityEngine;
-using UnityEngine.InputSystem;
 using InputActionPhase = Runtime.Enums.InputActionPhase;
 using InputActionType = Runtime.Enums.InputActionType;
 
 namespace Runtime.CameraControl
 {
-	public class CameraController : MonoBehaviour, ICameraController
+	public class CameraController : MonoBehaviour, ICameraController, IDisposable
 	{
 		[SerializeField]
 		private CameraSelectionController _cameraSelectionController;
+		
+		[SerializeField]
+		private CameraNavigationController _navigationController;
 		
 		[Header("Camera")]
 		[SerializeField]
@@ -20,25 +24,11 @@ namespace Runtime.CameraControl
 		[SerializeField]
 		private RaycastSettings _raycastSettings;
 		
-		[Header("Input Action References")]
-		[SerializeField]
-		private InputActionReference _primaryButtonInputActionReference;
-		
-		[SerializeField]
-		private InputActionReference _secondaryButtonInputActionReference;
-
+		private InputController _inputController;
 		private bool _isSelectionActive;
 		private IInteractable _hoveredInteractable;
-
-		private void OnEnable()
-		{
-			SubscribeEvents();
-		}
-
-		private void OnDisable()
-		{
-			UnsubscribeEvents();
-		}
+		
+		public ICameraNavigation CameraNavigation => _navigationController;
 
 		private void Update()
 		{
@@ -50,44 +40,32 @@ namespace Runtime.CameraControl
 			CastSelectionRay();
 		}
 
-		public void Initialize()
+		public void Initialize(InputController inputController)
 		{
 			_cameraSelectionController.Initialize(_playerCamera);
+			_navigationController.Initialize(_playerCamera);
+			
+			_inputController = inputController;
+			
+			_inputController.PrimaryButtonPerformedEvent += OnPrimaryButtonPerformedEventHandler;
+			_inputController.SecondaryButtonPerformedEvent += OnSecondaryButtonPerformedEventHandler;
+		}
+		
+		public void Dispose()
+		{
+			_inputController.PrimaryButtonPerformedEvent -= OnPrimaryButtonPerformedEventHandler;
+			_inputController.SecondaryButtonPerformedEvent -= OnSecondaryButtonPerformedEventHandler;
 		}
 
 		public void ActivateSelection()
 		{
 			_isSelectionActive = true;
-			SubscribeEvents();
 		}
 
 		public void DeactivateSelection()
 		{
 			_isSelectionActive = false;
-			UnsubscribeEvents();
 			UnHoverHoveredInteractableObject();
-		}
-
-		private void SubscribeEvents()
-		{
-			_primaryButtonInputActionReference.action.performed += OnPrimaryButtonPerformedEventHandler;
-			_primaryButtonInputActionReference.action.canceled += OnPrimaryButtonCanceledEventHandler;
-			_primaryButtonInputActionReference.action.Enable();
-			
-			_secondaryButtonInputActionReference.action.performed += OnSecondaryButtonPerformedEventHandler;
-			_secondaryButtonInputActionReference.action.canceled += OnSecondaryButtonCanceledEventHandler;
-			_secondaryButtonInputActionReference.action.Enable();
-		}
-
-		private void UnsubscribeEvents()
-		{
-			_primaryButtonInputActionReference.action.performed -= OnPrimaryButtonPerformedEventHandler;
-			_primaryButtonInputActionReference.action.canceled -= OnPrimaryButtonCanceledEventHandler;
-			_primaryButtonInputActionReference.action.Disable();
-			
-			_secondaryButtonInputActionReference.action.performed -= OnSecondaryButtonPerformedEventHandler;
-			_secondaryButtonInputActionReference.action.canceled -= OnSecondaryButtonCanceledEventHandler;
-			_secondaryButtonInputActionReference.action.Disable();
 		}
 
 		private void CastSelectionRay()
@@ -130,24 +108,14 @@ namespace Runtime.CameraControl
 			_hoveredInteractable = null;
 		}
 
-		private void OnPrimaryButtonPerformedEventHandler(InputAction.CallbackContext callback)
+		private void OnPrimaryButtonPerformedEventHandler(InputActionPhase inputActionPhase)
 		{
-			CastSelectionRay(InputActionType.PrimaryAction, InputActionPhase.Performed);
+			CastSelectionRay(InputActionType.PrimaryAction, inputActionPhase);
 		}
 
-		private void OnPrimaryButtonCanceledEventHandler(InputAction.CallbackContext callback)
+		private void OnSecondaryButtonPerformedEventHandler(InputActionPhase inputActionPhase)
 		{
-			CastSelectionRay(InputActionType.PrimaryAction, InputActionPhase.Canceled);
-		}
-
-		private void OnSecondaryButtonPerformedEventHandler(InputAction.CallbackContext callback)
-		{
-			CastSelectionRay(InputActionType.SecondaryAction, InputActionPhase.Performed);
-		}
-
-		private void OnSecondaryButtonCanceledEventHandler(InputAction.CallbackContext callback)
-		{
-			CastSelectionRay(InputActionType.SecondaryAction, InputActionPhase.Canceled);
+			CastSelectionRay(InputActionType.SecondaryAction, inputActionPhase);
 		}
 
 		private void CastSelectionRay(InputActionType inputActionType, InputActionPhase inputActionPhase)

@@ -6,6 +6,7 @@ using Runtime.Level;
 using Runtime.Models;
 using Runtime.Models.Level;
 using Runtime.CameraControl;
+using Runtime.InputControl;
 using UnityEngine;
 
 namespace Runtime.Entry
@@ -14,6 +15,9 @@ namespace Runtime.Entry
 	{
 		[SerializeField]
 		private CameraController _cameraController;
+		
+		[SerializeField]
+		private InputController _inputController;
 		
 		[SerializeField]
 		private LevelBuilder _levelBuilder;
@@ -38,7 +42,7 @@ namespace Runtime.Entry
 
 		private void Initialize()
 		{
-			_cameraController.Initialize();
+			_cameraController.Initialize(_inputController);
 			
 			_cameraController.ActivateSelection();
 			

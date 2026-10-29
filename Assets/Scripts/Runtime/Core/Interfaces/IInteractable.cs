@@ -1,4 +1,5 @@
-﻿using Runtime.Enums;
+﻿using System;
+using Runtime.Enums;
 using UnityEngine;
 
 namespace Runtime.Interfaces
@@ -7,6 +8,11 @@ namespace Runtime.Interfaces
 	{
 		GameObject Root { get; }
 		InteractionObjectType InteractionObjectType { get; }
+		
+		public event Action HoverEvent;
+		public event Action UnHoverEvent;
+		public event Action SelectEvent;
+		public event Action ReleaseEvent;
 		
 		void Hover();
 		void UnHover();

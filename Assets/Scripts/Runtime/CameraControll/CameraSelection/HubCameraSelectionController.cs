@@ -5,17 +5,12 @@ namespace Runtime.CameraControl
 {
 	public class HubCameraSelectionController : CameraSelectionController
 	{
-		[SerializeField]
-		private CameraNavigationController _navigationController;
-		
 		public override void Initialize(Camera mainCamera)
 		{
 			_selectionStates = new()
 			{
-				{ InteractionObjectType.Location, new LocationSelectionState(this, _navigationController) },
+				{ InteractionObjectType.Location, new LocationSelectionState(this) },
 			};
-			
-			_navigationController.Initialize(mainCamera);
 			
 			SetFreeSelectionState();
 		}

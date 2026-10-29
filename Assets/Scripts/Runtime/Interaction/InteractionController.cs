@@ -37,6 +37,12 @@ namespace Runtime.Interaction
 		{
 			_isInteractionActive = isInteractionActive;
 
+			if (_isSelected && !_isInteractionActive)
+			{
+				_isSelected = false;
+				_interactionVisualizationStrategy.Release();
+			}
+			
 			foreach (var interactionCollider in _interactionColliders)
 			{
 				interactionCollider.enabled = isInteractionActive;
