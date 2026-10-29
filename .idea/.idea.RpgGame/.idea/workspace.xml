@@ -10,35 +10,7 @@
     <configurations />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c763a81-88c4-4510-b47f-161648233395" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RpgGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RpgGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Blink/Tools/EditorSceneLoader/EditorSceneLoaderSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Blink/Tools/EditorSceneLoader/EditorSceneLoaderSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Release/HubScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Release/HubScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Release/RaidScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Release/RaidScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Release/RaidScene.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Release/RaidScene.unity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/CameraSelectionController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/RaidCameraSelectionController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/CameraSelectionController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/RaidCameraSelectionController.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/ICameraSelectionController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/Base/ICameraSelectionController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/ICameraSelectionController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/Base/ICameraSelectionController.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/ICameraSelectionStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/Base/ICameraSelectionStateMachine.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/ICameraSelectionStateMachine.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/Base/ICameraSelectionStateMachine.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/States/Base/BaseSelectionState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/States/Base/BaseSelectionState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/States/CharacterControlSelectionState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/States/CharacterControlSelectionState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/States/EnvironmentObjectSelectionState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/States/EnvironmentObjectSelectionState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/States/FreeSelectionState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/States/FreeSelectionState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/States/GridSelectionState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/States/GridSelectionState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/ICameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/ICameraController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Core/Enums/EnvironmentType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Core/Enums/LocationType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Core/Enums/EnvironmentType.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Core/Enums/LocationType.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Core/Enums/InteractionObjectType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Core/Enums/InteractionObjectType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Entry/HubEntryPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Entry/HubEntryPoint.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Entry/RaidEntryPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Entry/RaidEntryPoint.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Entry/Test/LogicTestEntryPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Entry/Test/LogicTestEntryPoint.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Interaction/InteractionController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Interaction/InteractionController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Level/LevelBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Level/LevelBuilder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
-    </list>
+    <list default="true" id="4c763a81-88c4-4510-b47f-161648233395" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -253,7 +225,7 @@
       <workItem from="1792853543490" duration="4282000" />
       <workItem from="1793014583640" duration="3113000" />
       <workItem from="1793032721070" duration="3362000" />
-      <workItem from="1793111600393" duration="7960000" />
+      <workItem from="1793111600393" duration="8243000" />
     </task>
     <servers />
   </component>

@@ -21,7 +21,3 @@ MonoBehaviour:
     scene: {fileID: 102900000, guid: 8124e5870f4fd4c779e7a5f994e84ad1, type: 3}
   - displayName: LevelBuildingScene
     scene: {fileID: 102900000, guid: f5334301de381744e825be36e7cfadf9, type: 3}
-  - displayName: EnemyOverview
-    scene: {fileID: 102900000, guid: 5c54e744cf36d2c4c90b0474ea319a72, type: 3}
-  - displayName: PolyEnvironmentOverview
-    scene: {fileID: 102900000, guid: 566998dabce062e40ad6e22c99fa1a5b, type: 3}
