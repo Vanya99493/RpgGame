@@ -17,3 +17,7 @@ MonoBehaviour:
     Locations:
     - LocationPrefab: {fileID: 2357147444155599094, guid: 68d4aa6e607b74246b64ca9ea7ee2147, type: 3}
       HexagonalGridConfig: {fileID: 11400000, guid: 4cc981eff17958c47b139a11c477b5f9, type: 2}
+  - LocationType: 2
+    Locations:
+    - LocationPrefab: {fileID: 4108894784427050049, guid: 90dabf3a8e9f75248afea82e4c0a0597, type: 3}
+      HexagonalGridConfig: {fileID: 11400000, guid: cd2f6f0ffaf5ac44c8c8ababe043d150, type: 2}

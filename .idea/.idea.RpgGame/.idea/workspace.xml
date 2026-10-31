@@ -10,7 +10,10 @@
     <configurations />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c763a81-88c4-4510-b47f-161648233395" name="Changes" comment="" />
+    <list default="true" id="4c763a81-88c4-4510-b47f-161648233395" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RpgGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RpgGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableOjbects/Interaction/Location/LocationHoverElementOutlineDataAsset.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableOjbects/Interaction/Location/LocationHoverElementOutlineDataAsset.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -243,7 +246,8 @@
       <workItem from="1793014583640" duration="3113000" />
       <workItem from="1793032721070" duration="3362000" />
       <workItem from="1793111600393" duration="8243000" />
-      <workItem from="1793280369436" duration="17303000" />
+      <workItem from="1793280369436" duration="17898000" />
+      <workItem from="1793370712285" duration="525000" />
     </task>
     <servers />
   </component>
