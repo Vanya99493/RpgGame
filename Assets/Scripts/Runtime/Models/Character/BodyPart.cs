@@ -1,6 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using Runtime.Enums;
-using UnityEngine;
 
 namespace Runtime.Models
 {
@@ -9,18 +10,27 @@ namespace Runtime.Models
 	{
 		public GenderType GenderType;
 		public BodyCoverType BodyCoverType;
-		public Transform Reference;
 		
-		public string Name => Reference?.name ?? "undefined";
-
+		public List<BodyPartReference> References = new();
+		
+		public string Name => References.First()?.Name ?? "undefined";
+		
 		public BodyPart(
 			GenderType genderType, 
 			BodyCoverType bodyCoverType, 
-			Transform reference)
+			List<BodyPartReference> references)
 		{
 			GenderType = genderType;
 			BodyCoverType = bodyCoverType;
-			Reference = reference;
+			References = references;
+		}
+
+		public void SetActive(bool isActive)
+		{
+			foreach (var reference in References)
+			{
+				reference.Reference.gameObject.SetActive(isActive);
+			}
 		}
 	}
 }

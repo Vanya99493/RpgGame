@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using NaughtyAttributes;
 using Runtime.Enums;
 using Runtime.Models;
@@ -40,10 +39,9 @@ namespace Runtime.Character
 			{
 				if (bodyPartsCollection.BodyPartType == _bodyPartType)
 				{
-					if (_clothingPairType == ClothingPairType.Single)
-					{
-						bodyPartsCollection.BodyParts.AddRange(GenerateBodyParts());
-					}
+					bodyPartsCollection.BodyParts.AddRange(_clothingPairType == ClothingPairType.Single
+						? GenerateBodyParts()
+						: GeneratePairedBodyParts());
 					
 					isSet = true;
 				}
@@ -54,55 +52,14 @@ namespace Runtime.Character
 				_characterPartsContainer.BodyPartsCollections.Add(new BodyPartsCollection()
 				{
 					BodyPartType = _bodyPartType,
-					BodyParts = GenerateBodyParts(),
+					BodyParts = _clothingPairType == ClothingPairType.Single
+						? GenerateBodyParts()
+						: GeneratePairedBodyParts(),
 				});
 			}
 			
 			_bodyPartsToAdd.Clear();
 			_pairedBodyPartsToAdd.Clear();
-		}
-
-		[Button]
-		public void FillPairedBodyParts()
-		{
-			bool isSet = false;
-			
-			foreach (var pairedBodyPartsCollection in _characterPartsContainer.PairedBodyPartsCollections)
-			{
-				if (pairedBodyPartsCollection.BodyPartType == _bodyPartType)
-				{
-					if (_clothingPairType == ClothingPairType.Single)
-					{
-						pairedBodyPartsCollection.BodyParts.AddRange(GeneratePairedBodyParts());
-					}
-					
-					isSet = true;
-				}
-			}
-
-			if (!isSet)
-			{
-				_characterPartsContainer.PairedBodyPartsCollections.Add(new PairedBodyPartsCollection()
-				{
-					BodyPartType = _bodyPartType,
-					BodyParts = GeneratePairedBodyParts(),
-				});
-			}
-			
-			_bodyPartsToAdd.Clear();
-			_pairedBodyPartsToAdd.Clear();
-		}
-
-		[Button]
-		public void RemoveTopHead()
-		{
-			BodyPartsCollection topHeadCollection = _characterPartsContainer.BodyPartsCollections.First(x => x.BodyPartType == BodyPartType.TopHead);
-			BodyPartsCollection headCoveringCollection = _characterPartsContainer.BodyPartsCollections.First(x => x.BodyPartType == BodyPartType.HeadCovering);
-
-			foreach (var topHead in topHeadCollection.BodyParts)
-			{
-				headCoveringCollection.BodyParts.Add(new BodyPart(topHead.GenderType, topHead.BodyCoverType, topHead.Reference));
-			}
 		}
 
 		private List<BodyPart> GenerateBodyParts()
@@ -112,20 +69,33 @@ namespace Runtime.Character
 			int index = 0;
 			foreach (var bodyPartTransform in _bodyPartsToAdd)
 			{
-				list.Add(new BodyPart(_genderType, _bodyCoverType, bodyPartTransform));
+				list.Add(new BodyPart(
+					_genderType,
+					_bodyCoverType,
+					new List<BodyPartReference>()
+					{
+						new BodyPartReference() { Reference = bodyPartTransform, },
+					}));
 			}
 
 			return list;
 		}
 		
-		private List<PairedBodyPart> GeneratePairedBodyParts()
+		private List<BodyPart> GeneratePairedBodyParts()
 		{
-			List<PairedBodyPart> list = new();
+			List<BodyPart> list = new();
 
 			int index = 0;
 			foreach (var bodyPartTransform in _bodyPartsToAdd)
 			{
-				list.Add(new PairedBodyPart(_genderType, _bodyCoverType, bodyPartTransform, _pairedBodyPartsToAdd[index++]));
+				list.Add(new BodyPart(
+					_genderType, 
+					_bodyCoverType, 
+					new List<BodyPartReference>()
+					{
+						new BodyPartReference() { Reference = bodyPartTransform, },
+						new BodyPartReference() { Reference = _pairedBodyPartsToAdd[index++] },
+					}));
 			}
 
 			return list;
