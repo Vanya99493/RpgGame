@@ -114,61 +114,61 @@
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0507657747722647" />
-      <entry key="MS500" value="1.5509525579383054" />
-      <entry key="S2" value="1.8615461823724384" />
-      <entry key="S5" value="1.9441077443320456" />
-      <entry key="S10" value="2.067451114067357" />
-      <entry key="S30" value="3.771644304868548" />
-      <entry key="S60" value="7.054720719042815" />
-      <entry key="M2" value="11.489019246501412" />
-      <entry key="M5" value="19.779327346569122" />
-      <entry key="M10" value="46.855783512277036" />
-      <entry key="M15" value="83.87614399766449" />
-      <entry key="M30" value="211.37259389480784" />
-      <entry key="H1" value="502.4394367665664" />
-      <entry key="H2" value="1030.4395367276131" />
-      <entry key="H4" value="1848.5741809816361" />
-      <entry key="D1" value="5304.8436093935625" />
-      <entry key="W1" value="7183.582044563779" />
+      <entry key="MS100" value="1.000001842377338" />
+      <entry key="MS500" value="1.0724216438317964" />
+      <entry key="S2" value="1.7663924492825633" />
+      <entry key="S5" value="2.6140406205320024" />
+      <entry key="S10" value="3.170828909098434" />
+      <entry key="S30" value="3.685838052432915" />
+      <entry key="S60" value="3.9757318956944996" />
+      <entry key="M2" value="6.4379665896677984" />
+      <entry key="M5" value="26.521570584059816" />
+      <entry key="M10" value="63.70241171498064" />
+      <entry key="M15" value="100.9164870390215" />
+      <entry key="M30" value="222.0405567713985" />
+      <entry key="H1" value="501.1296288990113" />
+      <entry key="H2" value="1027.842824258265" />
+      <entry key="H4" value="1858.4086913522644" />
+      <entry key="D1" value="5370.135526562457" />
+      <entry key="W1" value="7289.767126789066" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="3.7813325703670544E-71" />
-      <entry key="S2" value="2.4974850652246744E-18" />
-      <entry key="S5" value="1.0330318584327134E-7" />
-      <entry key="S10" value="4.1333648754778317E-4" />
-      <entry key="S30" value="0.11525354346076666" />
-      <entry key="S60" value="0.4785148457286185" />
-      <entry key="M2" value="0.9876072772896886" />
-      <entry key="M5" value="2.4035443833852024" />
-      <entry key="M10" value="8.480259548348245" />
-      <entry key="M15" value="16.82126734458077" />
-      <entry key="M30" value="44.39658299012487" />
-      <entry key="H1" value="101.31155224083112" />
-      <entry key="H2" value="194.98543749787058" />
-      <entry key="H4" value="330.3046674902872" />
-      <entry key="D1" value="857.0490713209716" />
-      <entry key="W1" value="1133.593318517868" />
+      <entry key="MS500" value="6.16989573184498E-233" />
+      <entry key="S2" value="8.862769561232587E-59" />
+      <entry key="S5" value="6.0144486240811085E-24" />
+      <entry key="S10" value="2.5001983138157164E-12" />
+      <entry key="S30" value="1.7129419603662717E-4" />
+      <entry key="S60" value="0.018287236423180454" />
+      <entry key="M2" value="0.2681728433517149" />
+      <entry key="M5" value="2.4644715213306156" />
+      <entry key="M10" value="7.515181384570192" />
+      <entry key="M15" value="13.930608770910661" />
+      <entry key="M30" value="37.79656582702235" />
+      <entry key="H1" value="91.88302572801396" />
+      <entry key="H2" value="186.08147024005262" />
+      <entry key="H4" value="324.566378703627" />
+      <entry key="D1" value="861.8842505794765" />
+      <entry key="W1" value="1145.0480748774187" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.20740986651976387" />
-      <entry key="MS500" value="0.8815801077099779" />
-      <entry key="S2" value="1.5482918791796556" />
-      <entry key="S5" value="1.798784662943381" />
-      <entry key="S10" value="1.984201085712638" />
-      <entry key="S30" value="3.8142505311317665" />
-      <entry key="S60" value="7.46073049292804" />
-      <entry key="M2" value="12.419115519613136" />
-      <entry key="M5" value="22.14618363611472" />
-      <entry key="M10" value="55.298172132165774" />
-      <entry key="M15" value="100.65498471675839" />
-      <entry key="M30" value="255.71870413825917" />
-      <entry key="H1" value="603.6933388889323" />
-      <entry key="H2" value="1225.368191552292" />
-      <entry key="H4" value="2178.8286979501504" />
-      <entry key="D1" value="6161.868822853237" />
-      <entry key="W1" value="8317.170768465483" />
+      <entry key="MS100" value="3.005792224715518E-4" />
+      <entry key="MS500" value="0.22120704772809077" />
+      <entry key="S2" value="1.241573619642545" />
+      <entry key="S5" value="2.2777026846559685" />
+      <entry key="S10" value="2.95939615638315" />
+      <entry key="S30" value="3.6017406761600808" />
+      <entry key="S60" value="3.9492872223673543" />
+      <entry key="M2" value="6.678718458176743" />
+      <entry key="M5" value="28.957218820804005" />
+      <entry key="M10" value="71.18341558296981" />
+      <entry key="M15" value="114.80925197489103" />
+      <entry key="M30" value="259.7917160584031" />
+      <entry key="H1" value="592.959101437995" />
+      <entry key="H2" value="1213.8695364151554" />
+      <entry key="H4" value="2182.925582173126" />
+      <entry key="D1" value="6231.995782711431" />
+      <entry key="W1" value="8434.810561360831" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -275,7 +275,7 @@
       <workItem from="1793727346577" duration="753000" />
       <workItem from="1793778736654" duration="1071000" />
       <workItem from="1793975942591" duration="4819000" />
-      <workItem from="1793986104032" duration="5459000" />
+      <workItem from="1793986104032" duration="6582000" />
     </task>
     <servers />
   </component>
@@ -310,29 +310,16 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/Runtime/Views/Character/CharacterView.cs</url>
-          <line>117</line>
-          <properties documentPath="D:\Programming\UnityProjects\RpgGame\Assets\Scripts\Runtime\Views\Character\CharacterView.cs" containingFunctionPresentation="Method 'GetActiveBodyPartIndex'">
+          <line>28</line>
+          <properties documentPath="D:\Programming\UnityProjects\RpgGame\Assets\Scripts\Runtime\Views\Character\CharacterView.cs" containingFunctionPresentation="Method 'Initialize'">
             <startOffsets>
-              <option value="3389" />
+              <option value="715" />
             </startOffsets>
             <endOffsets>
-              <option value="3510" />
+              <option value="740" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Runtime/Views/Character/CharacterView.cs</url>
-          <line>114</line>
-          <properties documentPath="D:\Programming\UnityProjects\RpgGame\Assets\Scripts\Runtime\Views\Character\CharacterView.cs" containingFunctionPresentation="Method 'GetActiveBodyPartIndex'">
-            <startOffsets>
-              <option value="3354" />
-            </startOffsets>
-            <endOffsets>
-              <option value="3367" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="9" />
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

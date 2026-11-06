@@ -16,7 +16,14 @@ namespace Runtime.UI.Panels
 		[SerializeField]
 		private Transform _groupButtonsContainer;
 
-		[Space(10)]
+		[Header("Gender")]
+		[SerializeField]
+		private Button _maleGenderButton;
+
+		[SerializeField]
+		private Button _femaleGenderButton;
+		
+		[Header("Navigation")]
 		[SerializeField]
 		private Button _leftButton;
 		
@@ -31,6 +38,7 @@ namespace Runtime.UI.Panels
 
 		private List<ButtonWithTitle> _groupButtons = new();
 		
+		public event Action<GenderType> ChangeGenderEvent;
 		public event Action<BodyPartType> ChangeBodyPartEvent;
 		public event Action ToPreviousElementEvent;
 		public event Action ToNextElementEvent;
@@ -47,12 +55,18 @@ namespace Runtime.UI.Panels
 
 		private void OnEnable()
 		{
+			_maleGenderButton.onClick.AddListener(OnMaleGenderButtonClicked);
+			_femaleGenderButton.onClick.AddListener(OnFemaleGenderButtonClicked);
+			
 			_leftButton.onClick.AddListener(OnLeftButtonClicked);
 			_rightButton.onClick.AddListener(OnRightButtonClicked);
 		}
 
 		private void OnDisable()
 		{
+			_maleGenderButton.onClick.RemoveListener(OnMaleGenderButtonClicked);
+			_femaleGenderButton.onClick.RemoveListener(OnFemaleGenderButtonClicked);
+			
 			_leftButton.onClick.RemoveListener(OnLeftButtonClicked);
 			_rightButton.onClick.RemoveListener(OnRightButtonClicked);
 		}
@@ -86,6 +100,16 @@ namespace Runtime.UI.Panels
 			}
 			
 			_groupButtons.Clear();
+		}
+
+		private void OnMaleGenderButtonClicked()
+		{
+			ChangeGenderEvent?.Invoke(GenderType.Male);
+		}
+
+		private void OnFemaleGenderButtonClicked()
+		{
+			ChangeGenderEvent?.Invoke(GenderType.Female);
 		}
 
 		private void OnLeftButtonClicked()

@@ -31,13 +31,11 @@ namespace Runtime.Character
 
 		public void Initialize(ICharacterCreationPanel characterCreationPanel)
 		{
-			InitDefaultCharacterView(GenderType.Male);
-			
 			_characterCreationPanel = characterCreationPanel;
 			
 			SubscribeOnEvents();
 			
-			OnBodyPartChanged(BodyPartType.HeadCovering);
+			ChangeGender(GenderType.Male);
 		}
 
 		private void InitDefaultCharacterView(GenderType genderType)
@@ -51,6 +49,7 @@ namespace Runtime.Character
 		{
 			if (_characterCreationPanel != null)
 			{
+				_characterCreationPanel.ChangeGenderEvent += ChangeGender;
 				_characterCreationPanel.ChangeBodyPartEvent += OnBodyPartChanged;
 				_characterCreationPanel.ToPreviousElementEvent += OnPreviousElementSelectedEventHandler;
 				_characterCreationPanel.ToNextElementEvent += OnNextElementSelectedEventHandler;
@@ -61,10 +60,17 @@ namespace Runtime.Character
 		{
 			if (_characterCreationPanel != null)
 			{
+				_characterCreationPanel.ChangeGenderEvent -= ChangeGender;
 				_characterCreationPanel.ChangeBodyPartEvent -= OnBodyPartChanged;
 				_characterCreationPanel.ToPreviousElementEvent -= OnPreviousElementSelectedEventHandler;
 				_characterCreationPanel.ToNextElementEvent -= OnNextElementSelectedEventHandler;
 			}
+		}
+
+		private void ChangeGender(GenderType genderType)
+		{
+			InitDefaultCharacterView(genderType);
+			OnBodyPartChanged(BodyPartType.Head);
 		}
 
 		private void OnBodyPartChanged(BodyPartType bodyPartType)

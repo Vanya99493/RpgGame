@@ -19,6 +19,7 @@ namespace Runtime.Views.Character
 
 		private readonly List<BodyPartType> _defaultBodyParts = new();
 		private readonly List<BodyPartData> _activeBodyParts = new();
+		
 		private GenderType _genderType;
 		
 		public void Initialize(
@@ -26,7 +27,11 @@ namespace Runtime.Views.Character
 			List<BodyPartType> defaultBodyPartsCollection)
 		{
 			_genderType = genderType;
+			
+			_defaultBodyParts.Clear();
 			_defaultBodyParts.AddRange(defaultBodyPartsCollection);
+
+			DisableActiveBodyParts();
 
 			foreach (var bodyPartType in _defaultBodyParts)
 			{
@@ -125,6 +130,18 @@ namespace Runtime.Views.Character
 			}
 
 			return -1;
+		}
+
+		private void DisableActiveBodyParts()
+		{
+			List<BodyPartType> activeBodyTypes = _activeBodyParts
+				.Select(x => x.BodyPartType)
+				.ToList();
+			
+			foreach (var activeBodyType in activeBodyTypes)
+			{
+				DisableBodyPart(activeBodyType);
+			}
 		}
 
 		private void DisableBodyPart(

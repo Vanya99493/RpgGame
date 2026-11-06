@@ -5,6 +5,7 @@ namespace Runtime.UI.Panels
 {
 	public interface ICharacterCreationPanel
 	{
+		public event Action<GenderType> ChangeGenderEvent;
 		public event Action<BodyPartType> ChangeBodyPartEvent;
 		public event Action ToPreviousElementEvent;
 		public event Action ToNextElementEvent;
