@@ -25,6 +25,9 @@ namespace Runtime.UI.Panels
 
 		[SerializeField]
 		private TMP_Text _currentIndexText;
+		
+		[SerializeField]
+		private TMP_Text _currentTypeText;
 
 		private List<ButtonWithTitle> _groupButtons = new();
 		
@@ -57,6 +60,11 @@ namespace Runtime.UI.Panels
 		public void SetIndexText(int index)
 		{
 			_currentIndexText.text = index.ToString();
+		}
+
+		public void SetTypeText(string type)
+		{
+			_currentTypeText.text = type;
 		}
 
 		private void FillGroupButtonsContainer()

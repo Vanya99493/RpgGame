@@ -1,4 +1,5 @@
-﻿using Configs.Character;
+﻿using System.Collections.Generic;
+using Configs.Character;
 using Runtime.Enums;
 using Runtime.Models;
 using Runtime.UI.Panels;
@@ -17,6 +18,9 @@ namespace Runtime.Character
 		private DefaultCharacterPartsConfig _defaultCharacterPartsConfig;
 
 		private ICharacterCreationPanel _characterCreationPanel;
+
+		private List<string> _currentBodyPartsList = new();
+		private bool _isAvailableWithoutAnything;
 		private BodyPartType _currentBodyPart;
 		private int _currentIndex;
 
@@ -38,17 +42,9 @@ namespace Runtime.Character
 
 		private void InitDefaultCharacterView(GenderType genderType)
 		{
-			_characterView.Initialize(genderType);
-			
-			foreach (var bodyPartData in _defaultCharacterPartsConfig.BodyPartTypes)
-			{
-				_characterView.SetBodyPart(
-					new BodyPartData()
-					{
-						BodyPartType = bodyPartData,
-						BodyPartName = "",
-					});
-			}
+			_characterView.Initialize(
+				genderType,
+				_defaultCharacterPartsConfig.BodyPartTypes);
 		}
 
 		private void SubscribeOnEvents()
@@ -73,17 +69,59 @@ namespace Runtime.Character
 
 		private void OnBodyPartChanged(BodyPartType bodyPartType)
 		{
+			_currentBodyPart = bodyPartType;
+			(_currentBodyPartsList, _isAvailableWithoutAnything) = _characterView.GetBodyPartNamesList(_currentBodyPart);
+			_currentIndex = _characterView.GetActiveBodyPartIndex(_currentBodyPart);
 			
+			UpdateUI();
 		}
 
 		private void OnPreviousElementSelectedEventHandler()
 		{
+			_currentIndex = Mathf.Max(
+				_currentIndex - 1, 
+				_isAvailableWithoutAnything 
+					? -1
+					: 0);
+
+			if (_currentIndex < 0)
+			{
+				_characterView.DisableBodyPart(_currentBodyPart);
+			}
+			else
+			{
+				_characterView.SetBodyPart(new BodyPartData()
+				{
+					BodyPartType = _currentBodyPart,
+					BodyPartName = _currentBodyPartsList[_currentIndex]
+				});
+			}
 			
+			UpdateUI();
 		}
 		
 		private void OnNextElementSelectedEventHandler()
 		{
+			_currentIndex = Mathf.Min(
+				_currentIndex + 1, 
+				_currentBodyPartsList.Count - 1);
 			
+			if (_currentIndex >= 0)
+			{
+				_characterView.SetBodyPart(new BodyPartData()
+				{
+					BodyPartType = _currentBodyPart,
+					BodyPartName = _currentBodyPartsList[_currentIndex]
+				});
+			}
+
+			UpdateUI();
+		}
+
+		private void UpdateUI()
+		{
+			_characterCreationPanel.SetIndexText(_currentIndex);
+			_characterCreationPanel.SetTypeText(_currentBodyPart.ToString());
 		}
 	}
 }

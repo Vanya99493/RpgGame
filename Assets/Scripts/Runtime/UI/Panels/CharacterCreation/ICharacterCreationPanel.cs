@@ -10,5 +10,6 @@ namespace Runtime.UI.Panels
 		public event Action ToNextElementEvent;
 
 		void SetIndexText(int index);
+		void SetTypeText(string type);
 	}
 }

@@ -14,15 +14,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RpgGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RpgGame/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Debug/CharactersCreationScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Debug/CharactersCreationScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Character/Creation/CharacterCreationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Character/Creation/CharacterCreationController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Character/Creation/CharacterPartsContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Character/Creation/CharacterPartsContainer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Character/Creation/CharacterPartsContainerFiller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Character/Creation/CharacterPartsContainerFiller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Models/Character/BodyPart.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Models/Character/BodyPart.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Models/Character/PairedBodyPart.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Models/Character/PairedBodyPart.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Models/Character/PairedBodyPartsCollection.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Models/Character/PairedBodyPartsCollection.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/UI/Panels/CharacterCreation/CharacterCreationPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/UI/Panels/CharacterCreation/CharacterCreationPanel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/UI/Panels/CharacterCreation/ICharacterCreationPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/UI/Panels/CharacterCreation/ICharacterCreationPanel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Views/Character/CharacterView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Views/Character/CharacterView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Synty.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,61 +114,61 @@
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.1968854802346997E-10" />
-      <entry key="MS500" value="0.011174738072390443" />
-      <entry key="S2" value="0.48812381637972374" />
-      <entry key="S5" value="1.1850860929735838" />
-      <entry key="S10" value="1.8652097181670928" />
-      <entry key="S30" value="3.7151261730552125" />
-      <entry key="S60" value="6.412805396173032" />
-      <entry key="M2" value="10.814689352698432" />
-      <entry key="M5" value="27.406592234987848" />
-      <entry key="M10" value="63.78663762063749" />
-      <entry key="M15" value="106.59616400663094" />
-      <entry key="M30" value="268.89032263612506" />
-      <entry key="H1" value="602.4228702965623" />
-      <entry key="H2" value="1115.6291615805164" />
-      <entry key="H4" value="1878.7318241541636" />
-      <entry key="D1" value="5145.272917200064" />
-      <entry key="W1" value="6890.394269723349" />
+      <entry key="MS100" value="1.0507657747722647" />
+      <entry key="MS500" value="1.5509525579383054" />
+      <entry key="S2" value="1.8615461823724384" />
+      <entry key="S5" value="1.9441077443320456" />
+      <entry key="S10" value="2.067451114067357" />
+      <entry key="S30" value="3.771644304868548" />
+      <entry key="S60" value="7.054720719042815" />
+      <entry key="M2" value="11.489019246501412" />
+      <entry key="M5" value="19.779327346569122" />
+      <entry key="M10" value="46.855783512277036" />
+      <entry key="M15" value="83.87614399766449" />
+      <entry key="M30" value="211.37259389480784" />
+      <entry key="H1" value="502.4394367665664" />
+      <entry key="H2" value="1030.4395367276131" />
+      <entry key="H4" value="1848.5741809816361" />
+      <entry key="D1" value="5304.8436093935625" />
+      <entry key="W1" value="7183.582044563779" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0000001002990322" />
-      <entry key="S10" value="1.0004740360038822" />
-      <entry key="S30" value="1.1519794462362047" />
-      <entry key="S60" value="1.6679649266724135" />
-      <entry key="M2" value="2.447290545177397" />
-      <entry key="M5" value="4.8153399349996455" />
-      <entry key="M10" value="11.69799277600324" />
-      <entry key="M15" value="20.78740100078536" />
-      <entry key="M30" value="53.42940122467459" />
-      <entry key="H1" value="113.46026053451864" />
-      <entry key="H2" value="198.99918495743475" />
-      <entry key="H4" value="320.65609719344167" />
-      <entry key="D1" value="811.5117320075734" />
-      <entry key="W1" value="1066.5732569593983" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="3.7813325703670544E-71" />
+      <entry key="S2" value="2.4974850652246744E-18" />
+      <entry key="S5" value="1.0330318584327134E-7" />
+      <entry key="S10" value="4.1333648754778317E-4" />
+      <entry key="S30" value="0.11525354346076666" />
+      <entry key="S60" value="0.4785148457286185" />
+      <entry key="M2" value="0.9876072772896886" />
+      <entry key="M5" value="2.4035443833852024" />
+      <entry key="M10" value="8.480259548348245" />
+      <entry key="M15" value="16.82126734458077" />
+      <entry key="M30" value="44.39658299012487" />
+      <entry key="H1" value="101.31155224083112" />
+      <entry key="H2" value="194.98543749787058" />
+      <entry key="H4" value="330.3046674902872" />
+      <entry key="D1" value="857.0490713209716" />
+      <entry key="W1" value="1133.593318517868" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="3.0688803777263474E-4" />
-      <entry key="MS500" value="0.20471735799435586" />
-      <entry key="S2" value="1.0958532969434023" />
-      <entry key="S5" value="1.9719163843513319" />
-      <entry key="S10" value="2.727070342020382" />
-      <entry key="S30" value="4.789862845463536" />
-      <entry key="S60" value="8.025887047841621" />
-      <entry key="M2" value="13.224807413288275" />
-      <entry key="M5" value="32.19143348531539" />
-      <entry key="M10" value="75.44649053669629" />
-      <entry key="M15" value="127.33806617291117" />
-      <entry key="M30" value="322.25884633418286" />
-      <entry key="H1" value="715.8162529547476" />
-      <entry key="H2" value="1314.5684935070904" />
-      <entry key="H4" value="2199.3378040924754" />
-      <entry key="D1" value="5956.761643631095" />
-      <entry key="W1" value="7956.963139399951" />
+      <entry key="MS100" value="0.20740986651976387" />
+      <entry key="MS500" value="0.8815801077099779" />
+      <entry key="S2" value="1.5482918791796556" />
+      <entry key="S5" value="1.798784662943381" />
+      <entry key="S10" value="1.984201085712638" />
+      <entry key="S30" value="3.8142505311317665" />
+      <entry key="S60" value="7.46073049292804" />
+      <entry key="M2" value="12.419115519613136" />
+      <entry key="M5" value="22.14618363611472" />
+      <entry key="M10" value="55.298172132165774" />
+      <entry key="M15" value="100.65498471675839" />
+      <entry key="M30" value="255.71870413825917" />
+      <entry key="H1" value="603.6933388889323" />
+      <entry key="H2" value="1225.368191552292" />
+      <entry key="H4" value="2178.8286979501504" />
+      <entry key="D1" value="6161.868822853237" />
+      <entry key="W1" value="8317.170768465483" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -281,7 +275,7 @@
       <workItem from="1793727346577" duration="753000" />
       <workItem from="1793778736654" duration="1071000" />
       <workItem from="1793975942591" duration="4819000" />
-      <workItem from="1793986104032" duration="2267000" />
+      <workItem from="1793986104032" duration="5459000" />
     </task>
     <servers />
   </component>
@@ -314,6 +308,32 @@
           <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="3" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Runtime/Views/Character/CharacterView.cs</url>
+          <line>117</line>
+          <properties documentPath="D:\Programming\UnityProjects\RpgGame\Assets\Scripts\Runtime\Views\Character\CharacterView.cs" containingFunctionPresentation="Method 'GetActiveBodyPartIndex'">
+            <startOffsets>
+              <option value="3389" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3510" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Runtime/Views/Character/CharacterView.cs</url>
+          <line>114</line>
+          <properties documentPath="D:\Programming\UnityProjects\RpgGame\Assets\Scripts\Runtime\Views\Character\CharacterView.cs" containingFunctionPresentation="Method 'GetActiveBodyPartIndex'">
+            <startOffsets>
+              <option value="3354" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3367" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
