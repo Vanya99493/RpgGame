@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e483f68d5b14308a2329a15b6089591, type: 3}
+  m_Name: HelmetClothingItemConfig
+  m_EditorClassIdentifier: Assembly-CSharp::Configs.Items.ClothingItemConfig
+  ItemType: 1
+  Name: Helmet
+  IconSprite: {fileID: 21300000, guid: c6733dc3251db2a45aeba967af2e7669, type: 3}
+  BodyCoverType: 2
+  References:
+  - GenderType: 1
+    BodyPartsData:
+    - BodyPartType: 0
+      BodyPartName: Chr_Head_No_Elements_Male_02
+  - GenderType: 2
+    BodyPartsData:
+    - BodyPartType: 0
+      BodyPartName: Chr_Head_No_Elements_Female_02
+  DressingStrategy: {fileID: 11400000, guid: 450ed0be235e57e4bb791cd40bb35e00, type: 2}

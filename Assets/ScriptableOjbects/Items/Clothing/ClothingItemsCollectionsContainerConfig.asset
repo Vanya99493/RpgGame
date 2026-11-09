@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11c01081023a4d03a92f3eee9893b81c, type: 3}
+  m_Name: ClothingItemsCollectionsContainerConfig
+  m_EditorClassIdentifier: Assembly-CSharp::Configs.Items.ClothingItemsCollectionsContainerConfig
+  ClothingItemsCollections:
+  - {fileID: 11400000, guid: edf41aa243ef73f46a43d97ad548e515, type: 2}
+  - {fileID: 11400000, guid: bbda63c25721d2f42b8b5b3f5ff84b4f, type: 2}

@@ -11,11 +11,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c763a81-88c4-4510-b47f-161648233395" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Character/Customization/CharacterPartsContainer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RpgGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RpgGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3rd-Party/Synty/PolygonFantasyRivals/Materials/Misc/Spirit_Demon_01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/3rd-Party/Synty/PolygonFantasyRivals/Materials/Misc/Spirit_Demon_01.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Debug/CharactersCreationScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Debug/CharactersCreationScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Character/Creation/CharacterCreationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Character/Creation/CharacterCreationController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/UI/Panels/CharacterCreation/CharacterCreationPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/UI/Panels/CharacterCreation/CharacterCreationPanel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/UI/Panels/CharacterCreation/ICharacterCreationPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/UI/Panels/CharacterCreation/ICharacterCreationPanel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableOjbects/Characters/CharacterAnimationParametersConfig.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableOjbects/Characters/CharacterAnimationParametersConfig.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Character/Creation.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Character/Customization.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Character/Creation/CharacterCreationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Character/Customization/CharacterCustomizationController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Character/Creation/CharacterCreationController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Character/Customization/CharacterCustomizationController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Character/Creation/CharacterPartsContainer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Character/Creation/CharacterPartsContainer.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Character/Customization/CharacterPartsContainer.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Character/Creation/CharacterPartsContainerFiller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Character/Customization/CharacterPartsContainerFiller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Character/Creation/CharacterPartsContainerFiller.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Character/Customization/CharacterPartsContainerFiller.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Entry/Test/CharactersCreationEntryPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Entry/Test/CharactersCreationEntryPoint.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runtime/Views/Character/CharacterView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Views/Character/CharacterView.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,6 +46,10 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3ea01e77be99618395f448b16bd7cc2bd4248bd9e5d8474964b2d97f39c5d74/System.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Configs/Animation/AnimationParametersConfig.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Configs/Character/Visual/BodyPartsDefinitionsConfig.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Configs/Items/Clothing/ClothingItemsCollectionConfig.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Configs/Items/Clothing/ClothingItemsCollectionsContainerConfig.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Configs/Items/Clothing/DressingStrategy/HeadCoveringDressingStrategy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Configs/Items/ItemConfig.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Configs/Location/LocationsCollectionConfig.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Extensions/ListExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Bfs/BfsAlgorithm.cs" root0="FORCE_HIGHLIGHTING" />
@@ -48,16 +61,18 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/States/GridSelectionState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/CameraControll/CameraSelection/States/LocationSelectionState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Character/CharactersController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Character/Creation/CharacterCreationController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Character/Customization/ICharacterClothingCustomization.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Character/Movement/CharacterMovementController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Character/RandomCharacterGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Core/Enums/BodyCoverType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Core/Enums/BodyPartType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Core/Enums/ClothingPairType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Core/Enums/ClothingType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Core/Enums/GenderType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Core/Enums/InputActionPhase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Core/Enums/InputActionType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Core/Enums/InteractionObjectType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Core/Enums/ItemType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Core/Enums/TeamType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Entry/RaidEntryPoint.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runtime/Entry/Test/CharactersCreationEntryPoint.cs" root0="FORCE_HIGHLIGHTING" />
@@ -114,61 +129,61 @@
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.000001842377338" />
-      <entry key="MS500" value="1.0724216438317964" />
-      <entry key="S2" value="1.7663924492825633" />
-      <entry key="S5" value="2.6140406205320024" />
-      <entry key="S10" value="3.170828909098434" />
-      <entry key="S30" value="3.685838052432915" />
-      <entry key="S60" value="3.9757318956944996" />
-      <entry key="M2" value="6.4379665896677984" />
-      <entry key="M5" value="26.521570584059816" />
-      <entry key="M10" value="63.70241171498064" />
-      <entry key="M15" value="100.9164870390215" />
-      <entry key="M30" value="222.0405567713985" />
-      <entry key="H1" value="501.1296288990113" />
-      <entry key="H2" value="1027.842824258265" />
-      <entry key="H4" value="1858.4086913522644" />
-      <entry key="D1" value="5370.135526562457" />
-      <entry key="W1" value="7289.767126789066" />
+      <entry key="MS100" value="1.0168629411953818" />
+      <entry key="MS500" value="1.4419637655318356" />
+      <entry key="S2" value="1.8153548639033543" />
+      <entry key="S5" value="1.9215919371140482" />
+      <entry key="S10" value="1.9599958005710483" />
+      <entry key="S30" value="1.9864833913049902" />
+      <entry key="S60" value="1.9932220811598407" />
+      <entry key="M2" value="2.0070933712683026" />
+      <entry key="M5" value="4.420833551829545" />
+      <entry key="M10" value="22.39582293876349" />
+      <entry key="M15" value="51.91442124418139" />
+      <entry key="M30" value="163.0910235733444" />
+      <entry key="H1" value="409.72819049279144" />
+      <entry key="H2" value="920.1651763405685" />
+      <entry key="H4" value="1805.9630131887882" />
+      <entry key="D1" value="5658.853429671303" />
+      <entry key="W1" value="7846.573501463514" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="6.16989573184498E-233" />
-      <entry key="S2" value="8.862769561232587E-59" />
-      <entry key="S5" value="6.0144486240811085E-24" />
-      <entry key="S10" value="2.5001983138157164E-12" />
-      <entry key="S30" value="1.7129419603662717E-4" />
-      <entry key="S60" value="0.018287236423180454" />
-      <entry key="M2" value="0.2681728433517149" />
-      <entry key="M5" value="2.4644715213306156" />
-      <entry key="M10" value="7.515181384570192" />
-      <entry key="M15" value="13.930608770910661" />
-      <entry key="M30" value="37.79656582702235" />
-      <entry key="H1" value="91.88302572801396" />
-      <entry key="H2" value="186.08147024005262" />
-      <entry key="H4" value="324.566378703627" />
-      <entry key="D1" value="861.8842505794765" />
-      <entry key="W1" value="1145.0480748774187" />
+      <entry key="MS100" value="6.128035942650239E-8" />
+      <entry key="MS500" value="0.0360964307672995" />
+      <entry key="S2" value="0.43587911976853116" />
+      <entry key="S5" value="0.7173753110748756" />
+      <entry key="S10" value="0.8469801125616088" />
+      <entry key="S30" value="0.9461450850581068" />
+      <entry key="S60" value="0.972699947172734" />
+      <entry key="M2" value="0.9866421816987474" />
+      <entry key="M5" value="1.096575485585651" />
+      <entry key="M10" value="2.3969392346049467" />
+      <entry key="M15" value="5.595244085637913" />
+      <entry key="M30" value="21.334775108723978" />
+      <entry key="H1" value="62.69068103070658" />
+      <entry key="H2" value="152.26894891054604" />
+      <entry key="H4" value="302.80907325573173" />
+      <entry key="D1" value="903.2782478003694" />
+      <entry key="W1" value="1229.780329488089" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="3.005792224715518E-4" />
-      <entry key="MS500" value="0.22120704772809077" />
-      <entry key="S2" value="1.241573619642545" />
-      <entry key="S5" value="2.2777026846559685" />
-      <entry key="S10" value="2.95939615638315" />
-      <entry key="S30" value="3.6017406761600808" />
-      <entry key="S60" value="3.9492872223673543" />
-      <entry key="M2" value="6.678718458176743" />
-      <entry key="M5" value="28.957218820804005" />
-      <entry key="M10" value="71.18341558296981" />
-      <entry key="M15" value="114.80925197489103" />
-      <entry key="M30" value="259.7917160584031" />
-      <entry key="H1" value="592.959101437995" />
-      <entry key="H2" value="1213.8695364151554" />
-      <entry key="H4" value="2182.925582173126" />
-      <entry key="D1" value="6231.995782711431" />
-      <entry key="W1" value="8434.810561360831" />
+      <entry key="MS100" value="0.041871271245109955" />
+      <entry key="MS500" value="0.6780383653622537" />
+      <entry key="S2" value="1.727435200164253" />
+      <entry key="S5" value="2.3442777292399493" />
+      <entry key="S10" value="2.6392954524312593" />
+      <entry key="S30" value="2.8714336651392225" />
+      <entry key="S60" value="2.93460620610427" />
+      <entry key="M2" value="2.9778511636355836" />
+      <entry key="M5" value="5.508705284658874" />
+      <entry key="M10" value="24.779161202889945" />
+      <entry key="M15" value="57.48840512853827" />
+      <entry key="M30" value="184.3884961828695" />
+      <entry key="H1" value="472.36961095444127" />
+      <entry key="H2" value="1072.37983654735" />
+      <entry key="H4" value="2108.7203949313466" />
+      <entry key="D1" value="6562.105634816573" />
+      <entry key="W1" value="9076.348721899352" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -229,15 +244,13 @@
       <option name="MIXED_MODE_DEBUG" value="0" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" useMixedMode="false" ignored-value-for-modified-check="19408">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" useMixedMode="false">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="19408" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="runtimes">
-        <list>
-          <MonoRuntime />
-        </list>
+        <list />
       </option>
       <option name="selectedOptions">
         <list />
@@ -275,7 +288,11 @@
       <workItem from="1793727346577" duration="753000" />
       <workItem from="1793778736654" duration="1071000" />
       <workItem from="1793975942591" duration="4819000" />
-      <workItem from="1793986104032" duration="6582000" />
+      <workItem from="1793986104032" duration="6767000" />
+      <workItem from="1794067188567" duration="3007000" />
+      <workItem from="1794070219269" duration="1625000" />
+      <workItem from="1794242711523" duration="2056000" />
+      <workItem from="1794247879599" duration="2249000" />
     </task>
     <servers />
   </component>
@@ -308,19 +325,6 @@
           <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="3" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Runtime/Views/Character/CharacterView.cs</url>
-          <line>28</line>
-          <properties documentPath="D:\Programming\UnityProjects\RpgGame\Assets\Scripts\Runtime\Views\Character\CharacterView.cs" containingFunctionPresentation="Method 'Initialize'">
-            <startOffsets>
-              <option value="715" />
-            </startOffsets>
-            <endOffsets>
-              <option value="740" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

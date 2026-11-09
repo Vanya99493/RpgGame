@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Configs.Character;
+using NaughtyAttributes;
 using Runtime.Enums;
 using Runtime.Models;
 using Runtime.UI.Panels;
@@ -8,7 +9,7 @@ using UnityEngine;
 
 namespace Runtime.Character
 {
-	public class CharacterCreationController : MonoBehaviour
+	public class CharacterCustomizationController : MonoBehaviour
 	{
 		[SerializeField]
 		private CharacterView _characterView;

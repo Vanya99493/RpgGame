@@ -1,6 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
-using Configs.Character;
+using Configs.Items;
 using Runtime.Character;
 using Runtime.Enums;
 using Runtime.Models;
@@ -8,17 +9,17 @@ using UnityEngine;
 
 namespace Runtime.Views.Character
 {
-	public class CharacterView : MonoBehaviour
+	public class CharacterView : MonoBehaviour, ICharacterClothingCustomization
 	{
 		[SerializeField]
 		private CharacterPartsContainer _characterPartsContainer;
 
-		[Header("Configs")]
 		[SerializeField]
-		private BodyPartsDefinitionsConfig _bodyPartsDefinitionsConfig;
+		private ClothingItemsCollectionsContainerConfig _clothingItemsCollectionsContainerConfig;
 
 		private readonly List<BodyPartType> _defaultBodyParts = new();
 		private readonly List<BodyPartData> _activeBodyParts = new();
+		private readonly List<BodyPartData> _hidedBodyParts = new();
 		
 		private GenderType _genderType;
 		
@@ -30,6 +31,7 @@ namespace Runtime.Views.Character
 			
 			_defaultBodyParts.Clear();
 			_defaultBodyParts.AddRange(defaultBodyPartsCollection);
+			_hidedBodyParts.Clear();
 
 			DisableActiveBodyParts();
 
@@ -132,6 +134,48 @@ namespace Runtime.Views.Character
 			return -1;
 		}
 
+		public void HideBodyPart(BodyPartType typeToHide)
+		{
+			foreach (var activeBodyPartData in _activeBodyParts)
+			{
+				if (typeToHide == activeBodyPartData.BodyPartType)
+				{
+					_hidedBodyParts.Add(activeBodyPartData);
+					_activeBodyParts.Remove(activeBodyPartData);
+						
+					var bodyPartsCollection = _characterPartsContainer.BodyPartsCollections
+						.FirstOrDefault(x => x.BodyPartType == typeToHide);
+					
+					DisableBodyPart(
+						bodyPartsCollection, 
+						activeBodyPartData.BodyPartName);
+					
+					break;
+				}
+			}
+		}
+
+		public void ShowBodyPart(BodyPartType typeToShow)
+		{
+			foreach (var hidedBodyPartData in _hidedBodyParts)
+			{
+				if (typeToShow == hidedBodyPartData.BodyPartType)
+				{
+					_activeBodyParts.Add(hidedBodyPartData);
+					_hidedBodyParts.Remove(hidedBodyPartData);
+					
+					var bodyPartsCollection = _characterPartsContainer.BodyPartsCollections
+						.FirstOrDefault(x => x.BodyPartType == typeToShow);
+					
+					EnableBodyPart(
+						bodyPartsCollection, 
+						hidedBodyPartData.BodyPartName);
+					
+					break;
+				}
+			}
+		}
+
 		private void DisableActiveBodyParts()
 		{
 			List<BodyPartType> activeBodyTypes = _activeBodyParts
@@ -154,14 +198,42 @@ namespace Runtime.Views.Character
 				.ForEach(activeBodyPartData =>
 				{
 					_activeBodyParts.Remove(activeBodyPartData);
-					bodyPartsCollection?.BodyParts
-						.Where(x => x.Name == activeBodyPartData.BodyPartName)
-						.ToList()
-						.ForEach(bodyPart =>
-						{
-							bodyPart.SetActive(false);
-						});
+					
+					DisableBodyPart(
+						bodyPartsCollection,
+						activeBodyPartData.BodyPartName);
 				});
+		}
+
+		private void DisableBodyPart(
+			BodyPartsCollection bodyPartsCollection,
+			string bodyPartName)
+		{
+			DoSmthWithBodyPart(
+				bodyPartsCollection, 
+				bodyPartName,
+				bodyPart => bodyPart.SetActive(false));
+		}
+
+		private void EnableBodyPart(
+			BodyPartsCollection bodyPartsCollection,
+			string bodyPartName)
+		{
+			DoSmthWithBodyPart(
+				bodyPartsCollection, 
+				bodyPartName,
+				bodyPart => bodyPart.SetActive(true));
+		}
+
+		private void DoSmthWithBodyPart(
+			BodyPartsCollection bodyPartsCollection,
+			string bodyPartName,
+			Action<BodyPart> smth = null)
+		{
+			bodyPartsCollection?.BodyParts
+				.Where(x => x.Name == bodyPartName)
+				.ToList()
+				.ForEach(bodyPart => smth?.Invoke(bodyPart));
 		}
 	}
 }
