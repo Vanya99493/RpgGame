@@ -7,7 +7,7 @@ namespace Runtime.Entry
 	public class CharactersCreationEntryPoint : MonoBehaviour
 	{
 		[SerializeField]
-		private CharacterCustomizationController _characterCustomizationController;
+		private CharacterCreationController _characterCreationController;
 		
 		[Header("UI")]
 		[SerializeField]
@@ -20,7 +20,7 @@ namespace Runtime.Entry
 
 		private void Initialize()
 		{
-			_characterCustomizationController.Initialize(_characterCreationPanel);
+			_characterCreationController.Initialize(_characterCreationPanel);
 		}
 	}
 }
